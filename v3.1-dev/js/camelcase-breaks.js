@@ -13,16 +13,19 @@ function insertCamelCaseBreaks(node) {
   Array.from(node.childNodes).forEach(function (child) {
     if (child.nodeType === Node.TEXT_NODE) {
       var text = child.textContent;
-      if (!/[a-z][A-Z]/.test(text)) return;
+      if (!/[a-z][A-Z]/.test(text) && !text.includes('/')) return;
 
       var frag = document.createDocumentFragment();
       var last = 0;
-      // Match every lowercase→uppercase transition and insert a <wbr> between them
-      text.replace(/([a-z])([A-Z])/g, function (match, lower, upper, offset) {
-        frag.appendChild(document.createTextNode(text.slice(last, offset + 1)));
+      // camelCase transition: wbr after lowercase; slash separator: wbr before slash
+      var re = /[a-z](?=[A-Z])|(?=\/)/g;
+      var m;
+      while ((m = re.exec(text)) !== null) {
+        var pos = m.index + m[0].length; // after lowercase char, or at slash
+        frag.appendChild(document.createTextNode(text.slice(last, pos)));
         frag.appendChild(document.createElement('wbr'));
-        last = offset + 1;
-      });
+        last = pos;
+      }
       frag.appendChild(document.createTextNode(text.slice(last)));
       child.parentNode.replaceChild(frag, child);
     } else if (child.nodeType === Node.ELEMENT_NODE) {
