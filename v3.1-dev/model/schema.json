@@ -208,9 +208,9 @@
         },
         "prop_ai_EnergyConsumptionDescription_ai_energyUnit": {
                 "enum": [
-                    "spdx:AI/EnergyUnitType/kilowattHour",
-                    "spdx:AI/EnergyUnitType/megajoule",
-                    "spdx:AI/EnergyUnitType/other"
+                    "ai_:EnergyUnitType/kilowattHour",
+                    "ai_:EnergyUnitType/megajoule",
+                    "ai_:EnergyUnitType/other"
                 ]
         },
         "ai_EnergyUnitType": {
@@ -917,21 +917,21 @@
         },
         "prop_ElementCollection_profileConformance": {
                 "enum": [
-                    "spdx:Core/ProfileIdentifierType/ai",
-                    "spdx:Core/ProfileIdentifierType/build",
-                    "spdx:Core/ProfileIdentifierType/core",
-                    "spdx:Core/ProfileIdentifierType/dataset",
-                    "spdx:Core/ProfileIdentifierType/expandedLicensing",
-                    "spdx:Core/ProfileIdentifierType/extension",
-                    "spdx:Core/ProfileIdentifierType/functionalSafety",
-                    "spdx:Core/ProfileIdentifierType/hardware",
-                    "spdx:Core/ProfileIdentifierType/lite",
-                    "spdx:Core/ProfileIdentifierType/operations",
-                    "spdx:Core/ProfileIdentifierType/security",
-                    "spdx:Core/ProfileIdentifierType/service",
-                    "spdx:Core/ProfileIdentifierType/simpleLicensing",
-                    "spdx:Core/ProfileIdentifierType/software",
-                    "spdx:Core/ProfileIdentifierType/supplyChain"
+                    ":ProfileIdentifierType/ai",
+                    ":ProfileIdentifierType/build",
+                    ":ProfileIdentifierType/core",
+                    ":ProfileIdentifierType/dataset",
+                    ":ProfileIdentifierType/expandedLicensing",
+                    ":ProfileIdentifierType/extension",
+                    ":ProfileIdentifierType/functionalSafety",
+                    ":ProfileIdentifierType/hardware",
+                    ":ProfileIdentifierType/lite",
+                    ":ProfileIdentifierType/operations",
+                    ":ProfileIdentifierType/security",
+                    ":ProfileIdentifierType/service",
+                    ":ProfileIdentifierType/simpleLicensing",
+                    ":ProfileIdentifierType/software",
+                    ":ProfileIdentifierType/supplyChain"
                 ]
         },
         "prop_ElementCollection_rootElement": {
@@ -1080,49 +1080,49 @@
         },
         "prop_ExternalIdentifier_externalIdentifierType": {
                 "enum": [
-                    "spdx:Core/ExternalIdentifierType/ark",
-                    "spdx:Core/ExternalIdentifierType/bic",
-                    "spdx:Core/ExternalIdentifierType/cpe22",
-                    "spdx:Core/ExternalIdentifierType/cpe23",
-                    "spdx:Core/ExternalIdentifierType/cve",
-                    "spdx:Core/ExternalIdentifierType/doi",
-                    "spdx:Core/ExternalIdentifierType/duns",
-                    "spdx:Core/ExternalIdentifierType/ecli",
-                    "spdx:Core/ExternalIdentifierType/eli",
-                    "spdx:Core/ExternalIdentifierType/email",
-                    "spdx:Core/ExternalIdentifierType/evidenceUID",
-                    "spdx:Core/ExternalIdentifierType/gitoid",
-                    "spdx:Core/ExternalIdentifierType/gln",
-                    "spdx:Core/ExternalIdentifierType/glue",
-                    "spdx:Core/ExternalIdentifierType/gtin",
-                    "spdx:Core/ExternalIdentifierType/hsCodes",
-                    "spdx:Core/ExternalIdentifierType/ibid",
-                    "spdx:Core/ExternalIdentifierType/ibrn",
-                    "spdx:Core/ExternalIdentifierType/isan",
-                    "spdx:Core/ExternalIdentifierType/isbn",
-                    "spdx:Core/ExternalIdentifierType/iscc",
-                    "spdx:Core/ExternalIdentifierType/isci",
-                    "spdx:Core/ExternalIdentifierType/isil",
-                    "spdx:Core/ExternalIdentifierType/ismn",
-                    "spdx:Core/ExternalIdentifierType/isni",
-                    "spdx:Core/ExternalIdentifierType/isrc",
-                    "spdx:Core/ExternalIdentifierType/issn",
-                    "spdx:Core/ExternalIdentifierType/iswc",
-                    "spdx:Core/ExternalIdentifierType/lei",
-                    "spdx:Core/ExternalIdentifierType/lexid",
-                    "spdx:Core/ExternalIdentifierType/nli",
-                    "spdx:Core/ExternalIdentifierType/orcidid",
-                    "spdx:Core/ExternalIdentifierType/other",
-                    "spdx:Core/ExternalIdentifierType/packageUrl",
-                    "spdx:Core/ExternalIdentifierType/phoneNumber",
-                    "spdx:Core/ExternalIdentifierType/requirementUID",
-                    "spdx:Core/ExternalIdentifierType/rorid",
-                    "spdx:Core/ExternalIdentifierType/securityOther",
-                    "spdx:Core/ExternalIdentifierType/swhid",
-                    "spdx:Core/ExternalIdentifierType/swid",
-                    "spdx:Core/ExternalIdentifierType/urlScheme",
-                    "spdx:Core/ExternalIdentifierType/verificationUID",
-                    "spdx:Core/ExternalIdentifierType/webpage"
+                    ":ExternalIdentifierType/ark",
+                    ":ExternalIdentifierType/bic",
+                    ":ExternalIdentifierType/cpe22",
+                    ":ExternalIdentifierType/cpe23",
+                    ":ExternalIdentifierType/cve",
+                    ":ExternalIdentifierType/doi",
+                    ":ExternalIdentifierType/duns",
+                    ":ExternalIdentifierType/ecli",
+                    ":ExternalIdentifierType/eli",
+                    ":ExternalIdentifierType/email",
+                    ":ExternalIdentifierType/evidenceUID",
+                    ":ExternalIdentifierType/gitoid",
+                    ":ExternalIdentifierType/gln",
+                    ":ExternalIdentifierType/glue",
+                    ":ExternalIdentifierType/gtin",
+                    ":ExternalIdentifierType/hsCodes",
+                    ":ExternalIdentifierType/ibid",
+                    ":ExternalIdentifierType/ibrn",
+                    ":ExternalIdentifierType/isan",
+                    ":ExternalIdentifierType/isbn",
+                    ":ExternalIdentifierType/iscc",
+                    ":ExternalIdentifierType/isci",
+                    ":ExternalIdentifierType/isil",
+                    ":ExternalIdentifierType/ismn",
+                    ":ExternalIdentifierType/isni",
+                    ":ExternalIdentifierType/isrc",
+                    ":ExternalIdentifierType/issn",
+                    ":ExternalIdentifierType/iswc",
+                    ":ExternalIdentifierType/lei",
+                    ":ExternalIdentifierType/lexid",
+                    ":ExternalIdentifierType/nli",
+                    ":ExternalIdentifierType/orcidid",
+                    ":ExternalIdentifierType/other",
+                    ":ExternalIdentifierType/packageUrl",
+                    ":ExternalIdentifierType/phoneNumber",
+                    ":ExternalIdentifierType/requirementUID",
+                    ":ExternalIdentifierType/rorid",
+                    ":ExternalIdentifierType/securityOther",
+                    ":ExternalIdentifierType/swhid",
+                    ":ExternalIdentifierType/swid",
+                    ":ExternalIdentifierType/urlScheme",
+                    ":ExternalIdentifierType/verificationUID",
+                    ":ExternalIdentifierType/webpage"
                 ]
         },
         "prop_ExternalIdentifier_identifier": {
@@ -1383,54 +1383,54 @@
         },
         "prop_ExternalRef_externalRefType": {
                 "enum": [
-                    "spdx:Core/ExternalRefType/altDownloadLocation",
-                    "spdx:Core/ExternalRefType/altWebPage",
-                    "spdx:Core/ExternalRefType/binaryArtifact",
-                    "spdx:Core/ExternalRefType/bom",
-                    "spdx:Core/ExternalRefType/bower",
-                    "spdx:Core/ExternalRefType/buildMeta",
-                    "spdx:Core/ExternalRefType/buildSystem",
-                    "spdx:Core/ExternalRefType/certificationReport",
-                    "spdx:Core/ExternalRefType/chat",
-                    "spdx:Core/ExternalRefType/componentAnalysisReport",
-                    "spdx:Core/ExternalRefType/cwe",
-                    "spdx:Core/ExternalRefType/documentation",
-                    "spdx:Core/ExternalRefType/dynamicAnalysisReport",
-                    "spdx:Core/ExternalRefType/eolNotice",
-                    "spdx:Core/ExternalRefType/exportControlAssessment",
-                    "spdx:Core/ExternalRefType/funding",
-                    "spdx:Core/ExternalRefType/issueTracker",
-                    "spdx:Core/ExternalRefType/license",
-                    "spdx:Core/ExternalRefType/mailingList",
-                    "spdx:Core/ExternalRefType/mavenCentral",
-                    "spdx:Core/ExternalRefType/metrics",
-                    "spdx:Core/ExternalRefType/npm",
-                    "spdx:Core/ExternalRefType/nuget",
-                    "spdx:Core/ExternalRefType/other",
-                    "spdx:Core/ExternalRefType/privacyAssessment",
-                    "spdx:Core/ExternalRefType/productMetadata",
-                    "spdx:Core/ExternalRefType/purchaseOrder",
-                    "spdx:Core/ExternalRefType/qualityAssessmentReport",
-                    "spdx:Core/ExternalRefType/releaseHistory",
-                    "spdx:Core/ExternalRefType/releaseNotes",
-                    "spdx:Core/ExternalRefType/riskAssessment",
-                    "spdx:Core/ExternalRefType/runtimeAnalysisReport",
-                    "spdx:Core/ExternalRefType/secureSoftwareAttestation",
-                    "spdx:Core/ExternalRefType/securityAdversaryModel",
-                    "spdx:Core/ExternalRefType/securityAdvisory",
-                    "spdx:Core/ExternalRefType/securityFix",
-                    "spdx:Core/ExternalRefType/securityOther",
-                    "spdx:Core/ExternalRefType/securityPenTestReport",
-                    "spdx:Core/ExternalRefType/securityPolicy",
-                    "spdx:Core/ExternalRefType/securityThreatModel",
-                    "spdx:Core/ExternalRefType/socialMedia",
-                    "spdx:Core/ExternalRefType/sourceArtifact",
-                    "spdx:Core/ExternalRefType/staticAnalysisReport",
-                    "spdx:Core/ExternalRefType/support",
-                    "spdx:Core/ExternalRefType/vcs",
-                    "spdx:Core/ExternalRefType/vulnerabilityDisclosureReport",
-                    "spdx:Core/ExternalRefType/vulnerabilityExploitabilityAssessment",
-                    "spdx:Core/ExternalRefType/x509Cert"
+                    ":ExternalRefType/altDownloadLocation",
+                    ":ExternalRefType/altWebPage",
+                    ":ExternalRefType/binaryArtifact",
+                    ":ExternalRefType/bom",
+                    ":ExternalRefType/bower",
+                    ":ExternalRefType/buildMeta",
+                    ":ExternalRefType/buildSystem",
+                    ":ExternalRefType/certificationReport",
+                    ":ExternalRefType/chat",
+                    ":ExternalRefType/componentAnalysisReport",
+                    ":ExternalRefType/cwe",
+                    ":ExternalRefType/documentation",
+                    ":ExternalRefType/dynamicAnalysisReport",
+                    ":ExternalRefType/eolNotice",
+                    ":ExternalRefType/exportControlAssessment",
+                    ":ExternalRefType/funding",
+                    ":ExternalRefType/issueTracker",
+                    ":ExternalRefType/license",
+                    ":ExternalRefType/mailingList",
+                    ":ExternalRefType/mavenCentral",
+                    ":ExternalRefType/metrics",
+                    ":ExternalRefType/npm",
+                    ":ExternalRefType/nuget",
+                    ":ExternalRefType/other",
+                    ":ExternalRefType/privacyAssessment",
+                    ":ExternalRefType/productMetadata",
+                    ":ExternalRefType/purchaseOrder",
+                    ":ExternalRefType/qualityAssessmentReport",
+                    ":ExternalRefType/releaseHistory",
+                    ":ExternalRefType/releaseNotes",
+                    ":ExternalRefType/riskAssessment",
+                    ":ExternalRefType/runtimeAnalysisReport",
+                    ":ExternalRefType/secureSoftwareAttestation",
+                    ":ExternalRefType/securityAdversaryModel",
+                    ":ExternalRefType/securityAdvisory",
+                    ":ExternalRefType/securityFix",
+                    ":ExternalRefType/securityOther",
+                    ":ExternalRefType/securityPenTestReport",
+                    ":ExternalRefType/securityPolicy",
+                    ":ExternalRefType/securityThreatModel",
+                    ":ExternalRefType/socialMedia",
+                    ":ExternalRefType/sourceArtifact",
+                    ":ExternalRefType/staticAnalysisReport",
+                    ":ExternalRefType/support",
+                    ":ExternalRefType/vcs",
+                    ":ExternalRefType/vulnerabilityDisclosureReport",
+                    ":ExternalRefType/vulnerabilityExploitabilityAssessment",
+                    ":ExternalRefType/x509Cert"
                 ]
         },
         "prop_ExternalRef_locator": {
@@ -1964,28 +1964,28 @@
         },
         "prop_PackageVerificationCode_algorithm": {
                 "enum": [
-                    "spdx:Core/HashAlgorithm/adler32",
-                    "spdx:Core/HashAlgorithm/blake2b256",
-                    "spdx:Core/HashAlgorithm/blake2b384",
-                    "spdx:Core/HashAlgorithm/blake2b512",
-                    "spdx:Core/HashAlgorithm/blake3",
-                    "spdx:Core/HashAlgorithm/crystalsDilithium",
-                    "spdx:Core/HashAlgorithm/crystalsKyber",
-                    "spdx:Core/HashAlgorithm/falcon",
-                    "spdx:Core/HashAlgorithm/md2",
-                    "spdx:Core/HashAlgorithm/md4",
-                    "spdx:Core/HashAlgorithm/md5",
-                    "spdx:Core/HashAlgorithm/md6",
-                    "spdx:Core/HashAlgorithm/other",
-                    "spdx:Core/HashAlgorithm/sha1",
-                    "spdx:Core/HashAlgorithm/sha224",
-                    "spdx:Core/HashAlgorithm/sha256",
-                    "spdx:Core/HashAlgorithm/sha384",
-                    "spdx:Core/HashAlgorithm/sha3_224",
-                    "spdx:Core/HashAlgorithm/sha3_256",
-                    "spdx:Core/HashAlgorithm/sha3_384",
-                    "spdx:Core/HashAlgorithm/sha3_512",
-                    "spdx:Core/HashAlgorithm/sha512"
+                    ":HashAlgorithm/adler32",
+                    ":HashAlgorithm/blake2b256",
+                    ":HashAlgorithm/blake2b384",
+                    ":HashAlgorithm/blake2b512",
+                    ":HashAlgorithm/blake3",
+                    ":HashAlgorithm/crystalsDilithium",
+                    ":HashAlgorithm/crystalsKyber",
+                    ":HashAlgorithm/falcon",
+                    ":HashAlgorithm/md2",
+                    ":HashAlgorithm/md4",
+                    ":HashAlgorithm/md5",
+                    ":HashAlgorithm/md6",
+                    ":HashAlgorithm/other",
+                    ":HashAlgorithm/sha1",
+                    ":HashAlgorithm/sha224",
+                    ":HashAlgorithm/sha256",
+                    ":HashAlgorithm/sha384",
+                    ":HashAlgorithm/sha3_224",
+                    ":HashAlgorithm/sha3_256",
+                    ":HashAlgorithm/sha3_384",
+                    ":HashAlgorithm/sha3_512",
+                    ":HashAlgorithm/sha512"
                 ]
         },
         "prop_PackageVerificationCode_hashValue": {
@@ -2434,9 +2434,9 @@
         },
         "prop_Relationship_completeness": {
                 "enum": [
-                    "spdx:Core/RelationshipCompleteness/complete",
-                    "spdx:Core/RelationshipCompleteness/incomplete",
-                    "spdx:Core/RelationshipCompleteness/noAssertion"
+                    ":RelationshipCompleteness/complete",
+                    ":RelationshipCompleteness/incomplete",
+                    ":RelationshipCompleteness/noAssertion"
                 ]
         },
         "prop_Relationship_endTime": {
@@ -2455,84 +2455,84 @@
         },
         "prop_Relationship_relationshipType": {
                 "enum": [
-                    "spdx:Core/RelationshipType/affects",
-                    "spdx:Core/RelationshipType/amendedBy",
-                    "spdx:Core/RelationshipType/ancestorOf",
-                    "spdx:Core/RelationshipType/assumes",
-                    "spdx:Core/RelationshipType/availableFrom",
-                    "spdx:Core/RelationshipType/configures",
-                    "spdx:Core/RelationshipType/conformsTo",
-                    "spdx:Core/RelationshipType/contains",
-                    "spdx:Core/RelationshipType/coordinatedBy",
-                    "spdx:Core/RelationshipType/copiedTo",
-                    "spdx:Core/RelationshipType/createdBy",
-                    "spdx:Core/RelationshipType/delegatedTo",
-                    "spdx:Core/RelationshipType/dependsOn",
-                    "spdx:Core/RelationshipType/descendantOf",
-                    "spdx:Core/RelationshipType/describes",
-                    "spdx:Core/RelationshipType/doesNotAffect",
-                    "spdx:Core/RelationshipType/evaluatedOn",
-                    "spdx:Core/RelationshipType/expandsTo",
-                    "spdx:Core/RelationshipType/exploitCreatedBy",
-                    "spdx:Core/RelationshipType/finetunedOn",
-                    "spdx:Core/RelationshipType/fixedBy",
-                    "spdx:Core/RelationshipType/fixedIn",
-                    "spdx:Core/RelationshipType/follows",
-                    "spdx:Core/RelationshipType/foundBy",
-                    "spdx:Core/RelationshipType/generates",
-                    "spdx:Core/RelationshipType/hasAddedFile",
-                    "spdx:Core/RelationshipType/hasAssessmentFor",
-                    "spdx:Core/RelationshipType/hasAssociatedVulnerability",
-                    "spdx:Core/RelationshipType/hasConcludedLicense",
-                    "spdx:Core/RelationshipType/hasContactPoint",
-                    "spdx:Core/RelationshipType/hasDataFile",
-                    "spdx:Core/RelationshipType/hasDeclaredLicense",
-                    "spdx:Core/RelationshipType/hasDeletedFile",
-                    "spdx:Core/RelationshipType/hasDependencyManifest",
-                    "spdx:Core/RelationshipType/hasDistributionArtifact",
-                    "spdx:Core/RelationshipType/hasDocumentation",
-                    "spdx:Core/RelationshipType/hasDynamicLink",
-                    "spdx:Core/RelationshipType/hasEvidence",
-                    "spdx:Core/RelationshipType/hasExample",
-                    "spdx:Core/RelationshipType/hasHost",
-                    "spdx:Core/RelationshipType/hasInput",
-                    "spdx:Core/RelationshipType/hasMetadata",
-                    "spdx:Core/RelationshipType/hasOptionalComponent",
-                    "spdx:Core/RelationshipType/hasOptionalDependency",
-                    "spdx:Core/RelationshipType/hasOutput",
-                    "spdx:Core/RelationshipType/hasPrerequisite",
-                    "spdx:Core/RelationshipType/hasProvidedDependency",
-                    "spdx:Core/RelationshipType/hasRequirement",
-                    "spdx:Core/RelationshipType/hasResolution",
-                    "spdx:Core/RelationshipType/hasRoleIn",
-                    "spdx:Core/RelationshipType/hasSpecification",
-                    "spdx:Core/RelationshipType/hasStaticLink",
-                    "spdx:Core/RelationshipType/hasTest",
-                    "spdx:Core/RelationshipType/hasTestCase",
-                    "spdx:Core/RelationshipType/hasVariant",
-                    "spdx:Core/RelationshipType/implementedBy",
-                    "spdx:Core/RelationshipType/invokedBy",
-                    "spdx:Core/RelationshipType/locatedAt",
-                    "spdx:Core/RelationshipType/modifiedBy",
-                    "spdx:Core/RelationshipType/other",
-                    "spdx:Core/RelationshipType/packagedBy",
-                    "spdx:Core/RelationshipType/patchedBy",
-                    "spdx:Core/RelationshipType/performedBy",
-                    "spdx:Core/RelationshipType/pretrainedOn",
-                    "spdx:Core/RelationshipType/providesSupportFor",
-                    "spdx:Core/RelationshipType/publishedBy",
-                    "spdx:Core/RelationshipType/reportedBy",
-                    "spdx:Core/RelationshipType/republishedBy",
-                    "spdx:Core/RelationshipType/resolved",
-                    "spdx:Core/RelationshipType/runsOn",
-                    "spdx:Core/RelationshipType/serializedInArtifact",
-                    "spdx:Core/RelationshipType/testedOn",
-                    "spdx:Core/RelationshipType/tracedToDetail",
-                    "spdx:Core/RelationshipType/trainedOn",
-                    "spdx:Core/RelationshipType/underInvestigationFor",
-                    "spdx:Core/RelationshipType/usesTool",
-                    "spdx:Core/RelationshipType/validatedOn",
-                    "spdx:Core/RelationshipType/verifiedBy"
+                    ":RelationshipType/affects",
+                    ":RelationshipType/amendedBy",
+                    ":RelationshipType/ancestorOf",
+                    ":RelationshipType/assumes",
+                    ":RelationshipType/availableFrom",
+                    ":RelationshipType/configures",
+                    ":RelationshipType/conformsTo",
+                    ":RelationshipType/contains",
+                    ":RelationshipType/coordinatedBy",
+                    ":RelationshipType/copiedTo",
+                    ":RelationshipType/createdBy",
+                    ":RelationshipType/delegatedTo",
+                    ":RelationshipType/dependsOn",
+                    ":RelationshipType/descendantOf",
+                    ":RelationshipType/describes",
+                    ":RelationshipType/doesNotAffect",
+                    ":RelationshipType/evaluatedOn",
+                    ":RelationshipType/expandsTo",
+                    ":RelationshipType/exploitCreatedBy",
+                    ":RelationshipType/finetunedOn",
+                    ":RelationshipType/fixedBy",
+                    ":RelationshipType/fixedIn",
+                    ":RelationshipType/follows",
+                    ":RelationshipType/foundBy",
+                    ":RelationshipType/generates",
+                    ":RelationshipType/hasAddedFile",
+                    ":RelationshipType/hasAssessmentFor",
+                    ":RelationshipType/hasAssociatedVulnerability",
+                    ":RelationshipType/hasConcludedLicense",
+                    ":RelationshipType/hasContactPoint",
+                    ":RelationshipType/hasDataFile",
+                    ":RelationshipType/hasDeclaredLicense",
+                    ":RelationshipType/hasDeletedFile",
+                    ":RelationshipType/hasDependencyManifest",
+                    ":RelationshipType/hasDistributionArtifact",
+                    ":RelationshipType/hasDocumentation",
+                    ":RelationshipType/hasDynamicLink",
+                    ":RelationshipType/hasEvidence",
+                    ":RelationshipType/hasExample",
+                    ":RelationshipType/hasHost",
+                    ":RelationshipType/hasInput",
+                    ":RelationshipType/hasMetadata",
+                    ":RelationshipType/hasOptionalComponent",
+                    ":RelationshipType/hasOptionalDependency",
+                    ":RelationshipType/hasOutput",
+                    ":RelationshipType/hasPrerequisite",
+                    ":RelationshipType/hasProvidedDependency",
+                    ":RelationshipType/hasRequirement",
+                    ":RelationshipType/hasResolution",
+                    ":RelationshipType/hasRoleIn",
+                    ":RelationshipType/hasSpecification",
+                    ":RelationshipType/hasStaticLink",
+                    ":RelationshipType/hasTest",
+                    ":RelationshipType/hasTestCase",
+                    ":RelationshipType/hasVariant",
+                    ":RelationshipType/implementedBy",
+                    ":RelationshipType/invokedBy",
+                    ":RelationshipType/locatedAt",
+                    ":RelationshipType/modifiedBy",
+                    ":RelationshipType/other",
+                    ":RelationshipType/packagedBy",
+                    ":RelationshipType/patchedBy",
+                    ":RelationshipType/performedBy",
+                    ":RelationshipType/pretrainedOn",
+                    ":RelationshipType/providesSupportFor",
+                    ":RelationshipType/publishedBy",
+                    ":RelationshipType/reportedBy",
+                    ":RelationshipType/republishedBy",
+                    ":RelationshipType/resolved",
+                    ":RelationshipType/runsOn",
+                    ":RelationshipType/serializedInArtifact",
+                    ":RelationshipType/testedOn",
+                    ":RelationshipType/tracedToDetail",
+                    ":RelationshipType/trainedOn",
+                    ":RelationshipType/underInvestigationFor",
+                    ":RelationshipType/usesTool",
+                    ":RelationshipType/validatedOn",
+                    ":RelationshipType/verifiedBy"
                 ]
         },
         "prop_Relationship_startTime": {
@@ -2806,14 +2806,14 @@
         },
         "prop_Requirement_devLifecycleStage": {
                 "enum": [
-                    "spdx:Core/LifecycleScopeType/build",
-                    "spdx:Core/LifecycleScopeType/decommission",
-                    "spdx:Core/LifecycleScopeType/design",
-                    "spdx:Core/LifecycleScopeType/development",
-                    "spdx:Core/LifecycleScopeType/other",
-                    "spdx:Core/LifecycleScopeType/runtime",
-                    "spdx:Core/LifecycleScopeType/test",
-                    "spdx:Core/LifecycleScopeType/update"
+                    ":LifecycleScopeType/build",
+                    ":LifecycleScopeType/decommission",
+                    ":LifecycleScopeType/design",
+                    ":LifecycleScopeType/development",
+                    ":LifecycleScopeType/other",
+                    ":LifecycleScopeType/runtime",
+                    ":LifecycleScopeType/test",
+                    ":LifecycleScopeType/update"
                 ]
         },
         "prop_Requirement_rationale": {
@@ -3199,13 +3199,13 @@
         },
         "prop_SupportRelationship_supportLevel": {
                 "enum": [
-                    "spdx:Core/SupportType/deployed",
-                    "spdx:Core/SupportType/development",
-                    "spdx:Core/SupportType/endOfSupport",
-                    "spdx:Core/SupportType/limitedSupport",
-                    "spdx:Core/SupportType/noAssertion",
-                    "spdx:Core/SupportType/noSupport",
-                    "spdx:Core/SupportType/support"
+                    ":SupportType/deployed",
+                    ":SupportType/development",
+                    ":SupportType/endOfSupport",
+                    ":SupportType/limitedSupport",
+                    ":SupportType/noAssertion",
+                    ":SupportType/noSupport",
+                    ":SupportType/support"
                 ]
         },
         "SupportType": {
@@ -3935,9 +3935,9 @@
         },
         "prop_functionalsafety_EvaluationResult_functionalsafety_evaluation": {
                 "enum": [
-                    "spdx:FunctionalSafety/EvaluationResultType/fail",
-                    "spdx:FunctionalSafety/EvaluationResultType/inconclusive",
-                    "spdx:FunctionalSafety/EvaluationResultType/pass"
+                    "functionalsafety_:EvaluationResultType/fail",
+                    "functionalsafety_:EvaluationResultType/inconclusive",
+                    "functionalsafety_:EvaluationResultType/pass"
                 ]
         },
         "prop_functionalsafety_EvaluationResult_functionalsafety_evaluationBasedOn": {
@@ -4058,11 +4058,11 @@
         },
         "prop_functionalsafety_EvidenceRelationship_functionalsafety_evidenceCategory": {
                 "enum": [
-                    "spdx:FunctionalSafety/EvidenceType/log",
-                    "spdx:FunctionalSafety/EvidenceType/observation",
-                    "spdx:FunctionalSafety/EvidenceType/other",
-                    "spdx:FunctionalSafety/EvidenceType/recording",
-                    "spdx:FunctionalSafety/EvidenceType/report"
+                    "functionalsafety_:EvidenceType/log",
+                    "functionalsafety_:EvidenceType/observation",
+                    "functionalsafety_:EvidenceType/other",
+                    "functionalsafety_:EvidenceType/recording",
+                    "functionalsafety_:EvidenceType/report"
                 ]
         },
         "prop_functionalsafety_EvidenceRelationship_functionalsafety_evidenceUID": {
@@ -4211,14 +4211,14 @@
         },
         "prop_functionalsafety_RequirementVerification_functionalsafety_verificationMethod": {
                 "enum": [
-                    "spdx:FunctionalSafety/VerificationType/analysis",
-                    "spdx:FunctionalSafety/VerificationType/assessment",
-                    "spdx:FunctionalSafety/VerificationType/audit",
-                    "spdx:FunctionalSafety/VerificationType/demonstration",
-                    "spdx:FunctionalSafety/VerificationType/inspection",
-                    "spdx:FunctionalSafety/VerificationType/other",
-                    "spdx:FunctionalSafety/VerificationType/review",
-                    "spdx:FunctionalSafety/VerificationType/test"
+                    "functionalsafety_:VerificationType/analysis",
+                    "functionalsafety_:VerificationType/assessment",
+                    "functionalsafety_:VerificationType/audit",
+                    "functionalsafety_:VerificationType/demonstration",
+                    "functionalsafety_:VerificationType/inspection",
+                    "functionalsafety_:VerificationType/other",
+                    "functionalsafety_:VerificationType/review",
+                    "functionalsafety_:VerificationType/test"
                 ]
         },
         "prop_functionalsafety_RequirementVerification_functionalsafety_verificationPostcondition": {
@@ -4926,10 +4926,10 @@
         },
         "prop_service_SoftwareService_service_serverAuthenticationProtocol": {
                 "enum": [
-                    "spdx:Service/AuthenticationProtocolType/crl",
-                    "spdx:Service/AuthenticationProtocolType/ocsp",
-                    "spdx:Service/AuthenticationProtocolType/other",
-                    "spdx:Service/AuthenticationProtocolType/tls"
+                    "service_:AuthenticationProtocolType/crl",
+                    "service_:AuthenticationProtocolType/ocsp",
+                    "service_:AuthenticationProtocolType/other",
+                    "service_:AuthenticationProtocolType/tls"
                 ]
         },
         "prop_service_SoftwareService_service_serviceHostingCountry": {
@@ -5176,8 +5176,8 @@
         },
         "prop_software_ContentIdentifier_software_contentIdentifierType": {
                 "enum": [
-                    "spdx:Software/ContentIdentifierType/gitoid",
-                    "spdx:Software/ContentIdentifierType/swhid"
+                    "software_:ContentIdentifierType/gitoid",
+                    "software_:ContentIdentifierType/swhid"
                 ]
         },
         "prop_software_ContentIdentifier_software_contentIdentifierValue": {
@@ -5770,8 +5770,8 @@
         },
         "prop_Annotation_annotationType": {
                 "enum": [
-                    "spdx:Core/AnnotationType/other",
-                    "spdx:Core/AnnotationType/review"
+                    ":AnnotationType/other",
+                    ":AnnotationType/review"
                 ]
         },
         "prop_Annotation_contentType": {
@@ -5932,13 +5932,13 @@
         },
         "prop_Artifact_supportLevel": {
                 "enum": [
-                    "spdx:Core/SupportType/deployed",
-                    "spdx:Core/SupportType/development",
-                    "spdx:Core/SupportType/endOfSupport",
-                    "spdx:Core/SupportType/limitedSupport",
-                    "spdx:Core/SupportType/noAssertion",
-                    "spdx:Core/SupportType/noSupport",
-                    "spdx:Core/SupportType/support"
+                    ":SupportType/deployed",
+                    ":SupportType/development",
+                    ":SupportType/endOfSupport",
+                    ":SupportType/limitedSupport",
+                    ":SupportType/noAssertion",
+                    ":SupportType/noSupport",
+                    ":SupportType/support"
                 ]
         },
         "prop_Artifact_validUntilTime": {
@@ -6067,10 +6067,10 @@
         },
         "prop_ContactPointRelationship_contactType": {
                 "enum": [
-                    "spdx:Core/ContactPointRelationshipType/compliance",
-                    "spdx:Core/ContactPointRelationshipType/other",
-                    "spdx:Core/ContactPointRelationshipType/securityVulnerability",
-                    "spdx:Core/ContactPointRelationshipType/support"
+                    ":ContactPointRelationshipType/compliance",
+                    ":ContactPointRelationshipType/other",
+                    ":ContactPointRelationshipType/securityVulnerability",
+                    ":ContactPointRelationshipType/support"
                 ]
         },
         "DefinedProcess_derived": {
@@ -6123,10 +6123,10 @@
         },
         "prop_DefinedProcess_processReadiness": {
                 "enum": [
-                    "spdx:Core/ProcessReadinessType/active",
-                    "spdx:Core/ProcessReadinessType/draft",
-                    "spdx:Core/ProcessReadinessType/obsolete",
-                    "spdx:Core/ProcessReadinessType/other"
+                    ":ProcessReadinessType/active",
+                    ":ProcessReadinessType/draft",
+                    ":ProcessReadinessType/obsolete",
+                    ":ProcessReadinessType/other"
                 ]
         },
         "prop_DefinedProcess_rationale": {
@@ -6195,28 +6195,28 @@
         },
         "prop_Hash_algorithm": {
                 "enum": [
-                    "spdx:Core/HashAlgorithm/adler32",
-                    "spdx:Core/HashAlgorithm/blake2b256",
-                    "spdx:Core/HashAlgorithm/blake2b384",
-                    "spdx:Core/HashAlgorithm/blake2b512",
-                    "spdx:Core/HashAlgorithm/blake3",
-                    "spdx:Core/HashAlgorithm/crystalsDilithium",
-                    "spdx:Core/HashAlgorithm/crystalsKyber",
-                    "spdx:Core/HashAlgorithm/falcon",
-                    "spdx:Core/HashAlgorithm/md2",
-                    "spdx:Core/HashAlgorithm/md4",
-                    "spdx:Core/HashAlgorithm/md5",
-                    "spdx:Core/HashAlgorithm/md6",
-                    "spdx:Core/HashAlgorithm/other",
-                    "spdx:Core/HashAlgorithm/sha1",
-                    "spdx:Core/HashAlgorithm/sha224",
-                    "spdx:Core/HashAlgorithm/sha256",
-                    "spdx:Core/HashAlgorithm/sha384",
-                    "spdx:Core/HashAlgorithm/sha3_224",
-                    "spdx:Core/HashAlgorithm/sha3_256",
-                    "spdx:Core/HashAlgorithm/sha3_384",
-                    "spdx:Core/HashAlgorithm/sha3_512",
-                    "spdx:Core/HashAlgorithm/sha512"
+                    ":HashAlgorithm/adler32",
+                    ":HashAlgorithm/blake2b256",
+                    ":HashAlgorithm/blake2b384",
+                    ":HashAlgorithm/blake2b512",
+                    ":HashAlgorithm/blake3",
+                    ":HashAlgorithm/crystalsDilithium",
+                    ":HashAlgorithm/crystalsKyber",
+                    ":HashAlgorithm/falcon",
+                    ":HashAlgorithm/md2",
+                    ":HashAlgorithm/md4",
+                    ":HashAlgorithm/md5",
+                    ":HashAlgorithm/md6",
+                    ":HashAlgorithm/other",
+                    ":HashAlgorithm/sha1",
+                    ":HashAlgorithm/sha224",
+                    ":HashAlgorithm/sha256",
+                    ":HashAlgorithm/sha384",
+                    ":HashAlgorithm/sha3_224",
+                    ":HashAlgorithm/sha3_256",
+                    ":HashAlgorithm/sha3_384",
+                    ":HashAlgorithm/sha3_512",
+                    ":HashAlgorithm/sha512"
                 ]
         },
         "prop_Hash_hashValue": {
@@ -6276,14 +6276,14 @@
         },
         "prop_LifecycleScopedRelationship_scope": {
                 "enum": [
-                    "spdx:Core/LifecycleScopeType/build",
-                    "spdx:Core/LifecycleScopeType/decommission",
-                    "spdx:Core/LifecycleScopeType/design",
-                    "spdx:Core/LifecycleScopeType/development",
-                    "spdx:Core/LifecycleScopeType/other",
-                    "spdx:Core/LifecycleScopeType/runtime",
-                    "spdx:Core/LifecycleScopeType/test",
-                    "spdx:Core/LifecycleScopeType/update"
+                    ":LifecycleScopeType/build",
+                    ":LifecycleScopeType/decommission",
+                    ":LifecycleScopeType/design",
+                    ":LifecycleScopeType/development",
+                    ":LifecycleScopeType/other",
+                    ":LifecycleScopeType/runtime",
+                    ":LifecycleScopeType/test",
+                    ":LifecycleScopeType/update"
                 ]
         },
         "MeasureOfLength": {
@@ -6599,10 +6599,10 @@
         },
         "prop_Specification_specType": {
                 "enum": [
-                    "spdx:Core/SpecificationType/formalStandard",
-                    "spdx:Core/SpecificationType/other",
-                    "spdx:Core/SpecificationType/regulation",
-                    "spdx:Core/SpecificationType/specification"
+                    ":SpecificationType/formalStandard",
+                    ":SpecificationType/other",
+                    ":SpecificationType/regulation",
+                    ":SpecificationType/specification"
                 ]
         },
         "expandedlicensing_ConjunctiveLicenseSet": {
@@ -7534,9 +7534,9 @@
         },
         "prop_hardware_VirtualHardware_hardware_virtualHardwareModel": {
                 "enum": [
-                    "spdx:Hardware/VirtualHardwareModelType/cycle",
-                    "spdx:Hardware/VirtualHardwareModelType/function",
-                    "spdx:Hardware/VirtualHardwareModelType/other"
+                    "hardware_:VirtualHardwareModelType/cycle",
+                    "hardware_:VirtualHardwareModelType/function",
+                    "hardware_:VirtualHardwareModelType/other"
                 ]
         },
         "operations_ExportControlClassificationAssessment": {
@@ -7901,11 +7901,11 @@
         },
         "prop_security_CvssV3VulnAssessmentRelationship_security_severity": {
                 "enum": [
-                    "spdx:Security/CvssSeverityType/critical",
-                    "spdx:Security/CvssSeverityType/high",
-                    "spdx:Security/CvssSeverityType/low",
-                    "spdx:Security/CvssSeverityType/medium",
-                    "spdx:Security/CvssSeverityType/none"
+                    "security_:CvssSeverityType/critical",
+                    "security_:CvssSeverityType/high",
+                    "security_:CvssSeverityType/low",
+                    "security_:CvssSeverityType/medium",
+                    "security_:CvssSeverityType/none"
                 ]
         },
         "prop_security_CvssV3VulnAssessmentRelationship_security_vectorString": {
@@ -7987,11 +7987,11 @@
         },
         "prop_security_CvssV4VulnAssessmentRelationship_security_severity": {
                 "enum": [
-                    "spdx:Security/CvssSeverityType/critical",
-                    "spdx:Security/CvssSeverityType/high",
-                    "spdx:Security/CvssSeverityType/low",
-                    "spdx:Security/CvssSeverityType/medium",
-                    "spdx:Security/CvssSeverityType/none"
+                    "security_:CvssSeverityType/critical",
+                    "security_:CvssSeverityType/high",
+                    "security_:CvssSeverityType/low",
+                    "security_:CvssSeverityType/medium",
+                    "security_:CvssSeverityType/none"
                 ]
         },
         "prop_security_CvssV4VulnAssessmentRelationship_security_vectorString": {
@@ -8143,8 +8143,8 @@
         },
         "prop_security_ExploitCatalogVulnAssessmentRelationship_security_catalogType": {
                 "enum": [
-                    "spdx:Security/ExploitCatalogType/kev",
-                    "spdx:Security/ExploitCatalogType/other"
+                    "security_:ExploitCatalogType/kev",
+                    "security_:ExploitCatalogType/other"
                 ]
         },
         "prop_security_ExploitCatalogVulnAssessmentRelationship_security_exploited": {
@@ -8210,10 +8210,10 @@
         },
         "prop_security_SsvcVulnAssessmentRelationship_security_decisionType": {
                 "enum": [
-                    "spdx:Security/SsvcDecisionType/act",
-                    "spdx:Security/SsvcDecisionType/attend",
-                    "spdx:Security/SsvcDecisionType/track",
-                    "spdx:Security/SsvcDecisionType/trackStar"
+                    "security_:SsvcDecisionType/act",
+                    "security_:SsvcDecisionType/attend",
+                    "security_:SsvcDecisionType/track",
+                    "security_:SsvcDecisionType/trackStar"
                 ]
         },
         "security_VexVulnAssessmentRelationship_derived": {
@@ -8411,35 +8411,35 @@
         },
         "prop_software_SoftwareArtifact_software_additionalPurpose": {
                 "enum": [
-                    "spdx:Software/SoftwarePurpose/application",
-                    "spdx:Software/SoftwarePurpose/archive",
-                    "spdx:Software/SoftwarePurpose/bom",
-                    "spdx:Software/SoftwarePurpose/configuration",
-                    "spdx:Software/SoftwarePurpose/container",
-                    "spdx:Software/SoftwarePurpose/data",
-                    "spdx:Software/SoftwarePurpose/device",
-                    "spdx:Software/SoftwarePurpose/deviceDriver",
-                    "spdx:Software/SoftwarePurpose/diskImage",
-                    "spdx:Software/SoftwarePurpose/documentation",
-                    "spdx:Software/SoftwarePurpose/evidence",
-                    "spdx:Software/SoftwarePurpose/executable",
-                    "spdx:Software/SoftwarePurpose/file",
-                    "spdx:Software/SoftwarePurpose/filesystemImage",
-                    "spdx:Software/SoftwarePurpose/firmware",
-                    "spdx:Software/SoftwarePurpose/framework",
-                    "spdx:Software/SoftwarePurpose/install",
-                    "spdx:Software/SoftwarePurpose/library",
-                    "spdx:Software/SoftwarePurpose/manifest",
-                    "spdx:Software/SoftwarePurpose/model",
-                    "spdx:Software/SoftwarePurpose/module",
-                    "spdx:Software/SoftwarePurpose/operatingSystem",
-                    "spdx:Software/SoftwarePurpose/other",
-                    "spdx:Software/SoftwarePurpose/patch",
-                    "spdx:Software/SoftwarePurpose/platform",
-                    "spdx:Software/SoftwarePurpose/requirement",
-                    "spdx:Software/SoftwarePurpose/source",
-                    "spdx:Software/SoftwarePurpose/specification",
-                    "spdx:Software/SoftwarePurpose/test"
+                    "software_:SoftwarePurpose/application",
+                    "software_:SoftwarePurpose/archive",
+                    "software_:SoftwarePurpose/bom",
+                    "software_:SoftwarePurpose/configuration",
+                    "software_:SoftwarePurpose/container",
+                    "software_:SoftwarePurpose/data",
+                    "software_:SoftwarePurpose/device",
+                    "software_:SoftwarePurpose/deviceDriver",
+                    "software_:SoftwarePurpose/diskImage",
+                    "software_:SoftwarePurpose/documentation",
+                    "software_:SoftwarePurpose/evidence",
+                    "software_:SoftwarePurpose/executable",
+                    "software_:SoftwarePurpose/file",
+                    "software_:SoftwarePurpose/filesystemImage",
+                    "software_:SoftwarePurpose/firmware",
+                    "software_:SoftwarePurpose/framework",
+                    "software_:SoftwarePurpose/install",
+                    "software_:SoftwarePurpose/library",
+                    "software_:SoftwarePurpose/manifest",
+                    "software_:SoftwarePurpose/model",
+                    "software_:SoftwarePurpose/module",
+                    "software_:SoftwarePurpose/operatingSystem",
+                    "software_:SoftwarePurpose/other",
+                    "software_:SoftwarePurpose/patch",
+                    "software_:SoftwarePurpose/platform",
+                    "software_:SoftwarePurpose/requirement",
+                    "software_:SoftwarePurpose/source",
+                    "software_:SoftwarePurpose/specification",
+                    "software_:SoftwarePurpose/test"
                 ]
         },
         "prop_software_SoftwareArtifact_software_artifactSize": {
@@ -8457,35 +8457,35 @@
         },
         "prop_software_SoftwareArtifact_software_primaryPurpose": {
                 "enum": [
-                    "spdx:Software/SoftwarePurpose/application",
-                    "spdx:Software/SoftwarePurpose/archive",
-                    "spdx:Software/SoftwarePurpose/bom",
-                    "spdx:Software/SoftwarePurpose/configuration",
-                    "spdx:Software/SoftwarePurpose/container",
-                    "spdx:Software/SoftwarePurpose/data",
-                    "spdx:Software/SoftwarePurpose/device",
-                    "spdx:Software/SoftwarePurpose/deviceDriver",
-                    "spdx:Software/SoftwarePurpose/diskImage",
-                    "spdx:Software/SoftwarePurpose/documentation",
-                    "spdx:Software/SoftwarePurpose/evidence",
-                    "spdx:Software/SoftwarePurpose/executable",
-                    "spdx:Software/SoftwarePurpose/file",
-                    "spdx:Software/SoftwarePurpose/filesystemImage",
-                    "spdx:Software/SoftwarePurpose/firmware",
-                    "spdx:Software/SoftwarePurpose/framework",
-                    "spdx:Software/SoftwarePurpose/install",
-                    "spdx:Software/SoftwarePurpose/library",
-                    "spdx:Software/SoftwarePurpose/manifest",
-                    "spdx:Software/SoftwarePurpose/model",
-                    "spdx:Software/SoftwarePurpose/module",
-                    "spdx:Software/SoftwarePurpose/operatingSystem",
-                    "spdx:Software/SoftwarePurpose/other",
-                    "spdx:Software/SoftwarePurpose/patch",
-                    "spdx:Software/SoftwarePurpose/platform",
-                    "spdx:Software/SoftwarePurpose/requirement",
-                    "spdx:Software/SoftwarePurpose/source",
-                    "spdx:Software/SoftwarePurpose/specification",
-                    "spdx:Software/SoftwarePurpose/test"
+                    "software_:SoftwarePurpose/application",
+                    "software_:SoftwarePurpose/archive",
+                    "software_:SoftwarePurpose/bom",
+                    "software_:SoftwarePurpose/configuration",
+                    "software_:SoftwarePurpose/container",
+                    "software_:SoftwarePurpose/data",
+                    "software_:SoftwarePurpose/device",
+                    "software_:SoftwarePurpose/deviceDriver",
+                    "software_:SoftwarePurpose/diskImage",
+                    "software_:SoftwarePurpose/documentation",
+                    "software_:SoftwarePurpose/evidence",
+                    "software_:SoftwarePurpose/executable",
+                    "software_:SoftwarePurpose/file",
+                    "software_:SoftwarePurpose/filesystemImage",
+                    "software_:SoftwarePurpose/firmware",
+                    "software_:SoftwarePurpose/framework",
+                    "software_:SoftwarePurpose/install",
+                    "software_:SoftwarePurpose/library",
+                    "software_:SoftwarePurpose/manifest",
+                    "software_:SoftwarePurpose/model",
+                    "software_:SoftwarePurpose/module",
+                    "software_:SoftwarePurpose/operatingSystem",
+                    "software_:SoftwarePurpose/other",
+                    "software_:SoftwarePurpose/patch",
+                    "software_:SoftwarePurpose/platform",
+                    "software_:SoftwarePurpose/requirement",
+                    "software_:SoftwarePurpose/source",
+                    "software_:SoftwarePurpose/specification",
+                    "software_:SoftwarePurpose/test"
                 ]
         },
         "supplychain_BoundaryDefinitionProcess": {
@@ -8914,8 +8914,8 @@
         },
         "prop_supplychain_ResponsibilityChangeProcess_supplychain_responsibilityCategory": {
                 "enum": [
-                    "spdx:SupplyChain/ResponsibilityType/custody",
-                    "spdx:SupplyChain/ResponsibilityType/ownership"
+                    "supplychain_:ResponsibilityType/custody",
+                    "supplychain_:ResponsibilityType/ownership"
                 ]
         },
         "supplychain_State": {
@@ -9635,11 +9635,11 @@
         },
         "prop_security_VexNotAffectedVulnAssessmentRelationship_security_justificationType": {
                 "enum": [
-                    "spdx:Security/VexJustificationType/componentNotPresent",
-                    "spdx:Security/VexJustificationType/inlineMitigationsAlreadyExist",
-                    "spdx:Security/VexJustificationType/vulnerableCodeCannotBeControlledByAdversary",
-                    "spdx:Security/VexJustificationType/vulnerableCodeNotInExecutePath",
-                    "spdx:Security/VexJustificationType/vulnerableCodeNotPresent"
+                    "security_:VexJustificationType/componentNotPresent",
+                    "security_:VexJustificationType/inlineMitigationsAlreadyExist",
+                    "security_:VexJustificationType/vulnerableCodeCannotBeControlledByAdversary",
+                    "security_:VexJustificationType/vulnerableCodeNotInExecutePath",
+                    "security_:VexJustificationType/vulnerableCodeNotPresent"
                 ]
         },
         "security_VexUnderInvestigationVulnAssessmentRelationship": {
@@ -9752,9 +9752,9 @@
         },
         "prop_software_File_software_fileKind": {
                 "enum": [
-                    "spdx:Software/FileKindType/directory",
-                    "spdx:Software/FileKindType/file",
-                    "spdx:Software/FileKindType/symlink"
+                    "software_:FileKindType/directory",
+                    "software_:FileKindType/file",
+                    "software_:FileKindType/symlink"
                 ]
         },
         "software_Package": {
@@ -9905,12 +9905,12 @@
         },
         "prop_software_Sbom_software_sbomType": {
                 "enum": [
-                    "spdx:Software/SbomType/analyzed",
-                    "spdx:Software/SbomType/build",
-                    "spdx:Software/SbomType/deployed",
-                    "spdx:Software/SbomType/design",
-                    "spdx:Software/SbomType/runtime",
-                    "spdx:Software/SbomType/source"
+                    "software_:SbomType/analyzed",
+                    "software_:SbomType/build",
+                    "software_:SbomType/deployed",
+                    "software_:SbomType/design",
+                    "software_:SbomType/runtime",
+                    "software_:SbomType/source"
                 ]
         },
         "software_Snippet": {
@@ -10668,8 +10668,8 @@
         },
         "prop_supplychain_ResponsibilityChangeAction_supplychain_responsibilityCategory": {
                 "enum": [
-                    "spdx:SupplyChain/ResponsibilityType/custody",
-                    "spdx:SupplyChain/ResponsibilityType/ownership"
+                    "supplychain_:ResponsibilityType/custody",
+                    "supplychain_:ResponsibilityType/ownership"
                 ]
         },
         "prop_supplychain_ResponsibilityChangeAction_supplychain_responsibilityChangedOn": {
@@ -11048,9 +11048,9 @@
         },
         "prop_ai_AIPackage_ai_autonomyType": {
                 "enum": [
-                    "spdx:Core/PresenceType/no",
-                    "spdx:Core/PresenceType/noAssertion",
-                    "spdx:Core/PresenceType/yes"
+                    ":PresenceType/no",
+                    ":PresenceType/noAssertion",
+                    ":PresenceType/yes"
                 ]
         },
         "prop_ai_AIPackage_ai_domain": {
@@ -11085,10 +11085,10 @@
         },
         "prop_ai_AIPackage_ai_safetyRiskAssessment": {
                 "enum": [
-                    "spdx:AI/SafetyRiskAssessmentType/high",
-                    "spdx:AI/SafetyRiskAssessmentType/low",
-                    "spdx:AI/SafetyRiskAssessmentType/medium",
-                    "spdx:AI/SafetyRiskAssessmentType/serious"
+                    "ai_:SafetyRiskAssessmentType/high",
+                    "ai_:SafetyRiskAssessmentType/low",
+                    "ai_:SafetyRiskAssessmentType/medium",
+                    "ai_:SafetyRiskAssessmentType/serious"
                 ]
         },
         "prop_ai_AIPackage_ai_standardCompliance": {
@@ -11099,20 +11099,20 @@
         },
         "prop_ai_AIPackage_ai_useSensitivePersonalInformation": {
                 "enum": [
-                    "spdx:Core/PresenceType/no",
-                    "spdx:Core/PresenceType/noAssertion",
-                    "spdx:Core/PresenceType/yes"
+                    ":PresenceType/no",
+                    ":PresenceType/noAssertion",
+                    ":PresenceType/yes"
                 ]
         },
         "prop_ai_AIPackage_isoAutomationLevel": {
                 "enum": [
-                    "spdx:Core/IsoAutomationLevel/assistiveAutomation",
-                    "spdx:Core/IsoAutomationLevel/autonomous",
-                    "spdx:Core/IsoAutomationLevel/conditionalAutomation",
-                    "spdx:Core/IsoAutomationLevel/fullAutomation",
-                    "spdx:Core/IsoAutomationLevel/highAutomation",
-                    "spdx:Core/IsoAutomationLevel/notAutomated",
-                    "spdx:Core/IsoAutomationLevel/partialAutomation"
+                    ":IsoAutomationLevel/assistiveAutomation",
+                    ":IsoAutomationLevel/autonomous",
+                    ":IsoAutomationLevel/conditionalAutomation",
+                    ":IsoAutomationLevel/fullAutomation",
+                    ":IsoAutomationLevel/highAutomation",
+                    ":IsoAutomationLevel/notAutomated",
+                    ":IsoAutomationLevel/partialAutomation"
                 ]
         },
         "dataset_DatasetPackage": {
@@ -11261,10 +11261,10 @@
         },
         "prop_dataset_DatasetPackage_dataset_confidentialityLevel": {
                 "enum": [
-                    "spdx:Dataset/ConfidentialityLevelType/amber",
-                    "spdx:Dataset/ConfidentialityLevelType/clear",
-                    "spdx:Dataset/ConfidentialityLevelType/green",
-                    "spdx:Dataset/ConfidentialityLevelType/red"
+                    "dataset_:ConfidentialityLevelType/amber",
+                    "dataset_:ConfidentialityLevelType/clear",
+                    "dataset_:ConfidentialityLevelType/green",
+                    "dataset_:ConfidentialityLevelType/red"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_dataCollectionProcess": {
@@ -11275,11 +11275,11 @@
         },
         "prop_dataset_DatasetPackage_dataset_datasetAvailability": {
                 "enum": [
-                    "spdx:Dataset/DatasetAvailabilityType/clickthrough",
-                    "spdx:Dataset/DatasetAvailabilityType/directDownload",
-                    "spdx:Dataset/DatasetAvailabilityType/query",
-                    "spdx:Dataset/DatasetAvailabilityType/registration",
-                    "spdx:Dataset/DatasetAvailabilityType/scrapingScript"
+                    "dataset_:DatasetAvailabilityType/clickthrough",
+                    "dataset_:DatasetAvailabilityType/directDownload",
+                    "dataset_:DatasetAvailabilityType/query",
+                    "dataset_:DatasetAvailabilityType/registration",
+                    "dataset_:DatasetAvailabilityType/scrapingScript"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_datasetNoise": {
@@ -11291,20 +11291,20 @@
         },
         "prop_dataset_DatasetPackage_dataset_datasetType": {
                 "enum": [
-                    "spdx:Dataset/DatasetType/audio",
-                    "spdx:Dataset/DatasetType/categorical",
-                    "spdx:Dataset/DatasetType/graph",
-                    "spdx:Dataset/DatasetType/image",
-                    "spdx:Dataset/DatasetType/noAssertion",
-                    "spdx:Dataset/DatasetType/numeric",
-                    "spdx:Dataset/DatasetType/other",
-                    "spdx:Dataset/DatasetType/sensor",
-                    "spdx:Dataset/DatasetType/structured",
-                    "spdx:Dataset/DatasetType/syntactic",
-                    "spdx:Dataset/DatasetType/text",
-                    "spdx:Dataset/DatasetType/timeseries",
-                    "spdx:Dataset/DatasetType/timestamp",
-                    "spdx:Dataset/DatasetType/video"
+                    "dataset_:DatasetType/audio",
+                    "dataset_:DatasetType/categorical",
+                    "dataset_:DatasetType/graph",
+                    "dataset_:DatasetType/image",
+                    "dataset_:DatasetType/noAssertion",
+                    "dataset_:DatasetType/numeric",
+                    "dataset_:DatasetType/other",
+                    "dataset_:DatasetType/sensor",
+                    "dataset_:DatasetType/structured",
+                    "dataset_:DatasetType/syntactic",
+                    "dataset_:DatasetType/text",
+                    "dataset_:DatasetType/timeseries",
+                    "dataset_:DatasetType/timestamp",
+                    "dataset_:DatasetType/video"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_datasetUpdateMechanism": {
@@ -11312,9 +11312,9 @@
         },
         "prop_dataset_DatasetPackage_dataset_hasSensitivePersonalInformation": {
                 "enum": [
-                    "spdx:Core/PresenceType/no",
-                    "spdx:Core/PresenceType/noAssertion",
-                    "spdx:Core/PresenceType/yes"
+                    ":PresenceType/no",
+                    ":PresenceType/noAssertion",
+                    ":PresenceType/yes"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_intendedUse": {
