@@ -1287,10 +1287,13 @@
 <h2 id="description">Description</h2>
 <p>An ElementCollection is a collection of Elements, not necessarily with unifying
 context.</p>
-<p>Note that all ElementCollections shall conform to the Core profile even if the
+<p>All ElementCollections shall conform to the Core profile even if the
 Core profile is not specified in the profileConformance property.</p>
-<p>If the profileConformance property is not provided, "core" is to be assumed as
-the default.</p>
+<p>If the profileConformance property is not provided, it shall be evaluated as
+a list containing the "core" profile identifier.</p>
+<p>The inclusion of a profile identifier within the profileConformance property
+shall constitute a declaration that all constituent elements conform to the
+restrictions specified by that profile.</p>
 <p><em>Constraints</em></p>
 <ul>
 <li>If the ElementCollection has at least 1 element, it shall also have at least
