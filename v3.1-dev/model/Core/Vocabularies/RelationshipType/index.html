@@ -1206,7 +1206,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../SupplyChain/Properties/plannedStorageLocation/">plannedStorageLocation</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../../SupplyChain/Properties/plannedTransportRoutes/">plannedTransportRoutes</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../../SupplyChain/Properties/plannedTransportRoute/">plannedTransportRoute</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../SupplyChain/Properties/previous/">previous</a>
                 </li>
@@ -1357,7 +1357,7 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element is a configuration applied to each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>conforms<wbr>To</strong></td>
@@ -1399,14 +1399,14 @@ name completes the sentence:</p>
 <td>Agent</td>
 <td>Relationship</td>
 <td>The <code>from</code> Agent is delegating an action to the Agent of the <code>to</code> Relationship (which shall be of type invokedBy), during a LifecycleScopeType (e.g. the <code>to</code> invokedBy Relationship is being done on behalf of <code>from</code>).</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>depends<wbr>On</strong></td>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element depends on each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>descendant<wbr>Of</strong></td>
@@ -1574,7 +1574,7 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element dynamically links in each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Evidence</strong></td>
@@ -1595,7 +1595,7 @@ name completes the sentence:</p>
 <td><wbr>/Build<wbr>/Build</td>
 <td>Element</td>
 <td>The <code>from</code> /Build/Build was run on the <code>to</code> Element during a LifecycleScopeType period (e.g. the host that the build runs on).</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Input</strong></td>
@@ -1623,7 +1623,7 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element optionally depends on each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Output</strong></td>
@@ -1637,21 +1637,21 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element has a prerequisite on each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Provided<wbr>Dependency</strong></td>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element has a dependency on each <code>to</code> Element, dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Requirement</strong></td>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element has a requirement on each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Resolution</strong></td>
@@ -1672,21 +1672,21 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Element</td>
 <td>Every <code>to</code> Element is a specification for the <code>from</code> Element (<code>from</code> hasSpecification <code>to</code>), during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Static<wbr>Link</strong></td>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element statically links in each <code>to</code> Element, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Test</strong></td>
 <td>Element</td>
 <td>Element</td>
 <td>Every <code>to</code> Element is a test artifact for the <code>from</code> Element (<code>from</code> hasTest <code>to</code>), during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>has<wbr>Test<wbr>Case</strong></td>
@@ -1714,7 +1714,7 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Agent</td>
 <td>The <code>from</code> Element was invoked by the <code>to</code> Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>located<wbr>At</strong></td>
@@ -1805,7 +1805,7 @@ name completes the sentence:</p>
 <td>Element</td>
 <td><wbr>/Hardware<wbr>/Hardware</td>
 <td>The <code>from</code> Element (the instructions) of runs on each <code>to</code> /Hardware/Hardware (processing element), during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>serialized<wbr>In<wbr>Artifact</strong></td>
@@ -1847,7 +1847,7 @@ name completes the sentence:</p>
 <td>Element</td>
 <td>Element</td>
 <td>The <code>from</code> Element uses each <code>to</code> Element as a tool, during a LifecycleScopeType period.</td>
-<td>Relationship</td>
+<td>Lifecycle<wbr>Scoped<wbr>Relationship</td>
 </tr>
 <tr>
 <td><strong>validated<wbr>On</strong></td>
