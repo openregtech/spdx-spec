@@ -2259,7 +2259,7 @@
                 },
                 { "const": "ProcessReadinessType_active" },
                 { "const": "ProcessReadinessType_draft" },
-                { "const": "ProcessReadinessType_obsolete" },
+                { "const": "ProcessReadinessType_obsoleted" },
                 { "const": "ProcessReadinessType_other" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
@@ -6125,7 +6125,7 @@
                 "enum": [
                     ":ProcessReadinessType/active",
                     ":ProcessReadinessType/draft",
-                    ":ProcessReadinessType/obsolete",
+                    ":ProcessReadinessType/obsoleted",
                     ":ProcessReadinessType/other"
                 ]
         },

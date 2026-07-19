@@ -180,80 +180,8 @@ artificial intelligence capabilities."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/serious>
-                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/high>
-                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/medium>
-                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/low>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-ai:safetyRiskAssessment ;
-        ] ,
-        [
             sh:datatype xsd:string ;
             sh:path spdx-ai:modelExplainability ;
-        ] ,
-        [
-            sh:class spdx-ai:EnergyConsumption ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-ai:energyConsumption ;
-        ] ,
-        [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/yes>
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/no>
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/noAssertion>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-ai:useSensitivePersonalInformation ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-ai:typeOfModel ;
-        ] ,
-        [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-ai:metricDecisionThreshold ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-ai:limitation ;
-        ] ,
-        [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-ai:metric ;
-        ] ,
-        [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/yes>
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/no>
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/noAssertion>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-ai:autonomyType ;
-        ] ,
-        [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-ai:hyperparameter ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-ai:modelDataPreprocessing ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-ai:informationAboutTraining ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-ai:informationAboutApplication ;
         ] ,
         [
             sh:in (
@@ -270,11 +198,83 @@ artificial intelligence capabilities."""@en ;
         ] ,
         [
             sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-ai:informationAboutTraining ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
             sh:path spdx-ai:domain ;
         ] ,
         [
             sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-ai:limitation ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-ai:metric ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-ai:metricDecisionThreshold ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
             sh:path spdx-ai:standardCompliance ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/yes>
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/no>
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/noAssertion>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-ai:autonomyType ;
+        ] ,
+        [
+            sh:class spdx-ai:EnergyConsumption ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-ai:energyConsumption ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-ai:modelDataPreprocessing ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/yes>
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/no>
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/noAssertion>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-ai:useSensitivePersonalInformation ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-ai:typeOfModel ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-ai:informationAboutApplication ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/serious>
+                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/high>
+                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/medium>
+                <https://spdx.org/rdf/3/terms/AI/SafetyRiskAssessmentType/low>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-ai:safetyRiskAssessment ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-ai:hyperparameter ;
         ] ;
 .
 
@@ -1933,9 +1933,9 @@ spdx-core:Person
         owl:NamedIndividual ,
         spdx-core:ProcessReadinessType ;
     rdfs:label "active"@en ;
-    rdfs:comment "in use"@en ;
+    rdfs:comment "In use."@en ;
     rdfs:isDefinedBy spdx-core: ;
-    skos:definition "in use"@en ;
+    skos:definition "In use."@en ;
 .
 
 <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/draft>
@@ -1943,19 +1943,19 @@ spdx-core:Person
         owl:NamedIndividual ,
         spdx-core:ProcessReadinessType ;
     rdfs:label "draft"@en ;
-    rdfs:comment "in production"@en ;
+    rdfs:comment "Not yet finalized; under development or review."@en ;
     rdfs:isDefinedBy spdx-core: ;
-    skos:definition "in production"@en ;
+    skos:definition "Not yet finalized; under development or review."@en ;
 .
 
-<https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/obsolete>
+<https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/obsoleted>
     a
         owl:NamedIndividual ,
         spdx-core:ProcessReadinessType ;
-    rdfs:label "obsolete"@en ;
-    rdfs:comment "superseded or not valid at present"@en ;
+    rdfs:label "obsoleted"@en ;
+    rdfs:comment "Superseded or not valid at present."@en ;
     rdfs:isDefinedBy spdx-core: ;
-    skos:definition "superseded or not valid at present"@en ;
+    skos:definition "Superseded or not valid at present."@en ;
 .
 
 <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/other>
@@ -1963,9 +1963,9 @@ spdx-core:Person
         owl:NamedIndividual ,
         spdx-core:ProcessReadinessType ;
     rdfs:label "other"@en ;
-    rdfs:comment "other"@en ;
+    rdfs:comment "Other."@en ;
     rdfs:isDefinedBy spdx-core: ;
-    skos:definition "other"@en ;
+    skos:definition "Other."@en ;
 .
 
 <https://spdx.org/rdf/3/terms/Core/ProfileIdentifierType/ai>
@@ -3176,7 +3176,7 @@ spdx-core:postalName
     rdfs:isDefinedBy spdx-core: ;
     rdfs:range xsd:string ;
     skos:definition "The name of the recipient expressed in text."@en ;
-    skos:note "A postal name refers to the official name of a city, town, or locality as recognized by a postal system for mail delivery purposes. It ensures accurate addressing and routing of mail."@en ;
+    skos:note "postalName is a property that specifies the name of the organization, entity, or addressee to which mail or deliveries should be directed."@en ;
 .
 
 spdx-core:prefix
@@ -3579,54 +3579,9 @@ or for reporting, documentation, reference, and archival purposes."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-dataset:sensor ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:inLanguage ;
-            sh:pattern "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$" ;
-        ] ,
-        [
             sh:datatype xsd:nonNegativeInteger ;
             sh:maxCount 1 ;
             sh:path spdx-dataset:datasetSize ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-dataset:datasetUpdateMechanism ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-dataset:datasetNoise ;
-        ] ,
-        [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/clickthrough>
-                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/directDownload>
-                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/query>
-                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/registration>
-                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/scrapingScript>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-dataset:datasetAvailability ;
-        ] ,
-        [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/yes>
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/no>
-                <https://spdx.org/rdf/3/terms/Core/PresenceType/noAssertion>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-dataset:hasSensitivePersonalInformation ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-dataset:intendedUse ;
         ] ,
         [
             sh:in (
@@ -3641,7 +3596,7 @@ or for reporting, documentation, reference, and archival purposes."""@en ;
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-dataset:dataCollectionProcess ;
+            sh:path spdx-dataset:datasetNoise ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -3649,7 +3604,8 @@ or for reporting, documentation, reference, and archival purposes."""@en ;
         ] ,
         [
             sh:datatype xsd:string ;
-            sh:path spdx-dataset:anonymizationMethodUsed ;
+            sh:maxCount 1 ;
+            sh:path spdx-dataset:dataCollectionProcess ;
         ] ,
         [
             sh:in (
@@ -3670,6 +3626,50 @@ or for reporting, documentation, reference, and archival purposes."""@en ;
             ) ;
             sh:minCount 1 ;
             sh:path spdx-dataset:datasetType ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-dataset:sensor ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/yes>
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/no>
+                <https://spdx.org/rdf/3/terms/Core/PresenceType/noAssertion>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-dataset:hasSensitivePersonalInformation ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/clickthrough>
+                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/directDownload>
+                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/query>
+                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/registration>
+                <https://spdx.org/rdf/3/terms/Dataset/DatasetAvailabilityType/scrapingScript>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-dataset:datasetAvailability ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-dataset:datasetUpdateMechanism ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-dataset:anonymizationMethodUsed ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-dataset:intendedUse ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-core:inLanguage ;
+            sh:pattern "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$" ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -3702,9 +3702,9 @@ or for reporting, documentation, reference, and archival purposes."""@en ;
         owl:NamedIndividual ,
         spdx-dataset:DatasetType ;
     rdfs:label "graph"@en ;
-    rdfs:comment "Data is in the form of a graph where entries are somehow related to each other through edges, such a social network of friends."@en ;
+    rdfs:comment "Data is in the form of a graph where entries are somehow related to each other through edges, such as a social network of friends."@en ;
     rdfs:isDefinedBy spdx-dataset: ;
-    skos:definition "Data is in the form of a graph where entries are somehow related to each other through edges, such a social network of friends."@en ;
+    skos:definition "Data is in the form of a graph where entries are somehow related to each other through edges, such as a social network of friends."@en ;
 .
 
 <https://spdx.org/rdf/3/terms/Dataset/DatasetType/image>
@@ -3812,9 +3812,9 @@ or for reporting, documentation, reference, and archival purposes."""@en ;
         owl:NamedIndividual ,
         spdx-dataset:DatasetType ;
     rdfs:label "video"@en ;
-    rdfs:comment "Data is video based, such as a collection of movie clips featuring Tom Hanks."@en ;
+    rdfs:comment "Data is video based, such as a collection of movie clips."@en ;
     rdfs:isDefinedBy spdx-dataset: ;
-    skos:definition "Data is video based, such as a collection of movie clips featuring Tom Hanks."@en ;
+    skos:definition "Data is video based, such as a collection of movie clips."@en ;
 .
 
 spdx-dataset:anonymizationMethodUsed
@@ -3847,7 +3847,7 @@ spdx-dataset:dataCollectionProcess
     skos:definition "How the dataset was collected."@en ;
     skos:note """A free-form text that describes how a dataset was collected.
 
-Examples include the sources from which a dataset was scrapped and
+Examples include the sources from which a dataset was scraped and
 the interview protocol that was used for data collection."""@en ;
 .
 
@@ -4580,8 +4580,9 @@ spdx-hardware:ProductSpecification
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:version ;
+            sh:class spdx-core:DefinedType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-hardware:hazard ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -4589,9 +4590,8 @@ spdx-hardware:ProductSpecification
             sh:path spdx-hardware:partNumber ;
         ] ,
         [
-            sh:class spdx-core:DefinedType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-hardware:hazard ;
+            sh:datatype xsd:string ;
+            sh:path spdx-core:version ;
         ] ;
 .
 
@@ -4663,7 +4663,7 @@ spdx-hardware:bulkQuantity
     rdfs:isDefinedBy spdx-hardware: ;
     rdfs:range spdx-core:UnitOfMeasure ;
     skos:definition "The amount or measure of a bulk product."@en ;
-    skos:note "The amount or measure of a bulk product includes the quality and unit of measure."@en ;
+    skos:note "The amount or measure of a bulk product includes the quantity and unit of measure."@en ;
 .
 
 spdx-hardware:category
@@ -5291,7 +5291,7 @@ dictates any reference starting with a
 the official SPDX License List <https://spdx.org/licenses/>.
 
 The key for the ElementMap is the string used in the license expression
-and the elementValue is target Element, which must be a CustomLicense,
+and the elementValue is the target Element, which must be a CustomLicense,
 CustomLicenseAddition, or SimpleLicensingText.
 
 The key for the ElementMap shall be matched against the license expression
@@ -5885,41 +5885,53 @@ spdx-supplychain:destructionPerformedBy
 spdx-supplychain:dropoffLocation
     a owl:ObjectProperty ;
     rdfs:label "dropoffLocation"@en ;
-    rdfs:comment "The location for dropping off or delivering a package or item."@en ;
+    rdfs:comment "A location where a package or an item is being dropped off or delivered."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Location ;
-    skos:definition "The location for dropping off or delivering a package or item."@en ;
-    skos:note "This is a specific location that an item was dropped off to."@en ;
+    skos:definition "A location where a package or an item is being dropped off or delivered."@en ;
+    skos:note """A specific location where a package or an item was dropped off or delivered.
+
+For a location that is being designated for dropping off,
+see forDropoffLocation."""@en ;
 .
 
 spdx-supplychain:forDropoffLocation
     a owl:ObjectProperty ;
     rdfs:label "forDropoffLocation"@en ;
-    rdfs:comment "The location that an item will be dropping off or delivered."@en ;
+    rdfs:comment "A location where a package or an item will be dropped off or delivered."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Location ;
-    skos:definition "The location that an item will be dropping off or delivered."@en ;
-    skos:note "This is a specific location designated for dropping off or delivering an item."@en ;
+    skos:definition "A location where a package or an item will be dropped off or delivered."@en ;
+    skos:note """A designated location for dropping off or delivering a package or an item.
+
+For a location where an item was dropped off,
+see dropoffLocation."""@en ;
 .
 
 spdx-supplychain:forPickupLocation
     a owl:ObjectProperty ;
     rdfs:label "forPickupLocation"@en ;
-    rdfs:comment "The location for picking up a package or item."@en ;
+    rdfs:comment "A location where a package or an item will be picked up."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Location ;
-    skos:definition "The location for picking up a package or item."@en ;
-    skos:note "This is the designated location for pickup of an item."@en ;
+    skos:definition "A location where a package or an item will be picked up."@en ;
+    skos:note """A designated location for picking up a package or an item.
+
+For a location where an item was picked up,
+see pickupLocation."""@en ;
 .
 
 spdx-supplychain:pickupLocation
     a owl:ObjectProperty ;
     rdfs:label "pickupLocation"@en ;
-    rdfs:comment "The location for picking up a package or item."@en ;
+    rdfs:comment "A location where a package or an item is being picked up."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Location ;
-    skos:definition "The location for picking up a package or item."@en ;
-    skos:note "This is a specific location that an item was picked up."@en ;
+    skos:definition "A location where a package or an item is being picked up."@en ;
+    skos:note """A specific location where a package or an item was picked up.
+
+For a location that is being designated for picking up,
+see forPickupLocation."""@en ;
 .
 
 spdx-supplychain:plannedCurrent
@@ -5935,11 +5947,11 @@ spdx-supplychain:plannedCurrent
 spdx-supplychain:plannedInspectionLocation
     a owl:ObjectProperty ;
     rdfs:label "plannedInspectionLocation"@en ;
-    rdfs:comment "The planned location that a good, product or material is inspected."@en ;
+    rdfs:comment "A planned location where a good, product, or material is inspected."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Location ;
-    skos:definition "The planned location that a good, product or material is inspected."@en ;
-    skos:note "This is the property of the storage class that defines a planned location related to the inspection of a good, product or material."@en ;
+    skos:definition "A planned location where a good, product, or material is inspected."@en ;
+    skos:note "A planned location related to the inspection of a good, product, or material."@en ;
 .
 
 spdx-supplychain:plannedPrevious
@@ -5965,11 +5977,11 @@ spdx-supplychain:plannedProductOfResponsibilityChange
 spdx-supplychain:plannedStorageLocation
     a owl:ObjectProperty ;
     rdfs:label "plannedStorageLocation"@en ;
-    rdfs:comment "The planned location that a good, product or material is stored."@en ;
+    rdfs:comment "A planned location where a good, product, or material is stored."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Location ;
-    skos:definition "The planned location that a good, product or material is stored."@en ;
-    skos:note "This is the property of the storage class that defines a planned location related to the storage of a good, product or material."@en ;
+    skos:definition "A planned location where a good, product, or material is stored."@en ;
+    skos:note "A planned location related to the storage of a good, product, or material."@en ;
 .
 
 spdx-supplychain:plannedTransportRoute
@@ -5999,11 +6011,13 @@ spdx-supplychain:previous
 spdx-supplychain:responsibilityChangedOn
     a owl:ObjectProperty ;
     rdfs:label "responsibilityChangedOn"@en ;
-    rdfs:comment "The element that has it's responsibility changed."@en ;
+    rdfs:comment "The element that has its responsibility changed."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:range spdx-core:Element ;
-    skos:definition "The element that has it's responsibility changed."@en ;
-    skos:note "The element that has it's responsibility changed. For example: \"This product is associated with the change of ownership.\""@en ;
+    skos:definition "The element that has its responsibility changed."@en ;
+    skos:note """The element that has its responsibility changed.
+
+For example, "This product is associated with the change of ownership.\""""@en ;
 .
 
 spdx-supplychain:transportRoute
@@ -6071,6 +6085,21 @@ The contentType property describes the format of the statement property."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Core/AnnotationType/other>
+                <https://spdx.org/rdf/3/terms/Core/AnnotationType/review>
+            ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-core:annotationType ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:contentType ;
+            sh:pattern "^[^\\/]+\\/[^\\/]+$" ;
+        ] ,
+        [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-core:statement ;
@@ -6081,21 +6110,6 @@ The contentType property describes the format of the statement property."""@en ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-core:subject ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:contentType ;
-            sh:pattern "^[^\\/]+\\/[^\\/]+$" ;
-        ] ,
-        [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Core/AnnotationType/other>
-                <https://spdx.org/rdf/3/terms/Core/AnnotationType/review>
-            ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-core:annotationType ;
         ] ;
 .
 
@@ -6513,10 +6527,6 @@ Required sort order: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b',
             sh:path spdx-core:hashValue ;
         ] ,
         [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:packageVerificationCodeExcludedFile ;
-        ] ,
-        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Core/HashAlgorithm/adler32>
                 <https://spdx.org/rdf/3/terms/Core/HashAlgorithm/blake2b256>
@@ -6544,6 +6554,10 @@ Required sort order: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b',
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-core:algorithm ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-core:packageVerificationCodeExcludedFile ;
         ] ;
 .
 
@@ -6562,8 +6576,12 @@ spdx-core:PhysicalLocation
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-core:country ;
-            sh:pattern "^[A-Z]{3}$" ;
+            sh:path spdx-core:countyCode ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:streetAddress ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -6578,11 +6596,8 @@ spdx-core:PhysicalLocation
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-core:streetAddress ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:geographicPointLocation ;
+            sh:path spdx-core:country ;
+            sh:pattern "^[A-Z]{3}$" ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -6592,7 +6607,7 @@ spdx-core:PhysicalLocation
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-core:countyCode ;
+            sh:path spdx-core:postalName ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -6601,8 +6616,7 @@ spdx-core:PhysicalLocation
         ] ,
         [
             sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:postalName ;
+            sh:path spdx-core:geographicPointLocation ;
         ] ;
 .
 
@@ -7064,15 +7078,15 @@ RoleRelationship inherits the from and to properties from Relationship, where:
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:Agent ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-core:assignedBy ;
-        ] ,
-        [
             sh:class spdx-core:Role ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-core:givenRole ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-core:assignedBy ;
         ] ;
 .
 
@@ -7611,16 +7625,6 @@ analysis methods, and any considerations of uncertainties or risks."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/FunctionalSafety/EvaluationResultType/pass>
-                <https://spdx.org/rdf/3/terms/FunctionalSafety/EvaluationResultType/fail>
-                <https://spdx.org/rdf/3/terms/FunctionalSafety/EvaluationResultType/inconclusive>
-            ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-functionalsafety:evaluation ;
-        ] ,
-        [
             sh:class spdx-functionalsafety:RequirementVerification ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -7632,6 +7636,16 @@ analysis methods, and any considerations of uncertainties or risks."""@en ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-core:rationale ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/FunctionalSafety/EvaluationResultType/pass>
+                <https://spdx.org/rdf/3/terms/FunctionalSafety/EvaluationResultType/fail>
+                <https://spdx.org/rdf/3/terms/FunctionalSafety/EvaluationResultType/inconclusive>
+            ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-functionalsafety:evaluation ;
         ] ;
 .
 
@@ -7756,10 +7770,10 @@ according to the classification schema of one or multiple countries."""@en ;
             sh:path spdx-operations:assessmentContext ;
         ] ,
         [
-            sh:class spdx-core:Agent ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-operations:assessor ;
+            sh:class spdx-operations:ExportControlClassification ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-operations:assessmentResult ;
         ] ,
         [
             sh:datatype xsd:dateTimeStamp ;
@@ -7768,17 +7782,17 @@ according to the classification schema of one or multiple countries."""@en ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
+            sh:class spdx-core:Agent ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-operations:assessor ;
+        ] ,
+        [
             sh:class spdx-core:Element ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-operations:assessedElement ;
-        ] ,
-        [
-            sh:class spdx-operations:ExportControlClassification ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-operations:assessmentResult ;
         ] ;
 .
 
@@ -7970,6 +7984,12 @@ It is intended to communicate the results of using a CVSS calculator.
     sh:nodeKind sh:IRI ;
     sh:property 
         [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-security:vectorString ;
+        ] ,
+        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Security/CvssSeverityType/critical>
                 <https://spdx.org/rdf/3/terms/Security/CvssSeverityType/high>
@@ -7980,12 +8000,6 @@ It is intended to communicate the results of using a CVSS calculator.
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-security:severity ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-security:vectorString ;
         ] ,
         [
             sh:datatype xsd:decimal ;
@@ -8063,12 +8077,6 @@ It is intended to communicate the results of using a CVSS calculator.
             sh:path spdx-security:vectorString ;
         ] ,
         [
-            sh:datatype xsd:decimal ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-security:score ;
-        ] ,
-        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Security/CvssSeverityType/critical>
                 <https://spdx.org/rdf/3/terms/Security/CvssSeverityType/high>
@@ -8079,6 +8087,12 @@ It is intended to communicate the results of using a CVSS calculator.
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-security:severity ;
+        ] ,
+        [
+            sh:datatype xsd:decimal ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-security:score ;
         ] ;
 .
 
@@ -8166,13 +8180,10 @@ CISA Known Exploited Vulnerabilities (KEV) Catalog <https://www.cisa.gov/known-e
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Security/ExploitCatalogType/kev>
-                <https://spdx.org/rdf/3/terms/Security/ExploitCatalogType/other>
-            ) ;
+            sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path spdx-security:catalogType ;
+            sh:path spdx-security:locator ;
         ] ,
         [
             sh:datatype xsd:boolean ;
@@ -8181,10 +8192,13 @@ CISA Known Exploited Vulnerabilities (KEV) Catalog <https://www.cisa.gov/known-e
             sh:path spdx-security:exploited ;
         ] ,
         [
-            sh:datatype xsd:anyURI ;
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Security/ExploitCatalogType/kev>
+                <https://spdx.org/rdf/3/terms/Security/ExploitCatalogType/other>
+            ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path spdx-security:locator ;
+            sh:path spdx-security:catalogType ;
         ] ;
 .
 
@@ -8341,12 +8355,6 @@ spdx-service:SoftwareService
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:Agent ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-service:provider ;
-        ] ,
-        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Service/AuthenticationProtocolType/tls>
                 <https://spdx.org/rdf/3/terms/Service/AuthenticationProtocolType/ocsp>
@@ -8354,6 +8362,12 @@ spdx-service:SoftwareService
                 <https://spdx.org/rdf/3/terms/Service/AuthenticationProtocolType/other>
             ) ;
             sh:path spdx-service:serverAuthenticationProtocol ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-service:provider ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -8389,10 +8403,15 @@ will be removed in a future release."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
+            sh:class spdx-core:ElementMap ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-simplelicensing:customIdToLicense ;
+        ] ,
+        [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-simplelicensing:licenseExpression ;
+            sh:path spdx-simplelicensing:licenseListVersion ;
+            sh:pattern "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*))?$" ;
         ] ,
         [
             sh:class spdx-core:DictionaryEntry ;
@@ -8402,13 +8421,8 @@ will be removed in a future release."""@en ;
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-simplelicensing:licenseListVersion ;
-            sh:pattern "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*))?$" ;
-        ] ,
-        [
-            sh:class spdx-core:ElementMap ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-simplelicensing:customIdToLicense ;
+            sh:minCount 1 ;
+            sh:path spdx-simplelicensing:licenseExpression ;
         ] ;
 .
 
@@ -8470,13 +8484,13 @@ vulnerability."""@en ;
             sh:class spdx-core:PositiveIntegerRange ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-software:lineRange ;
+            sh:path spdx-software:byteRange ;
         ] ,
         [
             sh:class spdx-core:PositiveIntegerRange ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-software:byteRange ;
+            sh:path spdx-software:lineRange ;
         ] ,
         [
             sh:class spdx-software:File ;
@@ -8862,7 +8876,7 @@ spdx-supplychain:ChangeAction
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:subClassOf spdx-supplychain:ModifyAction ;
     skos:definition "An actual change to a product."@en ;
-    skos:note "A ChangeAction expresses an alteration of a product, such as an intentional adjustment."@en ;
+    skos:note "A ChangeAction represents an alteration made to a product. Such alterations may include intentional adjustments or repairs. A repair is a corrective modification that restores a product to a functional or acceptable state following a defect, failure, or damage. Common examples of repairs are replacing worn components, correcting misalignments, sealing leaks, or reestablishing intended performance characteristics. Firmware updates performed are included, as they may correct software defects, or improve performance, or add new capabilities."@en ;
     sh:nodeKind sh:IRI ;
 .
 
@@ -8979,7 +8993,8 @@ spdx-supplychain:InstantiateVirtualHardwareProcess
     rdfs:isDefinedBy spdx-supplychain: ;
     rdfs:subClassOf spdx-supplychain:CreateProcess ;
     skos:definition "Class that describes an InstantiateVirtualHardwareProcess that is used to define VirtualHardware and its source."@en ;
-    skos:note "InstantiateVirtualHardwareProcess is a class defining the process needed to instantiate an 'VirtualHardware' defined by running software package(s)."@en ;
+    skos:note """InstantiateVirtualHardwareProcess is a class defining the process needed to
+instantiate a 'VirtualHardware' defined by running software package(s)."""@en ;
     sh:nodeKind sh:IRI ;
 .
 
@@ -9088,17 +9103,17 @@ The startTime and endTime can be the same time."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:Element ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-supplychain:responsibilityChangedOn ;
-        ] ,
-        [
             sh:class spdx-core:Agent ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-supplychain:current ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-supplychain:previous ;
         ] ,
         [
             sh:in (
@@ -9110,10 +9125,10 @@ The startTime and endTime can be the same time."""@en ;
             sh:path spdx-supplychain:responsibilityCategory ;
         ] ,
         [
-            sh:class spdx-core:Agent ;
-            sh:maxCount 1 ;
+            sh:class spdx-core:Element ;
+            sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
-            sh:path spdx-supplychain:previous ;
+            sh:path spdx-supplychain:responsibilityChangedOn ;
         ] ;
 .
 
@@ -9130,6 +9145,17 @@ spdx-supplychain:ResponsibilityChangeProcess
     sh:nodeKind sh:IRI ;
     sh:property 
         [
+            sh:class spdx-core:Element ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-supplychain:plannedProductOfResponsibilityChange ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-supplychain:plannedPrevious ;
+        ] ,
+        [
             sh:class spdx-core:Agent ;
             sh:maxCount 1 ;
             sh:nodeKind sh:IRI ;
@@ -9143,17 +9169,6 @@ spdx-supplychain:ResponsibilityChangeProcess
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-supplychain:responsibilityCategory ;
-        ] ,
-        [
-            sh:class spdx-core:Agent ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-supplychain:plannedPrevious ;
-        ] ,
-        [
-            sh:class spdx-core:Element ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-supplychain:plannedProductOfResponsibilityChange ;
         ] ;
 .
 
@@ -9187,22 +9202,24 @@ spdx-supplychain:StateAction
     rdfs:subClassOf spdx-supplychain:UseAction ;
     skos:definition "This is the state of an affected Element at a specific moment in time."@en ;
     skos:note """The state of a specific Element is defined, measured or observed in this class at a specific moment in time.
-The stateaction is defined by the method used by the definedstaeproces to produce an outcome."""@en ;
+
+The StateAction is defined by the method used by the DefinedStateProcess to
+produce an outcome."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
-        [
-            sh:class spdx-supplychain:State ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-supplychain:currentState ;
-        ] ,
         [
             sh:class spdx-supplychain:DefinedStateProcess ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-supplychain:decisionProcess ;
+        ] ,
+        [
+            sh:class spdx-supplychain:State ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-supplychain:currentState ;
         ] ;
 .
 
@@ -9282,10 +9299,6 @@ spdx-supplychain:TransportAction
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:path spdx-supplychain:transportRoute ;
-        ] ,
-        [
             sh:class spdx-core:Location ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-supplychain:dropoffLocation ;
@@ -9295,6 +9308,10 @@ spdx-supplychain:TransportAction
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-supplychain:pickupLocation ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-supplychain:transportRoute ;
         ] ;
 .
 
@@ -9311,8 +9328,9 @@ spdx-supplychain:TransportProcess
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:path spdx-supplychain:plannedTransportRoute ;
+            sh:class spdx-core:Location ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-supplychain:forDropoffLocation ;
         ] ,
         [
             sh:class spdx-core:Location ;
@@ -9320,9 +9338,8 @@ spdx-supplychain:TransportProcess
             sh:path spdx-supplychain:forPickupLocation ;
         ] ,
         [
-            sh:class spdx-core:Location ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-supplychain:forDropoffLocation ;
+            sh:datatype xsd:string ;
+            sh:path spdx-supplychain:plannedTransportRoute ;
         ] ;
 .
 
@@ -9378,12 +9395,12 @@ during its training, fine-tuning, and inference stages.
         [
             sh:class spdx-ai:EnergyConsumptionDescription ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-ai:trainingEnergyConsumption ;
+            sh:path spdx-ai:inferenceEnergyConsumption ;
         ] ,
         [
             sh:class spdx-ai:EnergyConsumptionDescription ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-ai:inferenceEnergyConsumption ;
+            sh:path spdx-ai:trainingEnergyConsumption ;
         ] ;
 .
 
@@ -9413,17 +9430,17 @@ unique keys."""@en ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:property 
         [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-core:key ;
+        ] ,
+        [
             sh:class spdx-core:Element ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-core:elementValue ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-core:key ;
         ] ;
 .
 
@@ -9450,11 +9467,6 @@ such as its provenance, where to retrieve it, and how to verify its integrity.""
             sh:path spdx-core:definingArtifact ;
         ] ,
         [
-            sh:class spdx-core:IntegrityMethod ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:verifiedUsing ;
-        ] ,
-        [
             sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -9464,6 +9476,11 @@ such as its provenance, where to retrieve it, and how to verify its integrity.""
             sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:path spdx-core:locationHint ;
+        ] ,
+        [
+            sh:class spdx-core:IntegrityMethod ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-core:verifiedUsing ;
         ] ;
 .
 
@@ -9482,7 +9499,8 @@ that provides additional context, characteristics or related information about a
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-core:comment ;
+            sh:path spdx-core:contentType ;
+            sh:pattern "^[^\\/]+\\/[^\\/]+$" ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -9491,8 +9509,7 @@ that provides additional context, characteristics or related information about a
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-core:contentType ;
-            sh:pattern "^[^\\/]+\\/[^\\/]+$" ;
+            sh:path spdx-core:comment ;
         ] ,
         [
             sh:in (
@@ -9613,16 +9630,16 @@ Namespace maps support a variety of relevant use cases such as:
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-core:prefix ;
-        ] ,
-        [
             sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-core:namespace ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-core:prefix ;
         ] ;
 .
 
@@ -9681,14 +9698,14 @@ SpdxDocument element definition."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:ExternalMap ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:import ;
-        ] ,
-        [
             sh:class spdx-core:NamespaceMap ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:path spdx-core:namespaceMap ;
+        ] ,
+        [
+            sh:class spdx-core:ExternalMap ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-core:import ;
         ] ,
         [
             sh:class spdx-simplelicensing:AnyLicenseInfo ;
@@ -9732,13 +9749,13 @@ This class can be used to implement CycloneDX compatible properties."""@en ;
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-extension:cdxPropName ;
+            sh:path spdx-extension:cdxPropValue ;
         ] ,
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-extension:cdxPropValue ;
+            sh:minCount 1 ;
+            sh:path spdx-extension:cdxPropName ;
         ] ;
 .
 
@@ -9796,21 +9813,16 @@ endTime is the time at which a project ends or is planned to end."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:dateTimeStamp ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:endTime ;
-            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
-        ] ,
-        [
-            sh:class spdx-core:Agent ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-operations:projectSponsor ;
-        ] ,
-        [
             sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-operations:projectContract ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-operations:projectTitle ;
         ] ,
         [
             sh:datatype xsd:dateTimeStamp ;
@@ -9827,10 +9839,15 @@ endTime is the time at which a project ends or is planned to end."""@en ;
             sh:path spdx-operations:projectOwner ;
         ] ,
         [
-            sh:datatype xsd:string ;
+            sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-operations:projectTitle ;
+            sh:path spdx-core:endTime ;
+            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-operations:projectSponsor ;
         ] ;
 .
 
@@ -9924,6 +9941,17 @@ following requirements shall be observed:
     sh:nodeKind sh:IRI ;
     sh:property 
         [
+            sh:datatype xsd:dateTimeStamp ;
+            sh:maxCount 1 ;
+            sh:path spdx-security:impactStatementTime ;
+            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-security:impactStatement ;
+        ] ,
+        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Security/VexJustificationType/componentNotPresent>
                 <https://spdx.org/rdf/3/terms/Security/VexJustificationType/vulnerableCodeNotPresent>
@@ -9933,17 +9961,6 @@ following requirements shall be observed:
             ) ;
             sh:maxCount 1 ;
             sh:path spdx-security:justificationType ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-security:impactStatement ;
-        ] ,
-        [
-            sh:datatype xsd:dateTimeStamp ;
-            sh:maxCount 1 ;
-            sh:path spdx-security:impactStatementTime ;
-            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ;
 .
 
@@ -10056,9 +10073,9 @@ For each ResolutionAction there is at least one /Core/Relationship class or subc
 spdx-supplychain:ResponsibilityType
     a owl:Class ;
     rdfs:label "ResponsibilityType"@en ;
-    rdfs:comment "These categories help define sets Responsibility Type."@en ;
+    rdfs:comment "Specifies the type of responsibility held over an asset, property, or entity."@en ;
     rdfs:isDefinedBy spdx-supplychain: ;
-    skos:definition "These categories help define sets Responsibility Type."@en ;
+    skos:definition "Specifies the type of responsibility held over an asset, property, or entity."@en ;
 .
 
 spdx-ai:EnergyUnitType
@@ -10254,24 +10271,24 @@ spdx-core:Role
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:DefinedType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:referenceSpecification ;
-        ] ,
-        [
             sh:class spdx-core:Requirement ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-core:responsibility ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:authorization ;
         ] ,
         [
             sh:class spdx-core:Requirement ;
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-core:roleQualification ;
+        ] ,
+        [
+            sh:class spdx-core:DefinedType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-core:referenceSpecification ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-core:authorization ;
         ] ;
 .
 
@@ -10371,13 +10388,13 @@ It ensures the item operates correctly within a system context."""@en ;
     sh:property 
         [
             sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-functionalsafety:assumptionStatement ;
+            sh:path spdx-core:rationale ;
         ] ,
         [
             sh:datatype xsd:string ;
-            sh:path spdx-core:rationale ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-functionalsafety:assumptionStatement ;
         ] ,
         [
             sh:class spdx-core:ExternalIdentifier ;
@@ -10390,17 +10407,17 @@ It ensures the item operates correctly within a system context."""@en ;
 spdx-functionalsafety:EvaluationResultType
     a owl:Class ;
     rdfs:label "EvaluationResultType"@en ;
-    rdfs:comment "EvaluationResultType describes the outcome of an evaluation or verification process with."@en ;
+    rdfs:comment "Specifies the outcome of an evaluation or verification process."@en ;
     rdfs:isDefinedBy spdx-functionalsafety: ;
-    skos:definition "EvaluationResultType describes the outcome of an evaluation or verification process with."@en ;
+    skos:definition "Specifies the outcome of an evaluation or verification process."@en ;
 .
 
 spdx-hardware:VirtualHardwareModelType
     a owl:Class ;
     rdfs:label "VirtualHardwareModelType"@en ;
-    rdfs:comment "VirtualHardwareModelType sets the VirtualHardware Model Type."@en ;
+    rdfs:comment "Specifies the type of simulation model used to represent virtual hardware."@en ;
     rdfs:isDefinedBy spdx-hardware: ;
-    skos:definition "VirtualHardwareModelType sets the VirtualHardware Model Type."@en ;
+    skos:definition "Specifies the type of simulation model used to represent virtual hardware."@en ;
 .
 
 spdx-operations:ExportControlClassification
@@ -10416,13 +10433,6 @@ according to the classification schema of one or multiple countries."""@en ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:property 
         [
-            sh:class spdx-core:Specification ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-operations:exportControlSpecification ;
-        ] ,
-        [
             sh:datatype xsd:positiveInteger ;
             sh:maxCount 1 ;
             sh:path spdx-operations:weight ;
@@ -10436,14 +10446,21 @@ according to the classification schema of one or multiple countries."""@en ;
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-core:comment ;
+            sh:minCount 1 ;
+            sh:path spdx-operations:exportingCountry ;
+            sh:pattern "^[A-Z]{3}$" ;
+        ] ,
+        [
+            sh:class spdx-core:Specification ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-operations:exportControlSpecification ;
         ] ,
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-operations:exportingCountry ;
-            sh:pattern "^[A-Z]{3}$" ;
+            sh:path spdx-core:comment ;
         ] ;
 .
 
@@ -10498,12 +10515,6 @@ The fileKind property can be set to symlink to indicate the file represents a li
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:contentType ;
-            sh:pattern "^[^\\/]+\\/[^\\/]+$" ;
-        ] ,
-        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Software/FileKindType/file>
                 <https://spdx.org/rdf/3/terms/Software/FileKindType/directory>
@@ -10511,6 +10522,12 @@ The fileKind property can be set to symlink to indicate the file represents a li
             ) ;
             sh:maxCount 1 ;
             sh:path spdx-software:fileKind ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:contentType ;
+            sh:pattern "^[^\\/]+\\/[^\\/]+$" ;
         ] ;
 .
 
@@ -10553,24 +10570,19 @@ Note that some of these could be represented in SPDX as a file as well."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:anyURI ;
-            sh:maxCount 1 ;
-            sh:path spdx-software:packageUrl ;
-        ] ,
-        [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-software:sourceInfo ;
         ] ,
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-software:packageVersion ;
-        ] ,
-        [
             sh:datatype xsd:anyURI ;
             sh:maxCount 1 ;
             sh:path spdx-software:downloadLocation ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-software:packageVersion ;
         ] ,
         [
             sh:datatype xsd:anyURI ;
@@ -10581,6 +10593,11 @@ Note that some of these could be represented in SPDX as a file as well."""@en ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-core:version ;
+        ] ,
+        [
+            sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:path spdx-software:packageUrl ;
         ] ;
 .
 
@@ -10648,39 +10665,10 @@ buildStartTime and buildEndTime will be removed in a future release."""@en ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-build:environment ;
-        ] ,
-        [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-build:parameter ;
-        ] ,
-        [
-            sh:datatype xsd:dateTimeStamp ;
-            sh:maxCount 1 ;
-            sh:path spdx-build:buildStartTime ;
-            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
-        ] ,
-        [
-            sh:datatype xsd:anyURI ;
-            sh:path spdx-build:configSourceUri ;
-        ] ,
-        [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
             sh:path spdx-build:buildEndTime ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-build:configSourceEntrypoint ;
-        ] ,
-        [
-            sh:class spdx-core:Hash ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-build:configSourceDigest ;
         ] ,
         [
             sh:datatype xsd:anyURI ;
@@ -10689,15 +10677,44 @@ buildStartTime and buildEndTime will be removed in a future release."""@en ;
             sh:path spdx-build:buildType ;
         ] ,
         [
-            sh:datatype xsd:dateTimeStamp ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:endTime ;
-            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
+            sh:datatype xsd:anyURI ;
+            sh:path spdx-build:configSourceUri ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-build:environment ;
+        ] ,
+        [
+            sh:class spdx-core:Hash ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-build:configSourceDigest ;
         ] ,
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-build:buildId ;
+        ] ,
+        [
+            sh:datatype xsd:dateTimeStamp ;
+            sh:maxCount 1 ;
+            sh:path spdx-build:buildStartTime ;
+            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-build:parameter ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:path spdx-build:configSourceEntrypoint ;
+        ] ,
+        [
+            sh:datatype xsd:dateTimeStamp ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:endTime ;
+            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ;
 .
 
@@ -10725,13 +10742,13 @@ spdx-core:PositiveIntegerRange
             sh:datatype xsd:positiveInteger ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path spdx-core:endIntegerRange ;
+            sh:path spdx-core:beginIntegerRange ;
         ] ,
         [
             sh:datatype xsd:positiveInteger ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path spdx-core:beginIntegerRange ;
+            sh:path spdx-core:endIntegerRange ;
         ] ;
 .
 
@@ -10883,13 +10900,6 @@ spdx-hardware:Dimensions
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-hardware:yAxisLength ;
-        ] ,
-        [
-            sh:class spdx-core:MeasureOfLength ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
             sh:path spdx-hardware:xAxisLength ;
         ] ,
         [
@@ -10898,6 +10908,13 @@ spdx-hardware:Dimensions
             sh:minCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:path spdx-hardware:zAxisLength ;
+        ] ,
+        [
+            sh:class spdx-core:MeasureOfLength ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-hardware:yAxisLength ;
         ] ;
 .
 
@@ -11040,19 +11057,16 @@ SPDX License List <https://spdx.org/licenses/>
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-expandedlicensing:licenseXml ;
+            sh:datatype xsd:anyURI ;
+            sh:path spdx-expandedlicensing:seeAlso ;
         ] ,
         [
-            sh:datatype xsd:boolean ;
-            sh:maxCount 1 ;
-            sh:path spdx-expandedlicensing:isOsiApproved ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-expandedlicensing:standardLicenseHeader ;
+            sh:message "https://spdx.org/rdf/3/terms/ExpandedLicensing/License is abstract and must not be instantiated directly."@en ;
+            sh:not
+                [
+                    sh:hasValue spdx-expandedlicensing:License ;
+                ] ;
+            sh:path rdf:type ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -11067,30 +11081,33 @@ SPDX License List <https://spdx.org/licenses/>
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
+            sh:path spdx-expandedlicensing:standardLicenseHeader ;
+        ] ,
+        [
+            sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:path spdx-expandedlicensing:isOsiApproved ;
+        ] ,
+        [
+            sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:path spdx-expandedlicensing:isDeprecatedLicenseId ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
             sh:path spdx-expandedlicensing:standardLicenseTemplate ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-expandedlicensing:licenseXml ;
         ] ,
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-simplelicensing:licenseText ;
-        ] ,
-        [
-            sh:datatype xsd:anyURI ;
-            sh:path spdx-expandedlicensing:seeAlso ;
-        ] ,
-        [
-            sh:message "https://spdx.org/rdf/3/terms/ExpandedLicensing/License is abstract and must not be instantiated directly."@en ;
-            sh:not
-                [
-                    sh:hasValue spdx-expandedlicensing:License ;
-                ] ;
-            sh:path rdf:type ;
-        ] ,
-        [
-            sh:datatype xsd:boolean ;
-            sh:maxCount 1 ;
-            sh:path spdx-expandedlicensing:isDeprecatedLicenseId ;
         ] ;
 .
 
@@ -11116,12 +11133,9 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition)."
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:message "https://spdx.org/rdf/3/terms/ExpandedLicensing/LicenseAddition is abstract and must not be instantiated directly."@en ;
-            sh:not
-                [
-                    sh:hasValue spdx-expandedlicensing:LicenseAddition ;
-                ] ;
-            sh:path rdf:type ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-expandedlicensing:standardAdditionTemplate ;
         ] ,
         [
             sh:datatype xsd:anyURI ;
@@ -11140,18 +11154,21 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition)."
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-expandedlicensing:obsoletedBy ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-expandedlicensing:additionText ;
         ] ,
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-expandedlicensing:standardAdditionTemplate ;
+            sh:path spdx-expandedlicensing:obsoletedBy ;
+        ] ,
+        [
+            sh:message "https://spdx.org/rdf/3/terms/ExpandedLicensing/LicenseAddition is abstract and must not be instantiated directly."@en ;
+            sh:not
+                [
+                    sh:hasValue spdx-expandedlicensing:LicenseAddition ;
+                ] ;
+            sh:path rdf:type ;
         ] ;
 .
 
@@ -11181,21 +11198,6 @@ spdx-hardware:Hardware
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-hardware:serialNumber ;
-        ] ,
-        [
-            sh:class spdx-core:DefinedType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-hardware:category ;
-        ] ,
-        [
-            sh:class spdx-core:Specification ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-hardware:additionalInformationSpecification ;
-        ] ,
-        [
             sh:message "https://spdx.org/rdf/3/terms/Hardware/Hardware is abstract and must not be instantiated directly."@en ;
             sh:not
                 [
@@ -11204,9 +11206,19 @@ spdx-hardware:Hardware
             sh:path rdf:type ;
         ] ,
         [
+            sh:class spdx-core:DefinedType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-hardware:hazard ;
+        ] ,
+        [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path spdx-hardware:batchNumber ;
+            sh:path spdx-hardware:serialNumber ;
+        ] ,
+        [
+            sh:class spdx-core:DictionaryEntry ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-hardware:additionalInformation ;
         ] ,
         [
             sh:class spdx-core:Agent ;
@@ -11216,9 +11228,14 @@ spdx-hardware:Hardware
             sh:path spdx-hardware:productAgent ;
         ] ,
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:version ;
+            sh:class spdx-core:Specification ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-hardware:additionalInformationSpecification ;
+        ] ,
+        [
+            sh:class spdx-core:DefinedType ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-hardware:category ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -11227,20 +11244,20 @@ spdx-hardware:Hardware
             sh:path spdx-hardware:partNumber ;
         ] ,
         [
-            sh:class spdx-core:DefinedType ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-hardware:hazard ;
-        ] ,
-        [
-            sh:class spdx-core:DictionaryEntry ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-hardware:additionalInformation ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-hardware:batchNumber ;
         ] ,
         [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
             sh:path spdx-hardware:releaseDate ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:version ;
         ] ;
 .
 
@@ -11293,14 +11310,6 @@ the document's date shall be considered as authoritative."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:message "https://spdx.org/rdf/3/terms/Security/VexVulnAssessmentRelationship is abstract and must not be instantiated directly."@en ;
-            sh:not
-                [
-                    sh:hasValue spdx-security:VexVulnAssessmentRelationship ;
-                ] ;
-            sh:path rdf:type ;
-        ] ,
-        [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-security:vexVersion ;
@@ -11309,6 +11318,14 @@ the document's date shall be considered as authoritative."""@en ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-security:statusNotes ;
+        ] ,
+        [
+            sh:message "https://spdx.org/rdf/3/terms/Security/VexVulnAssessmentRelationship is abstract and must not be instantiated directly."@en ;
+            sh:not
+                [
+                    sh:hasValue spdx-security:VexVulnAssessmentRelationship ;
+                ] ;
+            sh:path rdf:type ;
         ] ;
 .
 
@@ -11443,17 +11460,17 @@ Please note that different profiles may also provide additional methods for veri
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:property 
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:comment ;
-        ] ,
-        [
             sh:message "https://spdx.org/rdf/3/terms/Core/IntegrityMethod is abstract and must not be instantiated directly."@en ;
             sh:not
                 [
                     sh:hasValue spdx-core:IntegrityMethod ;
                 ] ;
             sh:path rdf:type ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:comment ;
         ] ;
 .
 
@@ -11499,39 +11516,8 @@ such as a package, a file, or a snippet."""@en ;
             sh:path spdx-software:artifactSize ;
         ] ,
         [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/application>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/archive>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/bom>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/configuration>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/container>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/data>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/device>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/diskImage>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/deviceDriver>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/documentation>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/evidence>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/executable>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/file>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/filesystemImage>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/firmware>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/framework>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/install>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/library>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/manifest>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/model>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/module>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/operatingSystem>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/other>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/patch>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/platform>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/requirement>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/source>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/specification>
-                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/test>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-software:primaryPurpose ;
+            sh:datatype xsd:string ;
+            sh:path spdx-software:attributionText ;
         ] ,
         [
             sh:in (
@@ -11568,9 +11554,9 @@ such as a package, a file, or a snippet."""@en ;
             sh:path spdx-software:additionalPurpose ;
         ] ,
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-software:copyrightText ;
+            sh:class spdx-software:ContentIdentifier ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-software:contentIdentifier ;
         ] ,
         [
             sh:message "https://spdx.org/rdf/3/terms/Software/SoftwareArtifact is abstract and must not be instantiated directly."@en ;
@@ -11582,12 +11568,43 @@ such as a package, a file, or a snippet."""@en ;
         ] ,
         [
             sh:datatype xsd:string ;
-            sh:path spdx-software:attributionText ;
+            sh:maxCount 1 ;
+            sh:path spdx-software:copyrightText ;
         ] ,
         [
-            sh:class spdx-software:ContentIdentifier ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-software:contentIdentifier ;
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/application>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/archive>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/bom>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/configuration>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/container>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/data>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/device>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/diskImage>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/deviceDriver>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/documentation>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/evidence>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/executable>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/file>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/filesystemImage>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/firmware>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/framework>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/install>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/library>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/manifest>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/model>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/module>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/operatingSystem>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/other>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/patch>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/platform>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/requirement>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/source>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/specification>
+                <https://spdx.org/rdf/3/terms/Software/SoftwarePurpose/test>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-software:primaryPurpose ;
         ] ;
 .
 
@@ -11650,6 +11667,11 @@ doing so supports reproducible builds."""@en ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
+            sh:class spdx-core:Tool ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-core:createdUsing ;
+        ] ,
+        [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -11660,11 +11682,6 @@ doing so supports reproducible builds."""@en ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:path spdx-core:comment ;
-        ] ,
-        [
-            sh:class spdx-core:Tool ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-core:createdUsing ;
         ] ;
 .
 
@@ -11745,75 +11762,20 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/runsOn> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasConcludedLicense> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
         ]
         
         [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-            sh:property
-                [
-                    sh:class spdx-hardware:Hardware ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasOutput> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property
-                [
-                    sh:or (
-                        
-                        [
-                            sh:class spdx-build:Build ;
-                        ]
-                        
-                        [
-                            sh:class spdx-core:DefinedProcess ;
-                        ]
-                        
-                        [
-                            sh:class spdx-core:Action ;
-                        ]
-                    ) ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasContactPoint> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:ContactPointRelationship ;
             sh:property 
                 [
                     sh:class spdx-core:Artifact ;
                     sh:path spdx-core:from ;
                 ] ,
                 [
-                    sh:class spdx-core:Agent ;
+                    sh:class spdx-simplelicensing:AnyLicenseInfo ;
                     sh:path spdx-core:to ;
                 ] ;
         ]
@@ -11824,7 +11786,7 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/foundBy> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/performedBy> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
@@ -11833,412 +11795,7 @@ NoAssertionElement individual."""@en ;
         [
             sh:property 
                 [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/reportedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasRoleIn> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:RoleRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/exploitCreatedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/underInvestigationFor> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-security:VexUnderInvestigationVulnAssessmentRelationship ;
-            sh:property
-                [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/providesSupportFor> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:SupportRelationship ;
-            sh:property 
-                [
-                    sh:class spdx-core:Artifact ;
-                    sh:path spdx-core:to ;
-                ] ,
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/verifiedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-functionalsafety:RequirementVerification ;
-                    sh:path spdx-core:to ;
-                ] ,
-                [
-                    sh:class spdx-core:Requirement ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/invokedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-            sh:property
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/usesTool> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasSpecification> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasResolution> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-supplychain:ResolutionAction ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-supplychain:OutOfSpecAction ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/implementedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property
-                [
-                    sh:class spdx-core:Requirement ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasOptionalDependency> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/coordinatedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/assumes> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property
-                [
-                    sh:class spdx-functionalsafety:Assumption ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/doesNotAffect> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-security:VexNotAffectedVulnAssessmentRelationship ;
-            sh:property
-                [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasPrerequisite> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasStaticLink> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasHost> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-            sh:property
-                [
-                    sh:class spdx-build:Build ;
-                    sh:path spdx-core:from ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasProvidedDependency> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/fixedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-security:Vulnerability ;
+                    sh:class spdx-core:Action ;
                     sh:path spdx-core:from ;
                 ] ,
                 [
@@ -12267,30 +11824,6 @@ NoAssertionElement individual."""@en ;
                 ] ,
                 [
                     sh:class spdx-core:Requirement ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/performedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-core:Action ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-core:Agent ;
                     sh:path spdx-core:to ;
                 ] ;
         ]
@@ -12334,7 +11867,56 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasRequirement> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/providesSupportFor> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:SupportRelationship ;
+            sh:property 
+                [
+                    sh:class spdx-core:Artifact ;
+                    sh:path spdx-core:to ;
+                ] ,
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:from ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasDeclaredLicense> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-core:Artifact ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-simplelicensing:AnyLicenseInfo ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/invokedBy> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
@@ -12342,6 +11924,230 @@ NoAssertionElement individual."""@en ;
         
         [
             sh:class spdx-core:LifecycleScopedRelationship ;
+            sh:property
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/fixedIn> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-security:VexFixedVulnAssessmentRelationship ;
+            sh:property
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasSpecification> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/doesNotAffect> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-security:VexNotAffectedVulnAssessmentRelationship ;
+            sh:property
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/assumes> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property
+                [
+                    sh:class spdx-functionalsafety:Assumption ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/foundBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/usesTool> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/publishedBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasStaticLink> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasContactPoint> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:ContactPointRelationship ;
+            sh:property 
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ,
+                [
+                    sh:class spdx-core:Artifact ;
+                    sh:path spdx-core:from ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasTest> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/implementedBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property
+                [
+                    sh:class spdx-core:Requirement ;
+                    sh:path spdx-core:from ;
+                ] ;
         ]
     ) , (
         
@@ -12383,7 +12189,155 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasAssociatedVulnerability> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/reportedBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/locatedAt> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property
+                [
+                    sh:class spdx-core:Location ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasResolution> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-supplychain:ResolutionAction ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-supplychain:OutOfSpecAction ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/verifiedBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-core:Requirement ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-functionalsafety:RequirementVerification ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/fixedBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasRoleIn> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:RoleRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/dependsOn> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/serializedInArtifact> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
@@ -12393,34 +12347,10 @@ NoAssertionElement individual."""@en ;
             sh:property 
                 [
                     sh:class spdx-core:Artifact ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-security:Vulnerability ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/publishedBy> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-core:Agent ;
                     sh:path spdx-core:to ;
                 ] ,
                 [
-                    sh:class spdx-security:Vulnerability ;
+                    sh:class spdx-core:SpdxDocument ;
                     sh:path spdx-core:from ;
                 ] ;
         ]
@@ -12431,7 +12361,7 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/configures> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasDynamicLink> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
@@ -12439,31 +12369,6 @@ NoAssertionElement individual."""@en ;
         
         [
             sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/delegatedTo> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-            sh:property 
-                [
-                    sh:class spdx-core:Agent ;
-                    sh:path spdx-core:from ;
-                ] ,
-                [
-                    sh:class spdx-core:Relationship ;
-                    sh:path spdx-core:to ;
-                ] ;
         ]
     ) , (
         
@@ -12483,6 +12388,51 @@ NoAssertionElement individual."""@en ;
             sh:property
                 [
                     sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/runsOn> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+            sh:property
+                [
+                    sh:class spdx-hardware:Hardware ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasAssociatedVulnerability> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:to ;
+                ] ,
+                [
+                    sh:class spdx-core:Artifact ;
                     sh:path spdx-core:from ;
                 ] ;
         ]
@@ -12522,7 +12472,7 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasDynamicLink> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/configures> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
@@ -12538,14 +12488,31 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasTest> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasOutput> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
         ]
         
         [
-            sh:class spdx-core:LifecycleScopedRelationship ;
+            sh:property
+                [
+                    sh:or (
+                        
+                        [
+                            sh:class spdx-build:Build ;
+                        ]
+                        
+                        [
+                            sh:class spdx-core:DefinedProcess ;
+                        ]
+                        
+                        [
+                            sh:class spdx-core:Action ;
+                        ]
+                    ) ;
+                    sh:path spdx-core:from ;
+                ] ;
         ]
     ) , (
         
@@ -12554,23 +12521,7 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/dependsOn> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:class spdx-core:LifecycleScopedRelationship ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasConcludedLicense> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/exploitCreatedBy> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
@@ -12579,13 +12530,85 @@ NoAssertionElement individual."""@en ;
         [
             sh:property 
                 [
-                    sh:class spdx-simplelicensing:AnyLicenseInfo ;
+                    sh:class spdx-security:Vulnerability ;
+                    sh:path spdx-core:from ;
+                ] ,
+                [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/coordinatedBy> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:property 
+                [
+                    sh:class spdx-core:Agent ;
                     sh:path spdx-core:to ;
                 ] ,
                 [
-                    sh:class spdx-core:Artifact ;
+                    sh:class spdx-security:Vulnerability ;
                     sh:path spdx-core:from ;
                 ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasProvidedDependency> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasOptionalDependency> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasRequirement> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
         ]
     ) , (
         
@@ -12603,6 +12626,10 @@ NoAssertionElement individual."""@en ;
         [
             sh:property 
                 [
+                    sh:class spdx-core:Agent ;
+                    sh:path spdx-core:to ;
+                ] ,
+                [
                     sh:or (
                         
                         [
@@ -12614,33 +12641,30 @@ NoAssertionElement individual."""@en ;
                         ]
                     ) ;
                     sh:path spdx-core:from ;
+                ] ;
+        ]
+    ) , (
+        
+        [
+            sh:not
+                [
+                    sh:property
+                        [
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/delegatedTo> ;
+                            sh:path spdx-core:relationshipType ;
+                        ] ;
+                ] ;
+        ]
+        
+        [
+            sh:class spdx-core:LifecycleScopedRelationship ;
+            sh:property 
+                [
+                    sh:class spdx-core:Relationship ;
+                    sh:path spdx-core:to ;
                 ] ,
                 [
                     sh:class spdx-core:Agent ;
-                    sh:path spdx-core:to ;
-                ] ;
-        ]
-    ) , (
-        
-        [
-            sh:not
-                [
-                    sh:property
-                        [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasDeclaredLicense> ;
-                            sh:path spdx-core:relationshipType ;
-                        ] ;
-                ] ;
-        ]
-        
-        [
-            sh:property 
-                [
-                    sh:class spdx-simplelicensing:AnyLicenseInfo ;
-                    sh:path spdx-core:to ;
-                ] ,
-                [
-                    sh:class spdx-core:Artifact ;
                     sh:path spdx-core:from ;
                 ] ;
         ]
@@ -12651,22 +12675,14 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/serializedInArtifact> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasPrerequisite> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
         ]
         
         [
-            sh:property 
-                [
-                    sh:class spdx-core:Artifact ;
-                    sh:path spdx-core:to ;
-                ] ,
-                [
-                    sh:class spdx-core:SpdxDocument ;
-                    sh:path spdx-core:from ;
-                ] ;
+            sh:class spdx-core:LifecycleScopedRelationship ;
         ]
     ) , (
         
@@ -12675,17 +12691,18 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/locatedAt> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/hasHost> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
         ]
         
         [
+            sh:class spdx-core:LifecycleScopedRelationship ;
             sh:property
                 [
-                    sh:class spdx-core:Location ;
-                    sh:path spdx-core:to ;
+                    sh:class spdx-build:Build ;
+                    sh:path spdx-core:from ;
                 ] ;
         ]
     ) , (
@@ -12695,14 +12712,14 @@ NoAssertionElement individual."""@en ;
                 [
                     sh:property
                         [
-                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/fixedIn> ;
+                            sh:hasValue <https://spdx.org/rdf/3/terms/Core/RelationshipType/underInvestigationFor> ;
                             sh:path spdx-core:relationshipType ;
                         ] ;
                 ] ;
         ]
         
         [
-            sh:class spdx-security:VexFixedVulnAssessmentRelationship ;
+            sh:class spdx-security:VexUnderInvestigationVulnAssessmentRelationship ;
             sh:property
                 [
                     sh:class spdx-security:Vulnerability ;
@@ -12714,21 +12731,23 @@ NoAssertionElement individual."""@en ;
         [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
-            sh:path spdx-core:endTime ;
+            sh:path spdx-core:startTime ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
-            sh:path spdx-core:startTime ;
+            sh:path spdx-core:endTime ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
-            sh:class spdx-core:Element ;
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Core/RelationshipCompleteness/incomplete>
+                <https://spdx.org/rdf/3/terms/Core/RelationshipCompleteness/complete>
+                <https://spdx.org/rdf/3/terms/Core/RelationshipCompleteness/noAssertion>
+            ) ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-core:from ;
+            sh:path spdx-core:completeness ;
         ] ,
         [
             sh:in (
@@ -12822,13 +12841,11 @@ NoAssertionElement individual."""@en ;
             sh:path spdx-core:to ;
         ] ,
         [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Core/RelationshipCompleteness/incomplete>
-                <https://spdx.org/rdf/3/terms/Core/RelationshipCompleteness/complete>
-                <https://spdx.org/rdf/3/terms/Core/RelationshipCompleteness/noAssertion>
-            ) ;
+            sh:class spdx-core:Element ;
             sh:maxCount 1 ;
-            sh:path spdx-core:completeness ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-core:from ;
         ] ;
 .
 
@@ -12854,12 +12871,6 @@ assessment relationships. It factors out the common properties shared by them.""
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:Agent ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-core:suppliedBy ;
-        ] ,
-        [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
             sh:path spdx-security:publishedTime ;
@@ -12872,6 +12883,20 @@ assessment relationships. It factors out the common properties shared by them.""
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
+            sh:message "https://spdx.org/rdf/3/terms/Security/VulnAssessmentRelationship is abstract and must not be instantiated directly."@en ;
+            sh:not
+                [
+                    sh:hasValue spdx-security:VulnAssessmentRelationship ;
+                ] ;
+            sh:path rdf:type ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-core:suppliedBy ;
+        ] ,
+        [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
             sh:path spdx-security:modifiedTime ;
@@ -12882,14 +12907,6 @@ assessment relationships. It factors out the common properties shared by them.""
             sh:maxCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path spdx-security:assessedElement ;
-        ] ,
-        [
-            sh:message "https://spdx.org/rdf/3/terms/Security/VulnAssessmentRelationship is abstract and must not be instantiated directly."@en ;
-            sh:not
-                [
-                    sh:hasValue spdx-security:VulnAssessmentRelationship ;
-                ] ;
-            sh:path rdf:type ;
         ] ;
 .
 
@@ -12976,14 +12993,14 @@ requirement statement itself."""@en ;
             sh:path spdx-core:requirementStatement ;
         ] ,
         [
+            sh:datatype xsd:string ;
+            sh:path spdx-core:rationale ;
+        ] ,
+        [
             sh:class spdx-core:ExternalIdentifier ;
             sh:maxCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
             sh:path spdx-core:requirementUID ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:rationale ;
         ] ;
 .
 
@@ -13002,6 +13019,17 @@ that provides a unique key within an established domain that can uniquely identi
         [
             sh:datatype xsd:anyURI ;
             sh:path spdx-core:identifierLocator ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:issuingAuthority ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path spdx-core:identifier ;
         ] ,
         [
             sh:in (
@@ -13056,18 +13084,7 @@ that provides a unique key within an established domain that can uniquely identi
         [
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path spdx-core:identifier ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
             sh:path spdx-core:comment ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:issuingAuthority ;
         ] ;
 .
 
@@ -13114,21 +13131,6 @@ spdx-core:DefinedProcess
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:in (
-                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/draft>
-                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/active>
-                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/obsolete>
-                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/other>
-            ) ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:processReadiness ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:rationale ;
-        ] ,
-        [
             sh:message "https://spdx.org/rdf/3/terms/Core/DefinedProcess is abstract and must not be instantiated directly."@en ;
             sh:not
                 [
@@ -13141,6 +13143,21 @@ spdx-core:DefinedProcess
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path spdx-core:version ;
+        ] ,
+        [
+            sh:in (
+                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/draft>
+                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/active>
+                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/obsoleted>
+                <https://spdx.org/rdf/3/terms/Core/ProcessReadinessType/other>
+            ) ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:processReadiness ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:rationale ;
         ] ;
 .
 
@@ -13215,7 +13232,7 @@ spdx-security:Vulnerability
     {
       "type": "ExternalIdentifier",
       "externalIdentifierType": "cve",
-      "identifier": "CVE-2020-2849",
+      "identifier": "CVE-2020-28498",
       "identifierLocator": [
         "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28498",
         "https://www.cve.org/CVERecord?id=CVE-2020-28498"
@@ -13295,13 +13312,13 @@ spdx-security:Vulnerability
         [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
-            sh:path spdx-security:modifiedTime ;
+            sh:path spdx-security:publishedTime ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
-            sh:path spdx-security:publishedTime ;
+            sh:path spdx-security:modifiedTime ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
@@ -13414,6 +13431,30 @@ such as an electronic file, a software package, a device or an element of data."
     sh:nodeKind sh:IRI ;
     sh:property 
         [
+            sh:datatype xsd:string ;
+            sh:path spdx-core:standardName ;
+        ] ,
+        [
+            sh:message "https://spdx.org/rdf/3/terms/Core/Artifact is abstract and must not be instantiated directly."@en ;
+            sh:not
+                [
+                    sh:hasValue spdx-core:Artifact ;
+                ] ;
+            sh:path rdf:type ;
+        ] ,
+        [
+            sh:class spdx-core:Agent ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-core:suppliedBy ;
+        ] ,
+        [
+            sh:datatype xsd:dateTimeStamp ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:builtTime ;
+            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
+        ] ,
+        [
             sh:in (
                 <https://spdx.org/rdf/3/terms/Core/SupportType/development>
                 <https://spdx.org/rdf/3/terms/Core/SupportType/support>
@@ -13426,34 +13467,15 @@ such as an electronic file, a software package, a device or an element of data."
             sh:path spdx-core:supportLevel ;
         ] ,
         [
-            sh:message "https://spdx.org/rdf/3/terms/Core/Artifact is abstract and must not be instantiated directly."@en ;
-            sh:not
-                [
-                    sh:hasValue spdx-core:Artifact ;
-                ] ;
-            sh:path rdf:type ;
-        ] ,
-        [
-            sh:datatype xsd:dateTimeStamp ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:releaseTime ;
-            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
-        ] ,
-        [
             sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
             sh:path spdx-core:validUntilTime ;
             sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ,
         [
-            sh:datatype xsd:dateTimeStamp ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:builtTime ;
-            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:path spdx-core:standardName ;
+            sh:class spdx-core:Agent ;
+            sh:nodeKind sh:IRI ;
+            sh:path spdx-core:originatedBy ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -13461,15 +13483,10 @@ such as an electronic file, a software package, a device or an element of data."
             sh:path spdx-core:intendedUse ;
         ] ,
         [
-            sh:class spdx-core:Agent ;
+            sh:datatype xsd:dateTimeStamp ;
             sh:maxCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-core:suppliedBy ;
-        ] ,
-        [
-            sh:class spdx-core:Agent ;
-            sh:nodeKind sh:IRI ;
-            sh:path spdx-core:originatedBy ;
+            sh:path spdx-core:releaseTime ;
+            sh:pattern "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$" ;
         ] ;
 .
 
@@ -13609,28 +13626,9 @@ and inter-relatable content objects."""@en ;
     sh:nodeKind sh:IRI ;
     sh:property 
         [
-            sh:class spdx-core:ExternalIdentifier ;
+            sh:class spdx-core:ExternalRef ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:externalIdentifier ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:name ;
-        ] ,
-        [
-            sh:class spdx-core:IntegrityMethod ;
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:verifiedUsing ;
-        ] ,
-        [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:description ;
-        ] ,
-        [
-            sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:extension ;
+            sh:path spdx-core:externalRef ;
         ] ,
         [
             sh:message "https://spdx.org/rdf/3/terms/Core/Element is abstract and must not be instantiated directly."@en ;
@@ -13639,6 +13637,28 @@ and inter-relatable content objects."""@en ;
                     sh:hasValue spdx-core:Element ;
                 ] ;
             sh:path rdf:type ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:description ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:name ;
+        ] ,
+        [
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:path spdx-core:comment ;
+        ] ,
+        [
+            sh:class spdx-core:CreationInfo ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-core:creationInfo ;
         ] ,
         [
             sh:datatype xsd:string ;
@@ -14107,21 +14127,18 @@ and inter-relatable content objects."""@en ;
             sh:path spdx-core:extension ;
         ] ,
         [
-            sh:datatype xsd:string ;
-            sh:maxCount 1 ;
-            sh:path spdx-core:comment ;
+            sh:class spdx-core:ExternalIdentifier ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:path spdx-core:externalIdentifier ;
         ] ,
         [
-            sh:class spdx-core:ExternalRef ;
+            sh:class spdx-core:IntegrityMethod ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:externalRef ;
+            sh:path spdx-core:verifiedUsing ;
         ] ,
         [
-            sh:class spdx-core:CreationInfo ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
             sh:nodeKind sh:BlankNodeOrIRI ;
-            sh:path spdx-core:creationInfo ;
+            sh:path spdx-core:extension ;
         ] ;
 .
 
@@ -14207,29 +14224,18 @@ spdx-core:
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-hardware:Hardware
-        spdx-security:Vulnerability
-        spdx-software:SoftwareArtifact
-        spdx-core:Action
-        spdx-core:DefinedProcess
-        spdx-core:Specification
-        spdx-supplychain:State
-        spdx-operations:ExportControlClassificationAssessment
+        spdx-supplychain:AssemblyAction
+        spdx-supplychain:HarvestAction
+        spdx-supplychain:ManufactureAction
+        spdx-supplychain:ReproduceAction
     ) ;
 .
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-extension:CdxPropertiesExtension
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-security:VexNotAffectedVulnAssessmentRelationship
-        spdx-security:VexFixedVulnAssessmentRelationship
-        spdx-security:VexUnderInvestigationVulnAssessmentRelationship
-        spdx-security:VexAffectedVulnAssessmentRelationship
+        spdx-supplychain:ChangeProcess
+        spdx-supplychain:TransportProcess
+        spdx-supplychain:StorageProcess
     ) ;
 .
 
@@ -14258,36 +14264,8 @@ spdx-core:
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-supplychain:BoundaryCrossingAction
-        spdx-supplychain:OutOfSpecAction
-        spdx-supplychain:StateAction
-        spdx-supplychain:TestAction
-        spdx-supplychain:ResolutionAction
-        spdx-supplychain:InspectionAction
-        spdx-supplychain:PlanAction
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-expandedlicensing:CustomLicense
-        spdx-expandedlicensing:ListedLicense
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-supplychain:ChangeProcess
-        spdx-supplychain:TransportProcess
-        spdx-supplychain:StorageProcess
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-supplychain:StorageAction
-        spdx-supplychain:TransportAction
-        spdx-supplychain:ChangeAction
+        spdx-expandedlicensing:ListedLicenseException
+        spdx-expandedlicensing:CustomLicenseAddition
     ) ;
 .
 
@@ -14305,12 +14283,29 @@ spdx-core:
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-supplychain:UseProcess
-        spdx-supplychain:DestroyProcess
-        spdx-supplychain:ResponsibilityChangeProcess
-        spdx-supplychain:ModifyProcess
-        spdx-supplychain:BoundaryDefinitionProcess
-        spdx-supplychain:CreateProcess
+        spdx-expandedlicensing:CustomLicense
+        spdx-expandedlicensing:ListedLicense
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-hardware:Hardware
+        spdx-security:Vulnerability
+        spdx-software:SoftwareArtifact
+        spdx-core:Action
+        spdx-core:DefinedProcess
+        spdx-core:Specification
+        spdx-supplychain:State
+        spdx-operations:ExportControlClassificationAssessment
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-hardware:VirtualHardware
+        spdx-hardware:BulkHardware
+        spdx-hardware:PhysicalHardware
     ) ;
 .
 
@@ -14319,6 +14314,16 @@ spdx-core:
         spdx-software:ContentIdentifier
         spdx-core:Hash
         spdx-core:PackageVerificationCode
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-supplychain:ReproduceProcess
+        spdx-supplychain:ManufactureProcess
+        spdx-supplychain:HarvestProcess
+        spdx-supplychain:AssemblyProcess
+        spdx-supplychain:InstantiateVirtualHardwareProcess
     ) ;
 .
 
@@ -14333,24 +14338,16 @@ spdx-core:
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-expandedlicensing:ListedLicenseException
-        spdx-expandedlicensing:CustomLicenseAddition
+        spdx-expandedlicensing:OrLaterOperator
+        spdx-expandedlicensing:License
     ) ;
 .
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-software:Package
-        spdx-software:Snippet
-        spdx-software:File
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-hardware:VirtualHardware
-        spdx-hardware:BulkHardware
-        spdx-hardware:PhysicalHardware
+        spdx-supplychain:StorageAction
+        spdx-supplychain:TransportAction
+        spdx-supplychain:ChangeAction
     ) ;
 .
 
@@ -14367,17 +14364,53 @@ spdx-core:
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-supplychain:AssemblyAction
-        spdx-supplychain:HarvestAction
-        spdx-supplychain:ManufactureAction
-        spdx-supplychain:ReproduceAction
+        spdx-security:VexNotAffectedVulnAssessmentRelationship
+        spdx-security:VexFixedVulnAssessmentRelationship
+        spdx-security:VexUnderInvestigationVulnAssessmentRelationship
+        spdx-security:VexAffectedVulnAssessmentRelationship
     ) ;
 .
 
 []    a owl:AllDisjointClasses ;
     owl:members (
-        spdx-expandedlicensing:OrLaterOperator
-        spdx-expandedlicensing:License
+        spdx-supplychain:BoundaryCrossingAction
+        spdx-supplychain:OutOfSpecAction
+        spdx-supplychain:StateAction
+        spdx-supplychain:TestAction
+        spdx-supplychain:ResolutionAction
+        spdx-supplychain:InspectionAction
+        spdx-supplychain:PlanAction
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-extension:CdxPropertiesExtension
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-supplychain:UseProcess
+        spdx-supplychain:DestroyProcess
+        spdx-supplychain:ResponsibilityChangeProcess
+        spdx-supplychain:ModifyProcess
+        spdx-supplychain:BoundaryDefinitionProcess
+        spdx-supplychain:CreateProcess
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-software:Package
+        spdx-software:Snippet
+        spdx-software:File
+    ) ;
+.
+
+[]    a owl:AllDisjointClasses ;
+    owl:members (
+        spdx-core:PhysicalLocation
     ) ;
 .
 
@@ -14396,21 +14429,5 @@ spdx-core:
         spdx-supplychain:ModifyAction
         spdx-supplychain:BoundaryDefinitionAction
         spdx-supplychain:ResponsibilityChangeAction
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-core:PhysicalLocation
-    ) ;
-.
-
-[]    a owl:AllDisjointClasses ;
-    owl:members (
-        spdx-supplychain:ReproduceProcess
-        spdx-supplychain:ManufactureProcess
-        spdx-supplychain:HarvestProcess
-        spdx-supplychain:AssemblyProcess
-        spdx-supplychain:InstantiateVirtualHardwareProcess
     ) ;
 .
