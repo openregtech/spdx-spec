@@ -208,9 +208,9 @@
         },
         "prop_ai_EnergyConsumptionDescription_ai_energyUnit": {
                 "enum": [
-                    "kilowattHour",
-                    "megajoule",
-                    "other"
+                    "ai_:EnergyUnitType/kilowattHour",
+                    "ai_:EnergyUnitType/megajoule",
+                    "ai_:EnergyUnitType/other"
                 ]
         },
         "ai_EnergyUnitType": {
@@ -248,9 +248,9 @@
                         { "$ref": "#/$defs/ai_EnergyUnitType" }
                     ]
                 },
-                { "const": "spdx:AI/EnergyUnitType/kilowattHour" },
-                { "const": "spdx:AI/EnergyUnitType/megajoule" },
-                { "const": "spdx:AI/EnergyUnitType/other" },
+                { "const": "EnergyUnitType_kilowattHour" },
+                { "const": "EnergyUnitType_megajoule" },
+                { "const": "EnergyUnitType_other" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -299,10 +299,10 @@
                         { "$ref": "#/$defs/ai_SafetyRiskAssessmentType" }
                     ]
                 },
-                { "const": "spdx:AI/SafetyRiskAssessmentType/high" },
-                { "const": "spdx:AI/SafetyRiskAssessmentType/low" },
-                { "const": "spdx:AI/SafetyRiskAssessmentType/medium" },
-                { "const": "spdx:AI/SafetyRiskAssessmentType/serious" },
+                { "const": "SafetyRiskAssessmentType_high" },
+                { "const": "SafetyRiskAssessmentType_low" },
+                { "const": "SafetyRiskAssessmentType_medium" },
+                { "const": "SafetyRiskAssessmentType_serious" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -351,8 +351,8 @@
                         { "$ref": "#/$defs/AnnotationType" }
                     ]
                 },
-                { "const": "spdx:Core/AnnotationType/other" },
-                { "const": "spdx:Core/AnnotationType/review" },
+                { "const": "AnnotationType_other" },
+                { "const": "AnnotationType_review" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -401,10 +401,10 @@
                         { "$ref": "#/$defs/ContactPointRelationshipType" }
                     ]
                 },
-                { "const": "spdx:Core/ContactPointRelationshipType/compliance" },
-                { "const": "spdx:Core/ContactPointRelationshipType/other" },
-                { "const": "spdx:Core/ContactPointRelationshipType/securityVulnerability" },
-                { "const": "spdx:Core/ContactPointRelationshipType/support" },
+                { "const": "ContactPointRelationshipType_compliance" },
+                { "const": "ContactPointRelationshipType_other" },
+                { "const": "ContactPointRelationshipType_securityVulnerability" },
+                { "const": "ContactPointRelationshipType_support" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -917,21 +917,21 @@
         },
         "prop_ElementCollection_profileConformance": {
                 "enum": [
-                    "ai",
-                    "build",
-                    "core",
-                    "dataset",
-                    "expandedLicensing",
-                    "extension",
-                    "functionalSafety",
-                    "hardware",
-                    "lite",
-                    "operations",
-                    "security",
-                    "service",
-                    "simpleLicensing",
-                    "software",
-                    "supplyChain"
+                    ":ProfileIdentifierType/ai",
+                    ":ProfileIdentifierType/build",
+                    ":ProfileIdentifierType/core",
+                    ":ProfileIdentifierType/dataset",
+                    ":ProfileIdentifierType/expandedLicensing",
+                    ":ProfileIdentifierType/extension",
+                    ":ProfileIdentifierType/functionalSafety",
+                    ":ProfileIdentifierType/hardware",
+                    ":ProfileIdentifierType/lite",
+                    ":ProfileIdentifierType/operations",
+                    ":ProfileIdentifierType/security",
+                    ":ProfileIdentifierType/service",
+                    ":ProfileIdentifierType/simpleLicensing",
+                    ":ProfileIdentifierType/software",
+                    ":ProfileIdentifierType/supplyChain"
                 ]
         },
         "prop_ElementCollection_rootElement": {
@@ -1080,49 +1080,49 @@
         },
         "prop_ExternalIdentifier_externalIdentifierType": {
                 "enum": [
-                    "ark",
-                    "bic",
-                    "cpe22",
-                    "cpe23",
-                    "cve",
-                    "doi",
-                    "duns",
-                    "ecli",
-                    "eli",
-                    "email",
-                    "evidenceUID",
-                    "gitoid",
-                    "gln",
-                    "glue",
-                    "gtin",
-                    "hsCodes",
-                    "ibid",
-                    "ibrn",
-                    "isan",
-                    "isbn",
-                    "iscc",
-                    "isci",
-                    "isil",
-                    "ismn",
-                    "isni",
-                    "isrc",
-                    "issn",
-                    "iswc",
-                    "lei",
-                    "lexid",
-                    "nli",
-                    "orcidid",
-                    "other",
-                    "packageUrl",
-                    "phoneNumber",
-                    "requirementUID",
-                    "rorid",
-                    "securityOther",
-                    "swhid",
-                    "swid",
-                    "urlScheme",
-                    "verificationUID",
-                    "webpage"
+                    ":ExternalIdentifierType/ark",
+                    ":ExternalIdentifierType/bic",
+                    ":ExternalIdentifierType/cpe22",
+                    ":ExternalIdentifierType/cpe23",
+                    ":ExternalIdentifierType/cve",
+                    ":ExternalIdentifierType/doi",
+                    ":ExternalIdentifierType/duns",
+                    ":ExternalIdentifierType/ecli",
+                    ":ExternalIdentifierType/eli",
+                    ":ExternalIdentifierType/email",
+                    ":ExternalIdentifierType/evidenceUID",
+                    ":ExternalIdentifierType/gitoid",
+                    ":ExternalIdentifierType/gln",
+                    ":ExternalIdentifierType/glue",
+                    ":ExternalIdentifierType/gtin",
+                    ":ExternalIdentifierType/hsCodes",
+                    ":ExternalIdentifierType/ibid",
+                    ":ExternalIdentifierType/ibrn",
+                    ":ExternalIdentifierType/isan",
+                    ":ExternalIdentifierType/isbn",
+                    ":ExternalIdentifierType/iscc",
+                    ":ExternalIdentifierType/isci",
+                    ":ExternalIdentifierType/isil",
+                    ":ExternalIdentifierType/ismn",
+                    ":ExternalIdentifierType/isni",
+                    ":ExternalIdentifierType/isrc",
+                    ":ExternalIdentifierType/issn",
+                    ":ExternalIdentifierType/iswc",
+                    ":ExternalIdentifierType/lei",
+                    ":ExternalIdentifierType/lexid",
+                    ":ExternalIdentifierType/nli",
+                    ":ExternalIdentifierType/orcidid",
+                    ":ExternalIdentifierType/other",
+                    ":ExternalIdentifierType/packageUrl",
+                    ":ExternalIdentifierType/phoneNumber",
+                    ":ExternalIdentifierType/requirementUID",
+                    ":ExternalIdentifierType/rorid",
+                    ":ExternalIdentifierType/securityOther",
+                    ":ExternalIdentifierType/swhid",
+                    ":ExternalIdentifierType/swid",
+                    ":ExternalIdentifierType/urlScheme",
+                    ":ExternalIdentifierType/verificationUID",
+                    ":ExternalIdentifierType/webpage"
                 ]
         },
         "prop_ExternalIdentifier_identifier": {
@@ -1169,49 +1169,49 @@
                         { "$ref": "#/$defs/ExternalIdentifierType" }
                     ]
                 },
-                { "const": "spdx:Core/ExternalIdentifierType/ark" },
-                { "const": "spdx:Core/ExternalIdentifierType/bic" },
-                { "const": "spdx:Core/ExternalIdentifierType/cpe22" },
-                { "const": "spdx:Core/ExternalIdentifierType/cpe23" },
-                { "const": "spdx:Core/ExternalIdentifierType/cve" },
-                { "const": "spdx:Core/ExternalIdentifierType/doi" },
-                { "const": "spdx:Core/ExternalIdentifierType/duns" },
-                { "const": "spdx:Core/ExternalIdentifierType/ecli" },
-                { "const": "spdx:Core/ExternalIdentifierType/eli" },
-                { "const": "spdx:Core/ExternalIdentifierType/email" },
-                { "const": "spdx:Core/ExternalIdentifierType/evidenceUID" },
-                { "const": "spdx:Core/ExternalIdentifierType/gitoid" },
-                { "const": "spdx:Core/ExternalIdentifierType/gln" },
-                { "const": "spdx:Core/ExternalIdentifierType/glue" },
-                { "const": "spdx:Core/ExternalIdentifierType/gtin" },
-                { "const": "spdx:Core/ExternalIdentifierType/hsCodes" },
-                { "const": "spdx:Core/ExternalIdentifierType/ibid" },
-                { "const": "spdx:Core/ExternalIdentifierType/ibrn" },
-                { "const": "spdx:Core/ExternalIdentifierType/isan" },
-                { "const": "spdx:Core/ExternalIdentifierType/isbn" },
-                { "const": "spdx:Core/ExternalIdentifierType/iscc" },
-                { "const": "spdx:Core/ExternalIdentifierType/isci" },
-                { "const": "spdx:Core/ExternalIdentifierType/isil" },
-                { "const": "spdx:Core/ExternalIdentifierType/ismn" },
-                { "const": "spdx:Core/ExternalIdentifierType/isni" },
-                { "const": "spdx:Core/ExternalIdentifierType/isrc" },
-                { "const": "spdx:Core/ExternalIdentifierType/issn" },
-                { "const": "spdx:Core/ExternalIdentifierType/iswc" },
-                { "const": "spdx:Core/ExternalIdentifierType/lei" },
-                { "const": "spdx:Core/ExternalIdentifierType/lexid" },
-                { "const": "spdx:Core/ExternalIdentifierType/nli" },
-                { "const": "spdx:Core/ExternalIdentifierType/orcidid" },
-                { "const": "spdx:Core/ExternalIdentifierType/other" },
-                { "const": "spdx:Core/ExternalIdentifierType/packageUrl" },
-                { "const": "spdx:Core/ExternalIdentifierType/phoneNumber" },
-                { "const": "spdx:Core/ExternalIdentifierType/requirementUID" },
-                { "const": "spdx:Core/ExternalIdentifierType/rorid" },
-                { "const": "spdx:Core/ExternalIdentifierType/securityOther" },
-                { "const": "spdx:Core/ExternalIdentifierType/swhid" },
-                { "const": "spdx:Core/ExternalIdentifierType/swid" },
-                { "const": "spdx:Core/ExternalIdentifierType/urlScheme" },
-                { "const": "spdx:Core/ExternalIdentifierType/verificationUID" },
-                { "const": "spdx:Core/ExternalIdentifierType/webpage" },
+                { "const": "ExternalIdentifierType_ark" },
+                { "const": "ExternalIdentifierType_bic" },
+                { "const": "ExternalIdentifierType_cpe22" },
+                { "const": "ExternalIdentifierType_cpe23" },
+                { "const": "ExternalIdentifierType_cve" },
+                { "const": "ExternalIdentifierType_doi" },
+                { "const": "ExternalIdentifierType_duns" },
+                { "const": "ExternalIdentifierType_ecli" },
+                { "const": "ExternalIdentifierType_eli" },
+                { "const": "ExternalIdentifierType_email" },
+                { "const": "ExternalIdentifierType_evidenceUID" },
+                { "const": "ExternalIdentifierType_gitoid" },
+                { "const": "ExternalIdentifierType_gln" },
+                { "const": "ExternalIdentifierType_glue" },
+                { "const": "ExternalIdentifierType_gtin" },
+                { "const": "ExternalIdentifierType_hsCodes" },
+                { "const": "ExternalIdentifierType_ibid" },
+                { "const": "ExternalIdentifierType_ibrn" },
+                { "const": "ExternalIdentifierType_isan" },
+                { "const": "ExternalIdentifierType_isbn" },
+                { "const": "ExternalIdentifierType_iscc" },
+                { "const": "ExternalIdentifierType_isci" },
+                { "const": "ExternalIdentifierType_isil" },
+                { "const": "ExternalIdentifierType_ismn" },
+                { "const": "ExternalIdentifierType_isni" },
+                { "const": "ExternalIdentifierType_isrc" },
+                { "const": "ExternalIdentifierType_issn" },
+                { "const": "ExternalIdentifierType_iswc" },
+                { "const": "ExternalIdentifierType_lei" },
+                { "const": "ExternalIdentifierType_lexid" },
+                { "const": "ExternalIdentifierType_nli" },
+                { "const": "ExternalIdentifierType_orcidid" },
+                { "const": "ExternalIdentifierType_other" },
+                { "const": "ExternalIdentifierType_packageUrl" },
+                { "const": "ExternalIdentifierType_phoneNumber" },
+                { "const": "ExternalIdentifierType_requirementUID" },
+                { "const": "ExternalIdentifierType_rorid" },
+                { "const": "ExternalIdentifierType_securityOther" },
+                { "const": "ExternalIdentifierType_swhid" },
+                { "const": "ExternalIdentifierType_swid" },
+                { "const": "ExternalIdentifierType_urlScheme" },
+                { "const": "ExternalIdentifierType_verificationUID" },
+                { "const": "ExternalIdentifierType_webpage" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -1383,54 +1383,54 @@
         },
         "prop_ExternalRef_externalRefType": {
                 "enum": [
-                    "altDownloadLocation",
-                    "altWebPage",
-                    "binaryArtifact",
-                    "bom",
-                    "bower",
-                    "buildMeta",
-                    "buildSystem",
-                    "certificationReport",
-                    "chat",
-                    "componentAnalysisReport",
-                    "cwe",
-                    "documentation",
-                    "dynamicAnalysisReport",
-                    "eolNotice",
-                    "exportControlAssessment",
-                    "funding",
-                    "issueTracker",
-                    "license",
-                    "mailingList",
-                    "mavenCentral",
-                    "metrics",
-                    "npm",
-                    "nuget",
-                    "other",
-                    "privacyAssessment",
-                    "productMetadata",
-                    "purchaseOrder",
-                    "qualityAssessmentReport",
-                    "releaseHistory",
-                    "releaseNotes",
-                    "riskAssessment",
-                    "runtimeAnalysisReport",
-                    "secureSoftwareAttestation",
-                    "securityAdversaryModel",
-                    "securityAdvisory",
-                    "securityFix",
-                    "securityOther",
-                    "securityPenTestReport",
-                    "securityPolicy",
-                    "securityThreatModel",
-                    "socialMedia",
-                    "sourceArtifact",
-                    "staticAnalysisReport",
-                    "support",
-                    "vcs",
-                    "vulnerabilityDisclosureReport",
-                    "vulnerabilityExploitabilityAssessment",
-                    "x509Cert"
+                    ":ExternalRefType/altDownloadLocation",
+                    ":ExternalRefType/altWebPage",
+                    ":ExternalRefType/binaryArtifact",
+                    ":ExternalRefType/bom",
+                    ":ExternalRefType/bower",
+                    ":ExternalRefType/buildMeta",
+                    ":ExternalRefType/buildSystem",
+                    ":ExternalRefType/certificationReport",
+                    ":ExternalRefType/chat",
+                    ":ExternalRefType/componentAnalysisReport",
+                    ":ExternalRefType/cwe",
+                    ":ExternalRefType/documentation",
+                    ":ExternalRefType/dynamicAnalysisReport",
+                    ":ExternalRefType/eolNotice",
+                    ":ExternalRefType/exportControlAssessment",
+                    ":ExternalRefType/funding",
+                    ":ExternalRefType/issueTracker",
+                    ":ExternalRefType/license",
+                    ":ExternalRefType/mailingList",
+                    ":ExternalRefType/mavenCentral",
+                    ":ExternalRefType/metrics",
+                    ":ExternalRefType/npm",
+                    ":ExternalRefType/nuget",
+                    ":ExternalRefType/other",
+                    ":ExternalRefType/privacyAssessment",
+                    ":ExternalRefType/productMetadata",
+                    ":ExternalRefType/purchaseOrder",
+                    ":ExternalRefType/qualityAssessmentReport",
+                    ":ExternalRefType/releaseHistory",
+                    ":ExternalRefType/releaseNotes",
+                    ":ExternalRefType/riskAssessment",
+                    ":ExternalRefType/runtimeAnalysisReport",
+                    ":ExternalRefType/secureSoftwareAttestation",
+                    ":ExternalRefType/securityAdversaryModel",
+                    ":ExternalRefType/securityAdvisory",
+                    ":ExternalRefType/securityFix",
+                    ":ExternalRefType/securityOther",
+                    ":ExternalRefType/securityPenTestReport",
+                    ":ExternalRefType/securityPolicy",
+                    ":ExternalRefType/securityThreatModel",
+                    ":ExternalRefType/socialMedia",
+                    ":ExternalRefType/sourceArtifact",
+                    ":ExternalRefType/staticAnalysisReport",
+                    ":ExternalRefType/support",
+                    ":ExternalRefType/vcs",
+                    ":ExternalRefType/vulnerabilityDisclosureReport",
+                    ":ExternalRefType/vulnerabilityExploitabilityAssessment",
+                    ":ExternalRefType/x509Cert"
                 ]
         },
         "prop_ExternalRef_locator": {
@@ -1471,54 +1471,54 @@
                         { "$ref": "#/$defs/ExternalRefType" }
                     ]
                 },
-                { "const": "spdx:Core/ExternalRefType/altDownloadLocation" },
-                { "const": "spdx:Core/ExternalRefType/altWebPage" },
-                { "const": "spdx:Core/ExternalRefType/binaryArtifact" },
-                { "const": "spdx:Core/ExternalRefType/bom" },
-                { "const": "spdx:Core/ExternalRefType/bower" },
-                { "const": "spdx:Core/ExternalRefType/buildMeta" },
-                { "const": "spdx:Core/ExternalRefType/buildSystem" },
-                { "const": "spdx:Core/ExternalRefType/certificationReport" },
-                { "const": "spdx:Core/ExternalRefType/chat" },
-                { "const": "spdx:Core/ExternalRefType/componentAnalysisReport" },
-                { "const": "spdx:Core/ExternalRefType/cwe" },
-                { "const": "spdx:Core/ExternalRefType/documentation" },
-                { "const": "spdx:Core/ExternalRefType/dynamicAnalysisReport" },
-                { "const": "spdx:Core/ExternalRefType/eolNotice" },
-                { "const": "spdx:Core/ExternalRefType/exportControlAssessment" },
-                { "const": "spdx:Core/ExternalRefType/funding" },
-                { "const": "spdx:Core/ExternalRefType/issueTracker" },
-                { "const": "spdx:Core/ExternalRefType/license" },
-                { "const": "spdx:Core/ExternalRefType/mailingList" },
-                { "const": "spdx:Core/ExternalRefType/mavenCentral" },
-                { "const": "spdx:Core/ExternalRefType/metrics" },
-                { "const": "spdx:Core/ExternalRefType/npm" },
-                { "const": "spdx:Core/ExternalRefType/nuget" },
-                { "const": "spdx:Core/ExternalRefType/other" },
-                { "const": "spdx:Core/ExternalRefType/privacyAssessment" },
-                { "const": "spdx:Core/ExternalRefType/productMetadata" },
-                { "const": "spdx:Core/ExternalRefType/purchaseOrder" },
-                { "const": "spdx:Core/ExternalRefType/qualityAssessmentReport" },
-                { "const": "spdx:Core/ExternalRefType/releaseHistory" },
-                { "const": "spdx:Core/ExternalRefType/releaseNotes" },
-                { "const": "spdx:Core/ExternalRefType/riskAssessment" },
-                { "const": "spdx:Core/ExternalRefType/runtimeAnalysisReport" },
-                { "const": "spdx:Core/ExternalRefType/secureSoftwareAttestation" },
-                { "const": "spdx:Core/ExternalRefType/securityAdversaryModel" },
-                { "const": "spdx:Core/ExternalRefType/securityAdvisory" },
-                { "const": "spdx:Core/ExternalRefType/securityFix" },
-                { "const": "spdx:Core/ExternalRefType/securityOther" },
-                { "const": "spdx:Core/ExternalRefType/securityPenTestReport" },
-                { "const": "spdx:Core/ExternalRefType/securityPolicy" },
-                { "const": "spdx:Core/ExternalRefType/securityThreatModel" },
-                { "const": "spdx:Core/ExternalRefType/socialMedia" },
-                { "const": "spdx:Core/ExternalRefType/sourceArtifact" },
-                { "const": "spdx:Core/ExternalRefType/staticAnalysisReport" },
-                { "const": "spdx:Core/ExternalRefType/support" },
-                { "const": "spdx:Core/ExternalRefType/vcs" },
-                { "const": "spdx:Core/ExternalRefType/vulnerabilityDisclosureReport" },
-                { "const": "spdx:Core/ExternalRefType/vulnerabilityExploitabilityAssessment" },
-                { "const": "spdx:Core/ExternalRefType/x509Cert" },
+                { "const": "ExternalRefType_altDownloadLocation" },
+                { "const": "ExternalRefType_altWebPage" },
+                { "const": "ExternalRefType_binaryArtifact" },
+                { "const": "ExternalRefType_bom" },
+                { "const": "ExternalRefType_bower" },
+                { "const": "ExternalRefType_buildMeta" },
+                { "const": "ExternalRefType_buildSystem" },
+                { "const": "ExternalRefType_certificationReport" },
+                { "const": "ExternalRefType_chat" },
+                { "const": "ExternalRefType_componentAnalysisReport" },
+                { "const": "ExternalRefType_cwe" },
+                { "const": "ExternalRefType_documentation" },
+                { "const": "ExternalRefType_dynamicAnalysisReport" },
+                { "const": "ExternalRefType_eolNotice" },
+                { "const": "ExternalRefType_exportControlAssessment" },
+                { "const": "ExternalRefType_funding" },
+                { "const": "ExternalRefType_issueTracker" },
+                { "const": "ExternalRefType_license" },
+                { "const": "ExternalRefType_mailingList" },
+                { "const": "ExternalRefType_mavenCentral" },
+                { "const": "ExternalRefType_metrics" },
+                { "const": "ExternalRefType_npm" },
+                { "const": "ExternalRefType_nuget" },
+                { "const": "ExternalRefType_other" },
+                { "const": "ExternalRefType_privacyAssessment" },
+                { "const": "ExternalRefType_productMetadata" },
+                { "const": "ExternalRefType_purchaseOrder" },
+                { "const": "ExternalRefType_qualityAssessmentReport" },
+                { "const": "ExternalRefType_releaseHistory" },
+                { "const": "ExternalRefType_releaseNotes" },
+                { "const": "ExternalRefType_riskAssessment" },
+                { "const": "ExternalRefType_runtimeAnalysisReport" },
+                { "const": "ExternalRefType_secureSoftwareAttestation" },
+                { "const": "ExternalRefType_securityAdversaryModel" },
+                { "const": "ExternalRefType_securityAdvisory" },
+                { "const": "ExternalRefType_securityFix" },
+                { "const": "ExternalRefType_securityOther" },
+                { "const": "ExternalRefType_securityPenTestReport" },
+                { "const": "ExternalRefType_securityPolicy" },
+                { "const": "ExternalRefType_securityThreatModel" },
+                { "const": "ExternalRefType_socialMedia" },
+                { "const": "ExternalRefType_sourceArtifact" },
+                { "const": "ExternalRefType_staticAnalysisReport" },
+                { "const": "ExternalRefType_support" },
+                { "const": "ExternalRefType_vcs" },
+                { "const": "ExternalRefType_vulnerabilityDisclosureReport" },
+                { "const": "ExternalRefType_vulnerabilityExploitabilityAssessment" },
+                { "const": "ExternalRefType_x509Cert" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -1567,28 +1567,28 @@
                         { "$ref": "#/$defs/HashAlgorithm" }
                     ]
                 },
-                { "const": "spdx:Core/HashAlgorithm/adler32" },
-                { "const": "spdx:Core/HashAlgorithm/blake2b256" },
-                { "const": "spdx:Core/HashAlgorithm/blake2b384" },
-                { "const": "spdx:Core/HashAlgorithm/blake2b512" },
-                { "const": "spdx:Core/HashAlgorithm/blake3" },
-                { "const": "spdx:Core/HashAlgorithm/crystalsDilithium" },
-                { "const": "spdx:Core/HashAlgorithm/crystalsKyber" },
-                { "const": "spdx:Core/HashAlgorithm/falcon" },
-                { "const": "spdx:Core/HashAlgorithm/md2" },
-                { "const": "spdx:Core/HashAlgorithm/md4" },
-                { "const": "spdx:Core/HashAlgorithm/md5" },
-                { "const": "spdx:Core/HashAlgorithm/md6" },
-                { "const": "spdx:Core/HashAlgorithm/other" },
-                { "const": "spdx:Core/HashAlgorithm/sha1" },
-                { "const": "spdx:Core/HashAlgorithm/sha224" },
-                { "const": "spdx:Core/HashAlgorithm/sha256" },
-                { "const": "spdx:Core/HashAlgorithm/sha384" },
-                { "const": "spdx:Core/HashAlgorithm/sha3_224" },
-                { "const": "spdx:Core/HashAlgorithm/sha3_256" },
-                { "const": "spdx:Core/HashAlgorithm/sha3_384" },
-                { "const": "spdx:Core/HashAlgorithm/sha3_512" },
-                { "const": "spdx:Core/HashAlgorithm/sha512" },
+                { "const": "HashAlgorithm_adler32" },
+                { "const": "HashAlgorithm_blake2b256" },
+                { "const": "HashAlgorithm_blake2b384" },
+                { "const": "HashAlgorithm_blake2b512" },
+                { "const": "HashAlgorithm_blake3" },
+                { "const": "HashAlgorithm_crystalsDilithium" },
+                { "const": "HashAlgorithm_crystalsKyber" },
+                { "const": "HashAlgorithm_falcon" },
+                { "const": "HashAlgorithm_md2" },
+                { "const": "HashAlgorithm_md4" },
+                { "const": "HashAlgorithm_md5" },
+                { "const": "HashAlgorithm_md6" },
+                { "const": "HashAlgorithm_other" },
+                { "const": "HashAlgorithm_sha1" },
+                { "const": "HashAlgorithm_sha224" },
+                { "const": "HashAlgorithm_sha256" },
+                { "const": "HashAlgorithm_sha384" },
+                { "const": "HashAlgorithm_sha3_224" },
+                { "const": "HashAlgorithm_sha3_256" },
+                { "const": "HashAlgorithm_sha3_384" },
+                { "const": "HashAlgorithm_sha3_512" },
+                { "const": "HashAlgorithm_sha512" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -1718,13 +1718,13 @@
                         { "$ref": "#/$defs/IsoAutomationLevel" }
                     ]
                 },
-                { "const": "spdx:Core/IsoAutomationLevel/assistiveAutomation" },
-                { "const": "spdx:Core/IsoAutomationLevel/autonomous" },
-                { "const": "spdx:Core/IsoAutomationLevel/conditionalAutomation" },
-                { "const": "spdx:Core/IsoAutomationLevel/fullAutomation" },
-                { "const": "spdx:Core/IsoAutomationLevel/highAutomation" },
-                { "const": "spdx:Core/IsoAutomationLevel/notAutomated" },
-                { "const": "spdx:Core/IsoAutomationLevel/partialAutomation" },
+                { "const": "IsoAutomationLevel_assistiveAutomation" },
+                { "const": "IsoAutomationLevel_autonomous" },
+                { "const": "IsoAutomationLevel_conditionalAutomation" },
+                { "const": "IsoAutomationLevel_fullAutomation" },
+                { "const": "IsoAutomationLevel_highAutomation" },
+                { "const": "IsoAutomationLevel_notAutomated" },
+                { "const": "IsoAutomationLevel_partialAutomation" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -1773,14 +1773,14 @@
                         { "$ref": "#/$defs/LifecycleScopeType" }
                     ]
                 },
-                { "const": "spdx:Core/LifecycleScopeType/build" },
-                { "const": "spdx:Core/LifecycleScopeType/decommission" },
-                { "const": "spdx:Core/LifecycleScopeType/design" },
-                { "const": "spdx:Core/LifecycleScopeType/development" },
-                { "const": "spdx:Core/LifecycleScopeType/other" },
-                { "const": "spdx:Core/LifecycleScopeType/runtime" },
-                { "const": "spdx:Core/LifecycleScopeType/test" },
-                { "const": "spdx:Core/LifecycleScopeType/update" },
+                { "const": "LifecycleScopeType_build" },
+                { "const": "LifecycleScopeType_decommission" },
+                { "const": "LifecycleScopeType_design" },
+                { "const": "LifecycleScopeType_development" },
+                { "const": "LifecycleScopeType_other" },
+                { "const": "LifecycleScopeType_runtime" },
+                { "const": "LifecycleScopeType_test" },
+                { "const": "LifecycleScopeType_update" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -1964,28 +1964,28 @@
         },
         "prop_PackageVerificationCode_algorithm": {
                 "enum": [
-                    "adler32",
-                    "blake2b256",
-                    "blake2b384",
-                    "blake2b512",
-                    "blake3",
-                    "crystalsDilithium",
-                    "crystalsKyber",
-                    "falcon",
-                    "md2",
-                    "md4",
-                    "md5",
-                    "md6",
-                    "other",
-                    "sha1",
-                    "sha224",
-                    "sha256",
-                    "sha384",
-                    "sha3_224",
-                    "sha3_256",
-                    "sha3_384",
-                    "sha3_512",
-                    "sha512"
+                    ":HashAlgorithm/adler32",
+                    ":HashAlgorithm/blake2b256",
+                    ":HashAlgorithm/blake2b384",
+                    ":HashAlgorithm/blake2b512",
+                    ":HashAlgorithm/blake3",
+                    ":HashAlgorithm/crystalsDilithium",
+                    ":HashAlgorithm/crystalsKyber",
+                    ":HashAlgorithm/falcon",
+                    ":HashAlgorithm/md2",
+                    ":HashAlgorithm/md4",
+                    ":HashAlgorithm/md5",
+                    ":HashAlgorithm/md6",
+                    ":HashAlgorithm/other",
+                    ":HashAlgorithm/sha1",
+                    ":HashAlgorithm/sha224",
+                    ":HashAlgorithm/sha256",
+                    ":HashAlgorithm/sha384",
+                    ":HashAlgorithm/sha3_224",
+                    ":HashAlgorithm/sha3_256",
+                    ":HashAlgorithm/sha3_384",
+                    ":HashAlgorithm/sha3_512",
+                    ":HashAlgorithm/sha512"
                 ]
         },
         "prop_PackageVerificationCode_hashValue": {
@@ -2206,9 +2206,9 @@
                         { "$ref": "#/$defs/PresenceType" }
                     ]
                 },
-                { "const": "spdx:Core/PresenceType/no" },
-                { "const": "spdx:Core/PresenceType/noAssertion" },
-                { "const": "spdx:Core/PresenceType/yes" },
+                { "const": "PresenceType_no" },
+                { "const": "PresenceType_noAssertion" },
+                { "const": "PresenceType_yes" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -2257,10 +2257,10 @@
                         { "$ref": "#/$defs/ProcessReadinessType" }
                     ]
                 },
-                { "const": "spdx:Core/ProcessReadinessType/active" },
-                { "const": "spdx:Core/ProcessReadinessType/draft" },
-                { "const": "spdx:Core/ProcessReadinessType/obsoleted" },
-                { "const": "spdx:Core/ProcessReadinessType/other" },
+                { "const": "ProcessReadinessType_active" },
+                { "const": "ProcessReadinessType_draft" },
+                { "const": "ProcessReadinessType_obsoleted" },
+                { "const": "ProcessReadinessType_other" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -2309,21 +2309,21 @@
                         { "$ref": "#/$defs/ProfileIdentifierType" }
                     ]
                 },
-                { "const": "spdx:Core/ProfileIdentifierType/ai" },
-                { "const": "spdx:Core/ProfileIdentifierType/build" },
-                { "const": "spdx:Core/ProfileIdentifierType/core" },
-                { "const": "spdx:Core/ProfileIdentifierType/dataset" },
-                { "const": "spdx:Core/ProfileIdentifierType/expandedLicensing" },
-                { "const": "spdx:Core/ProfileIdentifierType/extension" },
-                { "const": "spdx:Core/ProfileIdentifierType/functionalSafety" },
-                { "const": "spdx:Core/ProfileIdentifierType/hardware" },
-                { "const": "spdx:Core/ProfileIdentifierType/lite" },
-                { "const": "spdx:Core/ProfileIdentifierType/operations" },
-                { "const": "spdx:Core/ProfileIdentifierType/security" },
-                { "const": "spdx:Core/ProfileIdentifierType/service" },
-                { "const": "spdx:Core/ProfileIdentifierType/simpleLicensing" },
-                { "const": "spdx:Core/ProfileIdentifierType/software" },
-                { "const": "spdx:Core/ProfileIdentifierType/supplyChain" },
+                { "const": "ProfileIdentifierType_ai" },
+                { "const": "ProfileIdentifierType_build" },
+                { "const": "ProfileIdentifierType_core" },
+                { "const": "ProfileIdentifierType_dataset" },
+                { "const": "ProfileIdentifierType_expandedLicensing" },
+                { "const": "ProfileIdentifierType_extension" },
+                { "const": "ProfileIdentifierType_functionalSafety" },
+                { "const": "ProfileIdentifierType_hardware" },
+                { "const": "ProfileIdentifierType_lite" },
+                { "const": "ProfileIdentifierType_operations" },
+                { "const": "ProfileIdentifierType_security" },
+                { "const": "ProfileIdentifierType_service" },
+                { "const": "ProfileIdentifierType_simpleLicensing" },
+                { "const": "ProfileIdentifierType_software" },
+                { "const": "ProfileIdentifierType_supplyChain" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -2434,9 +2434,9 @@
         },
         "prop_Relationship_completeness": {
                 "enum": [
-                    "complete",
-                    "incomplete",
-                    "noAssertion"
+                    ":RelationshipCompleteness/complete",
+                    ":RelationshipCompleteness/incomplete",
+                    ":RelationshipCompleteness/noAssertion"
                 ]
         },
         "prop_Relationship_endTime": {
@@ -2455,84 +2455,84 @@
         },
         "prop_Relationship_relationshipType": {
                 "enum": [
-                    "affects",
-                    "amendedBy",
-                    "ancestorOf",
-                    "assumes",
-                    "availableFrom",
-                    "configures",
-                    "conformsTo",
-                    "contains",
-                    "coordinatedBy",
-                    "copiedTo",
-                    "createdBy",
-                    "delegatedTo",
-                    "dependsOn",
-                    "descendantOf",
-                    "describes",
-                    "doesNotAffect",
-                    "evaluatedOn",
-                    "expandsTo",
-                    "exploitCreatedBy",
-                    "finetunedOn",
-                    "fixedBy",
-                    "fixedIn",
-                    "follows",
-                    "foundBy",
-                    "generates",
-                    "hasAddedFile",
-                    "hasAssessmentFor",
-                    "hasAssociatedVulnerability",
-                    "hasConcludedLicense",
-                    "hasContactPoint",
-                    "hasDataFile",
-                    "hasDeclaredLicense",
-                    "hasDeletedFile",
-                    "hasDependencyManifest",
-                    "hasDistributionArtifact",
-                    "hasDocumentation",
-                    "hasDynamicLink",
-                    "hasEvidence",
-                    "hasExample",
-                    "hasHost",
-                    "hasInput",
-                    "hasMetadata",
-                    "hasOptionalComponent",
-                    "hasOptionalDependency",
-                    "hasOutput",
-                    "hasPrerequisite",
-                    "hasProvidedDependency",
-                    "hasRequirement",
-                    "hasResolution",
-                    "hasRoleIn",
-                    "hasSpecification",
-                    "hasStaticLink",
-                    "hasTest",
-                    "hasTestCase",
-                    "hasVariant",
-                    "implementedBy",
-                    "invokedBy",
-                    "locatedAt",
-                    "modifiedBy",
-                    "other",
-                    "packagedBy",
-                    "patchedBy",
-                    "performedBy",
-                    "pretrainedOn",
-                    "providesSupportFor",
-                    "publishedBy",
-                    "reportedBy",
-                    "republishedBy",
-                    "resolved",
-                    "runsOn",
-                    "serializedInArtifact",
-                    "testedOn",
-                    "tracedToDetail",
-                    "trainedOn",
-                    "underInvestigationFor",
-                    "usesTool",
-                    "validatedOn",
-                    "verifiedBy"
+                    ":RelationshipType/affects",
+                    ":RelationshipType/amendedBy",
+                    ":RelationshipType/ancestorOf",
+                    ":RelationshipType/assumes",
+                    ":RelationshipType/availableFrom",
+                    ":RelationshipType/configures",
+                    ":RelationshipType/conformsTo",
+                    ":RelationshipType/contains",
+                    ":RelationshipType/coordinatedBy",
+                    ":RelationshipType/copiedTo",
+                    ":RelationshipType/createdBy",
+                    ":RelationshipType/delegatedTo",
+                    ":RelationshipType/dependsOn",
+                    ":RelationshipType/descendantOf",
+                    ":RelationshipType/describes",
+                    ":RelationshipType/doesNotAffect",
+                    ":RelationshipType/evaluatedOn",
+                    ":RelationshipType/expandsTo",
+                    ":RelationshipType/exploitCreatedBy",
+                    ":RelationshipType/finetunedOn",
+                    ":RelationshipType/fixedBy",
+                    ":RelationshipType/fixedIn",
+                    ":RelationshipType/follows",
+                    ":RelationshipType/foundBy",
+                    ":RelationshipType/generates",
+                    ":RelationshipType/hasAddedFile",
+                    ":RelationshipType/hasAssessmentFor",
+                    ":RelationshipType/hasAssociatedVulnerability",
+                    ":RelationshipType/hasConcludedLicense",
+                    ":RelationshipType/hasContactPoint",
+                    ":RelationshipType/hasDataFile",
+                    ":RelationshipType/hasDeclaredLicense",
+                    ":RelationshipType/hasDeletedFile",
+                    ":RelationshipType/hasDependencyManifest",
+                    ":RelationshipType/hasDistributionArtifact",
+                    ":RelationshipType/hasDocumentation",
+                    ":RelationshipType/hasDynamicLink",
+                    ":RelationshipType/hasEvidence",
+                    ":RelationshipType/hasExample",
+                    ":RelationshipType/hasHost",
+                    ":RelationshipType/hasInput",
+                    ":RelationshipType/hasMetadata",
+                    ":RelationshipType/hasOptionalComponent",
+                    ":RelationshipType/hasOptionalDependency",
+                    ":RelationshipType/hasOutput",
+                    ":RelationshipType/hasPrerequisite",
+                    ":RelationshipType/hasProvidedDependency",
+                    ":RelationshipType/hasRequirement",
+                    ":RelationshipType/hasResolution",
+                    ":RelationshipType/hasRoleIn",
+                    ":RelationshipType/hasSpecification",
+                    ":RelationshipType/hasStaticLink",
+                    ":RelationshipType/hasTest",
+                    ":RelationshipType/hasTestCase",
+                    ":RelationshipType/hasVariant",
+                    ":RelationshipType/implementedBy",
+                    ":RelationshipType/invokedBy",
+                    ":RelationshipType/locatedAt",
+                    ":RelationshipType/modifiedBy",
+                    ":RelationshipType/other",
+                    ":RelationshipType/packagedBy",
+                    ":RelationshipType/patchedBy",
+                    ":RelationshipType/performedBy",
+                    ":RelationshipType/pretrainedOn",
+                    ":RelationshipType/providesSupportFor",
+                    ":RelationshipType/publishedBy",
+                    ":RelationshipType/reportedBy",
+                    ":RelationshipType/republishedBy",
+                    ":RelationshipType/resolved",
+                    ":RelationshipType/runsOn",
+                    ":RelationshipType/serializedInArtifact",
+                    ":RelationshipType/testedOn",
+                    ":RelationshipType/tracedToDetail",
+                    ":RelationshipType/trainedOn",
+                    ":RelationshipType/underInvestigationFor",
+                    ":RelationshipType/usesTool",
+                    ":RelationshipType/validatedOn",
+                    ":RelationshipType/verifiedBy"
                 ]
         },
         "prop_Relationship_startTime": {
@@ -2584,9 +2584,9 @@
                         { "$ref": "#/$defs/RelationshipCompleteness" }
                     ]
                 },
-                { "const": "spdx:Core/RelationshipCompleteness/complete" },
-                { "const": "spdx:Core/RelationshipCompleteness/incomplete" },
-                { "const": "spdx:Core/RelationshipCompleteness/noAssertion" },
+                { "const": "RelationshipCompleteness_complete" },
+                { "const": "RelationshipCompleteness_incomplete" },
+                { "const": "RelationshipCompleteness_noAssertion" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -2635,84 +2635,84 @@
                         { "$ref": "#/$defs/RelationshipType" }
                     ]
                 },
-                { "const": "spdx:Core/RelationshipType/affects" },
-                { "const": "spdx:Core/RelationshipType/amendedBy" },
-                { "const": "spdx:Core/RelationshipType/ancestorOf" },
-                { "const": "spdx:Core/RelationshipType/assumes" },
-                { "const": "spdx:Core/RelationshipType/availableFrom" },
-                { "const": "spdx:Core/RelationshipType/configures" },
-                { "const": "spdx:Core/RelationshipType/conformsTo" },
-                { "const": "spdx:Core/RelationshipType/contains" },
-                { "const": "spdx:Core/RelationshipType/coordinatedBy" },
-                { "const": "spdx:Core/RelationshipType/copiedTo" },
-                { "const": "spdx:Core/RelationshipType/createdBy" },
-                { "const": "spdx:Core/RelationshipType/delegatedTo" },
-                { "const": "spdx:Core/RelationshipType/dependsOn" },
-                { "const": "spdx:Core/RelationshipType/descendantOf" },
-                { "const": "spdx:Core/RelationshipType/describes" },
-                { "const": "spdx:Core/RelationshipType/doesNotAffect" },
-                { "const": "spdx:Core/RelationshipType/evaluatedOn" },
-                { "const": "spdx:Core/RelationshipType/expandsTo" },
-                { "const": "spdx:Core/RelationshipType/exploitCreatedBy" },
-                { "const": "spdx:Core/RelationshipType/finetunedOn" },
-                { "const": "spdx:Core/RelationshipType/fixedBy" },
-                { "const": "spdx:Core/RelationshipType/fixedIn" },
-                { "const": "spdx:Core/RelationshipType/follows" },
-                { "const": "spdx:Core/RelationshipType/foundBy" },
-                { "const": "spdx:Core/RelationshipType/generates" },
-                { "const": "spdx:Core/RelationshipType/hasAddedFile" },
-                { "const": "spdx:Core/RelationshipType/hasAssessmentFor" },
-                { "const": "spdx:Core/RelationshipType/hasAssociatedVulnerability" },
-                { "const": "spdx:Core/RelationshipType/hasConcludedLicense" },
-                { "const": "spdx:Core/RelationshipType/hasContactPoint" },
-                { "const": "spdx:Core/RelationshipType/hasDataFile" },
-                { "const": "spdx:Core/RelationshipType/hasDeclaredLicense" },
-                { "const": "spdx:Core/RelationshipType/hasDeletedFile" },
-                { "const": "spdx:Core/RelationshipType/hasDependencyManifest" },
-                { "const": "spdx:Core/RelationshipType/hasDistributionArtifact" },
-                { "const": "spdx:Core/RelationshipType/hasDocumentation" },
-                { "const": "spdx:Core/RelationshipType/hasDynamicLink" },
-                { "const": "spdx:Core/RelationshipType/hasEvidence" },
-                { "const": "spdx:Core/RelationshipType/hasExample" },
-                { "const": "spdx:Core/RelationshipType/hasHost" },
-                { "const": "spdx:Core/RelationshipType/hasInput" },
-                { "const": "spdx:Core/RelationshipType/hasMetadata" },
-                { "const": "spdx:Core/RelationshipType/hasOptionalComponent" },
-                { "const": "spdx:Core/RelationshipType/hasOptionalDependency" },
-                { "const": "spdx:Core/RelationshipType/hasOutput" },
-                { "const": "spdx:Core/RelationshipType/hasPrerequisite" },
-                { "const": "spdx:Core/RelationshipType/hasProvidedDependency" },
-                { "const": "spdx:Core/RelationshipType/hasRequirement" },
-                { "const": "spdx:Core/RelationshipType/hasResolution" },
-                { "const": "spdx:Core/RelationshipType/hasRoleIn" },
-                { "const": "spdx:Core/RelationshipType/hasSpecification" },
-                { "const": "spdx:Core/RelationshipType/hasStaticLink" },
-                { "const": "spdx:Core/RelationshipType/hasTest" },
-                { "const": "spdx:Core/RelationshipType/hasTestCase" },
-                { "const": "spdx:Core/RelationshipType/hasVariant" },
-                { "const": "spdx:Core/RelationshipType/implementedBy" },
-                { "const": "spdx:Core/RelationshipType/invokedBy" },
-                { "const": "spdx:Core/RelationshipType/locatedAt" },
-                { "const": "spdx:Core/RelationshipType/modifiedBy" },
-                { "const": "spdx:Core/RelationshipType/other" },
-                { "const": "spdx:Core/RelationshipType/packagedBy" },
-                { "const": "spdx:Core/RelationshipType/patchedBy" },
-                { "const": "spdx:Core/RelationshipType/performedBy" },
-                { "const": "spdx:Core/RelationshipType/pretrainedOn" },
-                { "const": "spdx:Core/RelationshipType/providesSupportFor" },
-                { "const": "spdx:Core/RelationshipType/publishedBy" },
-                { "const": "spdx:Core/RelationshipType/reportedBy" },
-                { "const": "spdx:Core/RelationshipType/republishedBy" },
-                { "const": "spdx:Core/RelationshipType/resolved" },
-                { "const": "spdx:Core/RelationshipType/runsOn" },
-                { "const": "spdx:Core/RelationshipType/serializedInArtifact" },
-                { "const": "spdx:Core/RelationshipType/testedOn" },
-                { "const": "spdx:Core/RelationshipType/tracedToDetail" },
-                { "const": "spdx:Core/RelationshipType/trainedOn" },
-                { "const": "spdx:Core/RelationshipType/underInvestigationFor" },
-                { "const": "spdx:Core/RelationshipType/usesTool" },
-                { "const": "spdx:Core/RelationshipType/validatedOn" },
-                { "const": "spdx:Core/RelationshipType/verifiedBy" },
+                { "const": "RelationshipType_affects" },
+                { "const": "RelationshipType_amendedBy" },
+                { "const": "RelationshipType_ancestorOf" },
+                { "const": "RelationshipType_assumes" },
+                { "const": "RelationshipType_availableFrom" },
+                { "const": "RelationshipType_configures" },
+                { "const": "RelationshipType_conformsTo" },
+                { "const": "RelationshipType_contains" },
+                { "const": "RelationshipType_coordinatedBy" },
+                { "const": "RelationshipType_copiedTo" },
+                { "const": "RelationshipType_createdBy" },
+                { "const": "RelationshipType_delegatedTo" },
+                { "const": "RelationshipType_dependsOn" },
+                { "const": "RelationshipType_descendantOf" },
+                { "const": "RelationshipType_describes" },
+                { "const": "RelationshipType_doesNotAffect" },
+                { "const": "RelationshipType_evaluatedOn" },
+                { "const": "RelationshipType_expandsTo" },
+                { "const": "RelationshipType_exploitCreatedBy" },
+                { "const": "RelationshipType_finetunedOn" },
+                { "const": "RelationshipType_fixedBy" },
+                { "const": "RelationshipType_fixedIn" },
+                { "const": "RelationshipType_follows" },
+                { "const": "RelationshipType_foundBy" },
+                { "const": "RelationshipType_generates" },
+                { "const": "RelationshipType_hasAddedFile" },
+                { "const": "RelationshipType_hasAssessmentFor" },
+                { "const": "RelationshipType_hasAssociatedVulnerability" },
+                { "const": "RelationshipType_hasConcludedLicense" },
+                { "const": "RelationshipType_hasContactPoint" },
+                { "const": "RelationshipType_hasDataFile" },
+                { "const": "RelationshipType_hasDeclaredLicense" },
+                { "const": "RelationshipType_hasDeletedFile" },
+                { "const": "RelationshipType_hasDependencyManifest" },
+                { "const": "RelationshipType_hasDistributionArtifact" },
+                { "const": "RelationshipType_hasDocumentation" },
+                { "const": "RelationshipType_hasDynamicLink" },
+                { "const": "RelationshipType_hasEvidence" },
+                { "const": "RelationshipType_hasExample" },
+                { "const": "RelationshipType_hasHost" },
+                { "const": "RelationshipType_hasInput" },
+                { "const": "RelationshipType_hasMetadata" },
+                { "const": "RelationshipType_hasOptionalComponent" },
+                { "const": "RelationshipType_hasOptionalDependency" },
+                { "const": "RelationshipType_hasOutput" },
+                { "const": "RelationshipType_hasPrerequisite" },
+                { "const": "RelationshipType_hasProvidedDependency" },
+                { "const": "RelationshipType_hasRequirement" },
+                { "const": "RelationshipType_hasResolution" },
+                { "const": "RelationshipType_hasRoleIn" },
+                { "const": "RelationshipType_hasSpecification" },
+                { "const": "RelationshipType_hasStaticLink" },
+                { "const": "RelationshipType_hasTest" },
+                { "const": "RelationshipType_hasTestCase" },
+                { "const": "RelationshipType_hasVariant" },
+                { "const": "RelationshipType_implementedBy" },
+                { "const": "RelationshipType_invokedBy" },
+                { "const": "RelationshipType_locatedAt" },
+                { "const": "RelationshipType_modifiedBy" },
+                { "const": "RelationshipType_other" },
+                { "const": "RelationshipType_packagedBy" },
+                { "const": "RelationshipType_patchedBy" },
+                { "const": "RelationshipType_performedBy" },
+                { "const": "RelationshipType_pretrainedOn" },
+                { "const": "RelationshipType_providesSupportFor" },
+                { "const": "RelationshipType_publishedBy" },
+                { "const": "RelationshipType_reportedBy" },
+                { "const": "RelationshipType_republishedBy" },
+                { "const": "RelationshipType_resolved" },
+                { "const": "RelationshipType_runsOn" },
+                { "const": "RelationshipType_serializedInArtifact" },
+                { "const": "RelationshipType_testedOn" },
+                { "const": "RelationshipType_tracedToDetail" },
+                { "const": "RelationshipType_trainedOn" },
+                { "const": "RelationshipType_underInvestigationFor" },
+                { "const": "RelationshipType_usesTool" },
+                { "const": "RelationshipType_validatedOn" },
+                { "const": "RelationshipType_verifiedBy" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -2806,14 +2806,14 @@
         },
         "prop_Requirement_devLifecycleStage": {
                 "enum": [
-                    "spdx:Core/LifecycleScopeType/build",
-                    "spdx:Core/LifecycleScopeType/decommission",
-                    "spdx:Core/LifecycleScopeType/design",
-                    "spdx:Core/LifecycleScopeType/development",
-                    "spdx:Core/LifecycleScopeType/other",
-                    "spdx:Core/LifecycleScopeType/runtime",
-                    "spdx:Core/LifecycleScopeType/test",
-                    "spdx:Core/LifecycleScopeType/update"
+                    ":LifecycleScopeType/build",
+                    ":LifecycleScopeType/decommission",
+                    ":LifecycleScopeType/design",
+                    ":LifecycleScopeType/development",
+                    ":LifecycleScopeType/other",
+                    ":LifecycleScopeType/runtime",
+                    ":LifecycleScopeType/test",
+                    ":LifecycleScopeType/update"
                 ]
         },
         "prop_Requirement_rationale": {
@@ -3125,10 +3125,10 @@
                         { "$ref": "#/$defs/SpecificationType" }
                     ]
                 },
-                { "const": "spdx:Core/SpecificationType/formalStandard" },
-                { "const": "spdx:Core/SpecificationType/other" },
-                { "const": "spdx:Core/SpecificationType/regulation" },
-                { "const": "spdx:Core/SpecificationType/specification" },
+                { "const": "SpecificationType_formalStandard" },
+                { "const": "SpecificationType_other" },
+                { "const": "SpecificationType_regulation" },
+                { "const": "SpecificationType_specification" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -3199,13 +3199,13 @@
         },
         "prop_SupportRelationship_supportLevel": {
                 "enum": [
-                    "deployed",
-                    "development",
-                    "endOfSupport",
-                    "limitedSupport",
-                    "noAssertion",
-                    "noSupport",
-                    "support"
+                    ":SupportType/deployed",
+                    ":SupportType/development",
+                    ":SupportType/endOfSupport",
+                    ":SupportType/limitedSupport",
+                    ":SupportType/noAssertion",
+                    ":SupportType/noSupport",
+                    ":SupportType/support"
                 ]
         },
         "SupportType": {
@@ -3243,13 +3243,13 @@
                         { "$ref": "#/$defs/SupportType" }
                     ]
                 },
-                { "const": "spdx:Core/SupportType/deployed" },
-                { "const": "spdx:Core/SupportType/development" },
-                { "const": "spdx:Core/SupportType/endOfSupport" },
-                { "const": "spdx:Core/SupportType/limitedSupport" },
-                { "const": "spdx:Core/SupportType/noAssertion" },
-                { "const": "spdx:Core/SupportType/noSupport" },
-                { "const": "spdx:Core/SupportType/support" },
+                { "const": "SupportType_deployed" },
+                { "const": "SupportType_development" },
+                { "const": "SupportType_endOfSupport" },
+                { "const": "SupportType_limitedSupport" },
+                { "const": "SupportType_noAssertion" },
+                { "const": "SupportType_noSupport" },
+                { "const": "SupportType_support" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -3419,10 +3419,10 @@
                         { "$ref": "#/$defs/dataset_ConfidentialityLevelType" }
                     ]
                 },
-                { "const": "spdx:Dataset/ConfidentialityLevelType/amber" },
-                { "const": "spdx:Dataset/ConfidentialityLevelType/clear" },
-                { "const": "spdx:Dataset/ConfidentialityLevelType/green" },
-                { "const": "spdx:Dataset/ConfidentialityLevelType/red" },
+                { "const": "ConfidentialityLevelType_amber" },
+                { "const": "ConfidentialityLevelType_clear" },
+                { "const": "ConfidentialityLevelType_green" },
+                { "const": "ConfidentialityLevelType_red" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -3471,11 +3471,11 @@
                         { "$ref": "#/$defs/dataset_DatasetAvailabilityType" }
                     ]
                 },
-                { "const": "spdx:Dataset/DatasetAvailabilityType/clickthrough" },
-                { "const": "spdx:Dataset/DatasetAvailabilityType/directDownload" },
-                { "const": "spdx:Dataset/DatasetAvailabilityType/query" },
-                { "const": "spdx:Dataset/DatasetAvailabilityType/registration" },
-                { "const": "spdx:Dataset/DatasetAvailabilityType/scrapingScript" },
+                { "const": "DatasetAvailabilityType_clickthrough" },
+                { "const": "DatasetAvailabilityType_directDownload" },
+                { "const": "DatasetAvailabilityType_query" },
+                { "const": "DatasetAvailabilityType_registration" },
+                { "const": "DatasetAvailabilityType_scrapingScript" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -3524,20 +3524,20 @@
                         { "$ref": "#/$defs/dataset_DatasetType" }
                     ]
                 },
-                { "const": "spdx:Dataset/DatasetType/audio" },
-                { "const": "spdx:Dataset/DatasetType/categorical" },
-                { "const": "spdx:Dataset/DatasetType/graph" },
-                { "const": "spdx:Dataset/DatasetType/image" },
-                { "const": "spdx:Dataset/DatasetType/noAssertion" },
-                { "const": "spdx:Dataset/DatasetType/numeric" },
-                { "const": "spdx:Dataset/DatasetType/other" },
-                { "const": "spdx:Dataset/DatasetType/sensor" },
-                { "const": "spdx:Dataset/DatasetType/structured" },
-                { "const": "spdx:Dataset/DatasetType/syntactic" },
-                { "const": "spdx:Dataset/DatasetType/text" },
-                { "const": "spdx:Dataset/DatasetType/timeseries" },
-                { "const": "spdx:Dataset/DatasetType/timestamp" },
-                { "const": "spdx:Dataset/DatasetType/video" },
+                { "const": "DatasetType_audio" },
+                { "const": "DatasetType_categorical" },
+                { "const": "DatasetType_graph" },
+                { "const": "DatasetType_image" },
+                { "const": "DatasetType_noAssertion" },
+                { "const": "DatasetType_numeric" },
+                { "const": "DatasetType_other" },
+                { "const": "DatasetType_sensor" },
+                { "const": "DatasetType_structured" },
+                { "const": "DatasetType_syntactic" },
+                { "const": "DatasetType_text" },
+                { "const": "DatasetType_timeseries" },
+                { "const": "DatasetType_timestamp" },
+                { "const": "DatasetType_video" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -3941,9 +3941,9 @@
         },
         "prop_functionalsafety_EvaluationResult_functionalsafety_evaluation": {
                 "enum": [
-                    "spdx:FunctionalSafety/EvaluationResultType/fail",
-                    "spdx:FunctionalSafety/EvaluationResultType/inconclusive",
-                    "spdx:FunctionalSafety/EvaluationResultType/pass"
+                    "functionalsafety_:EvaluationResultType/fail",
+                    "functionalsafety_:EvaluationResultType/inconclusive",
+                    "functionalsafety_:EvaluationResultType/pass"
                 ]
         },
         "prop_functionalsafety_EvaluationResult_functionalsafety_evaluationBasedOn": {
@@ -3984,9 +3984,9 @@
                         { "$ref": "#/$defs/functionalsafety_EvaluationResultType" }
                     ]
                 },
-                { "const": "spdx:FunctionalSafety/EvaluationResultType/fail" },
-                { "const": "spdx:FunctionalSafety/EvaluationResultType/inconclusive" },
-                { "const": "spdx:FunctionalSafety/EvaluationResultType/pass" },
+                { "const": "EvaluationResultType_fail" },
+                { "const": "EvaluationResultType_inconclusive" },
+                { "const": "EvaluationResultType_pass" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4064,11 +4064,11 @@
         },
         "prop_functionalsafety_EvidenceRelationship_functionalsafety_evidenceCategory": {
                 "enum": [
-                    "log",
-                    "observation",
-                    "other",
-                    "recording",
-                    "report"
+                    "functionalsafety_:EvidenceType/log",
+                    "functionalsafety_:EvidenceType/observation",
+                    "functionalsafety_:EvidenceType/other",
+                    "functionalsafety_:EvidenceType/recording",
+                    "functionalsafety_:EvidenceType/report"
                 ]
         },
         "prop_functionalsafety_EvidenceRelationship_functionalsafety_evidenceUID": {
@@ -4109,11 +4109,11 @@
                         { "$ref": "#/$defs/functionalsafety_EvidenceType" }
                     ]
                 },
-                { "const": "spdx:FunctionalSafety/EvidenceType/log" },
-                { "const": "spdx:FunctionalSafety/EvidenceType/observation" },
-                { "const": "spdx:FunctionalSafety/EvidenceType/other" },
-                { "const": "spdx:FunctionalSafety/EvidenceType/recording" },
-                { "const": "spdx:FunctionalSafety/EvidenceType/report" },
+                { "const": "EvidenceType_log" },
+                { "const": "EvidenceType_observation" },
+                { "const": "EvidenceType_other" },
+                { "const": "EvidenceType_recording" },
+                { "const": "EvidenceType_report" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4217,14 +4217,14 @@
         },
         "prop_functionalsafety_RequirementVerification_functionalsafety_verificationMethod": {
                 "enum": [
-                    "spdx:FunctionalSafety/VerificationType/analysis",
-                    "spdx:FunctionalSafety/VerificationType/assessment",
-                    "spdx:FunctionalSafety/VerificationType/audit",
-                    "spdx:FunctionalSafety/VerificationType/demonstration",
-                    "spdx:FunctionalSafety/VerificationType/inspection",
-                    "spdx:FunctionalSafety/VerificationType/other",
-                    "spdx:FunctionalSafety/VerificationType/review",
-                    "spdx:FunctionalSafety/VerificationType/test"
+                    "functionalsafety_:VerificationType/analysis",
+                    "functionalsafety_:VerificationType/assessment",
+                    "functionalsafety_:VerificationType/audit",
+                    "functionalsafety_:VerificationType/demonstration",
+                    "functionalsafety_:VerificationType/inspection",
+                    "functionalsafety_:VerificationType/other",
+                    "functionalsafety_:VerificationType/review",
+                    "functionalsafety_:VerificationType/test"
                 ]
         },
         "prop_functionalsafety_RequirementVerification_functionalsafety_verificationPostcondition": {
@@ -4271,14 +4271,14 @@
                         { "$ref": "#/$defs/functionalsafety_VerificationType" }
                     ]
                 },
-                { "const": "spdx:FunctionalSafety/VerificationType/analysis" },
-                { "const": "spdx:FunctionalSafety/VerificationType/assessment" },
-                { "const": "spdx:FunctionalSafety/VerificationType/audit" },
-                { "const": "spdx:FunctionalSafety/VerificationType/demonstration" },
-                { "const": "spdx:FunctionalSafety/VerificationType/inspection" },
-                { "const": "spdx:FunctionalSafety/VerificationType/other" },
-                { "const": "spdx:FunctionalSafety/VerificationType/review" },
-                { "const": "spdx:FunctionalSafety/VerificationType/test" },
+                { "const": "VerificationType_analysis" },
+                { "const": "VerificationType_assessment" },
+                { "const": "VerificationType_audit" },
+                { "const": "VerificationType_demonstration" },
+                { "const": "VerificationType_inspection" },
+                { "const": "VerificationType_other" },
+                { "const": "VerificationType_review" },
+                { "const": "VerificationType_test" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4398,9 +4398,9 @@
                         { "$ref": "#/$defs/hardware_VirtualHardwareModelType" }
                     ]
                 },
-                { "const": "spdx:Hardware/VirtualHardwareModelType/cycle" },
-                { "const": "spdx:Hardware/VirtualHardwareModelType/function" },
-                { "const": "spdx:Hardware/VirtualHardwareModelType/other" },
+                { "const": "VirtualHardwareModelType_cycle" },
+                { "const": "VirtualHardwareModelType_function" },
+                { "const": "VirtualHardwareModelType_other" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4534,11 +4534,11 @@
                         { "$ref": "#/$defs/security_CvssSeverityType" }
                     ]
                 },
-                { "const": "spdx:Security/CvssSeverityType/critical" },
-                { "const": "spdx:Security/CvssSeverityType/high" },
-                { "const": "spdx:Security/CvssSeverityType/low" },
-                { "const": "spdx:Security/CvssSeverityType/medium" },
-                { "const": "spdx:Security/CvssSeverityType/none" },
+                { "const": "CvssSeverityType_critical" },
+                { "const": "CvssSeverityType_high" },
+                { "const": "CvssSeverityType_low" },
+                { "const": "CvssSeverityType_medium" },
+                { "const": "CvssSeverityType_none" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4587,8 +4587,8 @@
                         { "$ref": "#/$defs/security_ExploitCatalogType" }
                     ]
                 },
-                { "const": "spdx:Security/ExploitCatalogType/kev" },
-                { "const": "spdx:Security/ExploitCatalogType/other" },
+                { "const": "ExploitCatalogType_kev" },
+                { "const": "ExploitCatalogType_other" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4637,10 +4637,10 @@
                         { "$ref": "#/$defs/security_SsvcDecisionType" }
                     ]
                 },
-                { "const": "spdx:Security/SsvcDecisionType/act" },
-                { "const": "spdx:Security/SsvcDecisionType/attend" },
-                { "const": "spdx:Security/SsvcDecisionType/track" },
-                { "const": "spdx:Security/SsvcDecisionType/trackStar" },
+                { "const": "SsvcDecisionType_act" },
+                { "const": "SsvcDecisionType_attend" },
+                { "const": "SsvcDecisionType_track" },
+                { "const": "SsvcDecisionType_trackStar" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4689,11 +4689,11 @@
                         { "$ref": "#/$defs/security_VexJustificationType" }
                     ]
                 },
-                { "const": "spdx:Security/VexJustificationType/componentNotPresent" },
-                { "const": "spdx:Security/VexJustificationType/inlineMitigationsAlreadyExist" },
-                { "const": "spdx:Security/VexJustificationType/vulnerableCodeCannotBeControlledByAdversary" },
-                { "const": "spdx:Security/VexJustificationType/vulnerableCodeNotInExecutePath" },
-                { "const": "spdx:Security/VexJustificationType/vulnerableCodeNotPresent" },
+                { "const": "VexJustificationType_componentNotPresent" },
+                { "const": "VexJustificationType_inlineMitigationsAlreadyExist" },
+                { "const": "VexJustificationType_vulnerableCodeCannotBeControlledByAdversary" },
+                { "const": "VexJustificationType_vulnerableCodeNotInExecutePath" },
+                { "const": "VexJustificationType_vulnerableCodeNotPresent" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4827,10 +4827,10 @@
                         { "$ref": "#/$defs/service_AuthenticationProtocolType" }
                     ]
                 },
-                { "const": "spdx:Service/AuthenticationProtocolType/crl" },
-                { "const": "spdx:Service/AuthenticationProtocolType/ocsp" },
-                { "const": "spdx:Service/AuthenticationProtocolType/other" },
-                { "const": "spdx:Service/AuthenticationProtocolType/tls" },
+                { "const": "AuthenticationProtocolType_crl" },
+                { "const": "AuthenticationProtocolType_ocsp" },
+                { "const": "AuthenticationProtocolType_other" },
+                { "const": "AuthenticationProtocolType_tls" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -4932,10 +4932,10 @@
         },
         "prop_service_SoftwareService_service_serverAuthenticationProtocol": {
                 "enum": [
-                    "crl",
-                    "ocsp",
-                    "other",
-                    "tls"
+                    "service_:AuthenticationProtocolType/crl",
+                    "service_:AuthenticationProtocolType/ocsp",
+                    "service_:AuthenticationProtocolType/other",
+                    "service_:AuthenticationProtocolType/tls"
                 ]
         },
         "prop_service_SoftwareService_service_serviceHostingCountry": {
@@ -5182,8 +5182,8 @@
         },
         "prop_software_ContentIdentifier_software_contentIdentifierType": {
                 "enum": [
-                    "gitoid",
-                    "swhid"
+                    "software_:ContentIdentifierType/gitoid",
+                    "software_:ContentIdentifierType/swhid"
                 ]
         },
         "prop_software_ContentIdentifier_software_contentIdentifierValue": {
@@ -5224,8 +5224,8 @@
                         { "$ref": "#/$defs/software_ContentIdentifierType" }
                     ]
                 },
-                { "const": "spdx:Software/ContentIdentifierType/gitoid" },
-                { "const": "spdx:Software/ContentIdentifierType/swhid" },
+                { "const": "ContentIdentifierType_gitoid" },
+                { "const": "ContentIdentifierType_swhid" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -5274,9 +5274,9 @@
                         { "$ref": "#/$defs/software_FileKindType" }
                     ]
                 },
-                { "const": "spdx:Software/FileKindType/directory" },
-                { "const": "spdx:Software/FileKindType/file" },
-                { "const": "spdx:Software/FileKindType/symlink" },
+                { "const": "FileKindType_directory" },
+                { "const": "FileKindType_file" },
+                { "const": "FileKindType_symlink" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -5325,12 +5325,12 @@
                         { "$ref": "#/$defs/software_SbomType" }
                     ]
                 },
-                { "const": "spdx:Software/SbomType/analyzed" },
-                { "const": "spdx:Software/SbomType/build" },
-                { "const": "spdx:Software/SbomType/deployed" },
-                { "const": "spdx:Software/SbomType/design" },
-                { "const": "spdx:Software/SbomType/runtime" },
-                { "const": "spdx:Software/SbomType/source" },
+                { "const": "SbomType_analyzed" },
+                { "const": "SbomType_build" },
+                { "const": "SbomType_deployed" },
+                { "const": "SbomType_design" },
+                { "const": "SbomType_runtime" },
+                { "const": "SbomType_source" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -5379,35 +5379,35 @@
                         { "$ref": "#/$defs/software_SoftwarePurpose" }
                     ]
                 },
-                { "const": "spdx:Software/SoftwarePurpose/application" },
-                { "const": "spdx:Software/SoftwarePurpose/archive" },
-                { "const": "spdx:Software/SoftwarePurpose/bom" },
-                { "const": "spdx:Software/SoftwarePurpose/configuration" },
-                { "const": "spdx:Software/SoftwarePurpose/container" },
-                { "const": "spdx:Software/SoftwarePurpose/data" },
-                { "const": "spdx:Software/SoftwarePurpose/device" },
-                { "const": "spdx:Software/SoftwarePurpose/deviceDriver" },
-                { "const": "spdx:Software/SoftwarePurpose/diskImage" },
-                { "const": "spdx:Software/SoftwarePurpose/documentation" },
-                { "const": "spdx:Software/SoftwarePurpose/evidence" },
-                { "const": "spdx:Software/SoftwarePurpose/executable" },
-                { "const": "spdx:Software/SoftwarePurpose/file" },
-                { "const": "spdx:Software/SoftwarePurpose/filesystemImage" },
-                { "const": "spdx:Software/SoftwarePurpose/firmware" },
-                { "const": "spdx:Software/SoftwarePurpose/framework" },
-                { "const": "spdx:Software/SoftwarePurpose/install" },
-                { "const": "spdx:Software/SoftwarePurpose/library" },
-                { "const": "spdx:Software/SoftwarePurpose/manifest" },
-                { "const": "spdx:Software/SoftwarePurpose/model" },
-                { "const": "spdx:Software/SoftwarePurpose/module" },
-                { "const": "spdx:Software/SoftwarePurpose/operatingSystem" },
-                { "const": "spdx:Software/SoftwarePurpose/other" },
-                { "const": "spdx:Software/SoftwarePurpose/patch" },
-                { "const": "spdx:Software/SoftwarePurpose/platform" },
-                { "const": "spdx:Software/SoftwarePurpose/requirement" },
-                { "const": "spdx:Software/SoftwarePurpose/source" },
-                { "const": "spdx:Software/SoftwarePurpose/specification" },
-                { "const": "spdx:Software/SoftwarePurpose/test" },
+                { "const": "SoftwarePurpose_application" },
+                { "const": "SoftwarePurpose_archive" },
+                { "const": "SoftwarePurpose_bom" },
+                { "const": "SoftwarePurpose_configuration" },
+                { "const": "SoftwarePurpose_container" },
+                { "const": "SoftwarePurpose_data" },
+                { "const": "SoftwarePurpose_device" },
+                { "const": "SoftwarePurpose_deviceDriver" },
+                { "const": "SoftwarePurpose_diskImage" },
+                { "const": "SoftwarePurpose_documentation" },
+                { "const": "SoftwarePurpose_evidence" },
+                { "const": "SoftwarePurpose_executable" },
+                { "const": "SoftwarePurpose_file" },
+                { "const": "SoftwarePurpose_filesystemImage" },
+                { "const": "SoftwarePurpose_firmware" },
+                { "const": "SoftwarePurpose_framework" },
+                { "const": "SoftwarePurpose_install" },
+                { "const": "SoftwarePurpose_library" },
+                { "const": "SoftwarePurpose_manifest" },
+                { "const": "SoftwarePurpose_model" },
+                { "const": "SoftwarePurpose_module" },
+                { "const": "SoftwarePurpose_operatingSystem" },
+                { "const": "SoftwarePurpose_other" },
+                { "const": "SoftwarePurpose_patch" },
+                { "const": "SoftwarePurpose_platform" },
+                { "const": "SoftwarePurpose_requirement" },
+                { "const": "SoftwarePurpose_source" },
+                { "const": "SoftwarePurpose_specification" },
+                { "const": "SoftwarePurpose_test" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -5456,8 +5456,8 @@
                         { "$ref": "#/$defs/supplychain_ResponsibilityType" }
                     ]
                 },
-                { "const": "spdx:SupplyChain/ResponsibilityType/custody" },
-                { "const": "spdx:SupplyChain/ResponsibilityType/ownership" },
+                { "const": "ResponsibilityType_custody" },
+                { "const": "ResponsibilityType_ownership" },
                 { "$ref": "#/$defs/BlankNodeOrIRI" }
             ]
         },
@@ -5776,8 +5776,8 @@
         },
         "prop_Annotation_annotationType": {
                 "enum": [
-                    "other",
-                    "review"
+                    ":AnnotationType/other",
+                    ":AnnotationType/review"
                 ]
         },
         "prop_Annotation_contentType": {
@@ -5938,13 +5938,13 @@
         },
         "prop_Artifact_supportLevel": {
                 "enum": [
-                    "deployed",
-                    "development",
-                    "endOfSupport",
-                    "limitedSupport",
-                    "noAssertion",
-                    "noSupport",
-                    "support"
+                    ":SupportType/deployed",
+                    ":SupportType/development",
+                    ":SupportType/endOfSupport",
+                    ":SupportType/limitedSupport",
+                    ":SupportType/noAssertion",
+                    ":SupportType/noSupport",
+                    ":SupportType/support"
                 ]
         },
         "prop_Artifact_validUntilTime": {
@@ -6073,10 +6073,10 @@
         },
         "prop_ContactPointRelationship_contactType": {
                 "enum": [
-                    "compliance",
-                    "other",
-                    "securityVulnerability",
-                    "support"
+                    ":ContactPointRelationshipType/compliance",
+                    ":ContactPointRelationshipType/other",
+                    ":ContactPointRelationshipType/securityVulnerability",
+                    ":ContactPointRelationshipType/support"
                 ]
         },
         "DefinedProcess_derived": {
@@ -6129,10 +6129,10 @@
         },
         "prop_DefinedProcess_processReadiness": {
                 "enum": [
-                    "spdx:Core/ProcessReadinessType/active",
-                    "spdx:Core/ProcessReadinessType/draft",
-                    "spdx:Core/ProcessReadinessType/obsoleted",
-                    "spdx:Core/ProcessReadinessType/other"
+                    ":ProcessReadinessType/active",
+                    ":ProcessReadinessType/draft",
+                    ":ProcessReadinessType/obsoleted",
+                    ":ProcessReadinessType/other"
                 ]
         },
         "prop_DefinedProcess_rationale": {
@@ -6201,28 +6201,28 @@
         },
         "prop_Hash_algorithm": {
                 "enum": [
-                    "adler32",
-                    "blake2b256",
-                    "blake2b384",
-                    "blake2b512",
-                    "blake3",
-                    "crystalsDilithium",
-                    "crystalsKyber",
-                    "falcon",
-                    "md2",
-                    "md4",
-                    "md5",
-                    "md6",
-                    "other",
-                    "sha1",
-                    "sha224",
-                    "sha256",
-                    "sha384",
-                    "sha3_224",
-                    "sha3_256",
-                    "sha3_384",
-                    "sha3_512",
-                    "sha512"
+                    ":HashAlgorithm/adler32",
+                    ":HashAlgorithm/blake2b256",
+                    ":HashAlgorithm/blake2b384",
+                    ":HashAlgorithm/blake2b512",
+                    ":HashAlgorithm/blake3",
+                    ":HashAlgorithm/crystalsDilithium",
+                    ":HashAlgorithm/crystalsKyber",
+                    ":HashAlgorithm/falcon",
+                    ":HashAlgorithm/md2",
+                    ":HashAlgorithm/md4",
+                    ":HashAlgorithm/md5",
+                    ":HashAlgorithm/md6",
+                    ":HashAlgorithm/other",
+                    ":HashAlgorithm/sha1",
+                    ":HashAlgorithm/sha224",
+                    ":HashAlgorithm/sha256",
+                    ":HashAlgorithm/sha384",
+                    ":HashAlgorithm/sha3_224",
+                    ":HashAlgorithm/sha3_256",
+                    ":HashAlgorithm/sha3_384",
+                    ":HashAlgorithm/sha3_512",
+                    ":HashAlgorithm/sha512"
                 ]
         },
         "prop_Hash_hashValue": {
@@ -6282,14 +6282,14 @@
         },
         "prop_LifecycleScopedRelationship_scope": {
                 "enum": [
-                    "build",
-                    "decommission",
-                    "design",
-                    "development",
-                    "other",
-                    "runtime",
-                    "test",
-                    "update"
+                    ":LifecycleScopeType/build",
+                    ":LifecycleScopeType/decommission",
+                    ":LifecycleScopeType/design",
+                    ":LifecycleScopeType/development",
+                    ":LifecycleScopeType/other",
+                    ":LifecycleScopeType/runtime",
+                    ":LifecycleScopeType/test",
+                    ":LifecycleScopeType/update"
                 ]
         },
         "MeasureOfLength": {
@@ -6605,10 +6605,10 @@
         },
         "prop_Specification_specType": {
                 "enum": [
-                    "spdx:Core/SpecificationType/formalStandard",
-                    "spdx:Core/SpecificationType/other",
-                    "spdx:Core/SpecificationType/regulation",
-                    "spdx:Core/SpecificationType/specification"
+                    ":SpecificationType/formalStandard",
+                    ":SpecificationType/other",
+                    ":SpecificationType/regulation",
+                    ":SpecificationType/specification"
                 ]
         },
         "expandedlicensing_ConjunctiveLicenseSet": {
@@ -7540,9 +7540,9 @@
         },
         "prop_hardware_VirtualHardware_hardware_virtualHardwareModel": {
                 "enum": [
-                    "spdx:Hardware/VirtualHardwareModelType/cycle",
-                    "spdx:Hardware/VirtualHardwareModelType/function",
-                    "spdx:Hardware/VirtualHardwareModelType/other"
+                    "hardware_:VirtualHardwareModelType/cycle",
+                    "hardware_:VirtualHardwareModelType/function",
+                    "hardware_:VirtualHardwareModelType/other"
                 ]
         },
         "operations_ExportControlClassificationAssessment": {
@@ -7907,11 +7907,11 @@
         },
         "prop_security_CvssV3VulnAssessmentRelationship_security_severity": {
                 "enum": [
-                    "critical",
-                    "high",
-                    "low",
-                    "medium",
-                    "none"
+                    "security_:CvssSeverityType/critical",
+                    "security_:CvssSeverityType/high",
+                    "security_:CvssSeverityType/low",
+                    "security_:CvssSeverityType/medium",
+                    "security_:CvssSeverityType/none"
                 ]
         },
         "prop_security_CvssV3VulnAssessmentRelationship_security_vectorString": {
@@ -7993,11 +7993,11 @@
         },
         "prop_security_CvssV4VulnAssessmentRelationship_security_severity": {
                 "enum": [
-                    "critical",
-                    "high",
-                    "low",
-                    "medium",
-                    "none"
+                    "security_:CvssSeverityType/critical",
+                    "security_:CvssSeverityType/high",
+                    "security_:CvssSeverityType/low",
+                    "security_:CvssSeverityType/medium",
+                    "security_:CvssSeverityType/none"
                 ]
         },
         "prop_security_CvssV4VulnAssessmentRelationship_security_vectorString": {
@@ -8149,8 +8149,8 @@
         },
         "prop_security_ExploitCatalogVulnAssessmentRelationship_security_catalogType": {
                 "enum": [
-                    "kev",
-                    "other"
+                    "security_:ExploitCatalogType/kev",
+                    "security_:ExploitCatalogType/other"
                 ]
         },
         "prop_security_ExploitCatalogVulnAssessmentRelationship_security_exploited": {
@@ -8216,10 +8216,10 @@
         },
         "prop_security_SsvcVulnAssessmentRelationship_security_decisionType": {
                 "enum": [
-                    "act",
-                    "attend",
-                    "track",
-                    "trackStar"
+                    "security_:SsvcDecisionType/act",
+                    "security_:SsvcDecisionType/attend",
+                    "security_:SsvcDecisionType/track",
+                    "security_:SsvcDecisionType/trackStar"
                 ]
         },
         "security_VexVulnAssessmentRelationship_derived": {
@@ -8417,35 +8417,35 @@
         },
         "prop_software_SoftwareArtifact_software_additionalPurpose": {
                 "enum": [
-                    "application",
-                    "archive",
-                    "bom",
-                    "configuration",
-                    "container",
-                    "data",
-                    "device",
-                    "deviceDriver",
-                    "diskImage",
-                    "documentation",
-                    "evidence",
-                    "executable",
-                    "file",
-                    "filesystemImage",
-                    "firmware",
-                    "framework",
-                    "install",
-                    "library",
-                    "manifest",
-                    "model",
-                    "module",
-                    "operatingSystem",
-                    "other",
-                    "patch",
-                    "platform",
-                    "requirement",
-                    "source",
-                    "specification",
-                    "test"
+                    "software_:SoftwarePurpose/application",
+                    "software_:SoftwarePurpose/archive",
+                    "software_:SoftwarePurpose/bom",
+                    "software_:SoftwarePurpose/configuration",
+                    "software_:SoftwarePurpose/container",
+                    "software_:SoftwarePurpose/data",
+                    "software_:SoftwarePurpose/device",
+                    "software_:SoftwarePurpose/deviceDriver",
+                    "software_:SoftwarePurpose/diskImage",
+                    "software_:SoftwarePurpose/documentation",
+                    "software_:SoftwarePurpose/evidence",
+                    "software_:SoftwarePurpose/executable",
+                    "software_:SoftwarePurpose/file",
+                    "software_:SoftwarePurpose/filesystemImage",
+                    "software_:SoftwarePurpose/firmware",
+                    "software_:SoftwarePurpose/framework",
+                    "software_:SoftwarePurpose/install",
+                    "software_:SoftwarePurpose/library",
+                    "software_:SoftwarePurpose/manifest",
+                    "software_:SoftwarePurpose/model",
+                    "software_:SoftwarePurpose/module",
+                    "software_:SoftwarePurpose/operatingSystem",
+                    "software_:SoftwarePurpose/other",
+                    "software_:SoftwarePurpose/patch",
+                    "software_:SoftwarePurpose/platform",
+                    "software_:SoftwarePurpose/requirement",
+                    "software_:SoftwarePurpose/source",
+                    "software_:SoftwarePurpose/specification",
+                    "software_:SoftwarePurpose/test"
                 ]
         },
         "prop_software_SoftwareArtifact_software_artifactSize": {
@@ -8463,35 +8463,35 @@
         },
         "prop_software_SoftwareArtifact_software_primaryPurpose": {
                 "enum": [
-                    "application",
-                    "archive",
-                    "bom",
-                    "configuration",
-                    "container",
-                    "data",
-                    "device",
-                    "deviceDriver",
-                    "diskImage",
-                    "documentation",
-                    "evidence",
-                    "executable",
-                    "file",
-                    "filesystemImage",
-                    "firmware",
-                    "framework",
-                    "install",
-                    "library",
-                    "manifest",
-                    "model",
-                    "module",
-                    "operatingSystem",
-                    "other",
-                    "patch",
-                    "platform",
-                    "requirement",
-                    "source",
-                    "specification",
-                    "test"
+                    "software_:SoftwarePurpose/application",
+                    "software_:SoftwarePurpose/archive",
+                    "software_:SoftwarePurpose/bom",
+                    "software_:SoftwarePurpose/configuration",
+                    "software_:SoftwarePurpose/container",
+                    "software_:SoftwarePurpose/data",
+                    "software_:SoftwarePurpose/device",
+                    "software_:SoftwarePurpose/deviceDriver",
+                    "software_:SoftwarePurpose/diskImage",
+                    "software_:SoftwarePurpose/documentation",
+                    "software_:SoftwarePurpose/evidence",
+                    "software_:SoftwarePurpose/executable",
+                    "software_:SoftwarePurpose/file",
+                    "software_:SoftwarePurpose/filesystemImage",
+                    "software_:SoftwarePurpose/firmware",
+                    "software_:SoftwarePurpose/framework",
+                    "software_:SoftwarePurpose/install",
+                    "software_:SoftwarePurpose/library",
+                    "software_:SoftwarePurpose/manifest",
+                    "software_:SoftwarePurpose/model",
+                    "software_:SoftwarePurpose/module",
+                    "software_:SoftwarePurpose/operatingSystem",
+                    "software_:SoftwarePurpose/other",
+                    "software_:SoftwarePurpose/patch",
+                    "software_:SoftwarePurpose/platform",
+                    "software_:SoftwarePurpose/requirement",
+                    "software_:SoftwarePurpose/source",
+                    "software_:SoftwarePurpose/specification",
+                    "software_:SoftwarePurpose/test"
                 ]
         },
         "supplychain_BoundaryDefinitionProcess": {
@@ -8920,8 +8920,8 @@
         },
         "prop_supplychain_ResponsibilityChangeProcess_supplychain_responsibilityCategory": {
                 "enum": [
-                    "custody",
-                    "ownership"
+                    "supplychain_:ResponsibilityType/custody",
+                    "supplychain_:ResponsibilityType/ownership"
                 ]
         },
         "supplychain_State": {
@@ -9641,11 +9641,11 @@
         },
         "prop_security_VexNotAffectedVulnAssessmentRelationship_security_justificationType": {
                 "enum": [
-                    "componentNotPresent",
-                    "inlineMitigationsAlreadyExist",
-                    "vulnerableCodeCannotBeControlledByAdversary",
-                    "vulnerableCodeNotInExecutePath",
-                    "vulnerableCodeNotPresent"
+                    "security_:VexJustificationType/componentNotPresent",
+                    "security_:VexJustificationType/inlineMitigationsAlreadyExist",
+                    "security_:VexJustificationType/vulnerableCodeCannotBeControlledByAdversary",
+                    "security_:VexJustificationType/vulnerableCodeNotInExecutePath",
+                    "security_:VexJustificationType/vulnerableCodeNotPresent"
                 ]
         },
         "security_VexUnderInvestigationVulnAssessmentRelationship": {
@@ -9758,9 +9758,9 @@
         },
         "prop_software_File_software_fileKind": {
                 "enum": [
-                    "directory",
-                    "file",
-                    "symlink"
+                    "software_:FileKindType/directory",
+                    "software_:FileKindType/file",
+                    "software_:FileKindType/symlink"
                 ]
         },
         "software_Package": {
@@ -9911,12 +9911,12 @@
         },
         "prop_software_Sbom_software_sbomType": {
                 "enum": [
-                    "analyzed",
-                    "build",
-                    "deployed",
-                    "design",
-                    "runtime",
-                    "source"
+                    "software_:SbomType/analyzed",
+                    "software_:SbomType/build",
+                    "software_:SbomType/deployed",
+                    "software_:SbomType/design",
+                    "software_:SbomType/runtime",
+                    "software_:SbomType/source"
                 ]
         },
         "software_Snippet": {
@@ -10674,8 +10674,8 @@
         },
         "prop_supplychain_ResponsibilityChangeAction_supplychain_responsibilityCategory": {
                 "enum": [
-                    "custody",
-                    "ownership"
+                    "supplychain_:ResponsibilityType/custody",
+                    "supplychain_:ResponsibilityType/ownership"
                 ]
         },
         "prop_supplychain_ResponsibilityChangeAction_supplychain_responsibilityChangedOn": {
@@ -11054,9 +11054,9 @@
         },
         "prop_ai_AIPackage_ai_autonomyType": {
                 "enum": [
-                    "no",
-                    "noAssertion",
-                    "yes"
+                    ":PresenceType/no",
+                    ":PresenceType/noAssertion",
+                    ":PresenceType/yes"
                 ]
         },
         "prop_ai_AIPackage_ai_domain": {
@@ -11091,10 +11091,10 @@
         },
         "prop_ai_AIPackage_ai_safetyRiskAssessment": {
                 "enum": [
-                    "high",
-                    "low",
-                    "medium",
-                    "serious"
+                    "ai_:SafetyRiskAssessmentType/high",
+                    "ai_:SafetyRiskAssessmentType/low",
+                    "ai_:SafetyRiskAssessmentType/medium",
+                    "ai_:SafetyRiskAssessmentType/serious"
                 ]
         },
         "prop_ai_AIPackage_ai_standardCompliance": {
@@ -11105,20 +11105,20 @@
         },
         "prop_ai_AIPackage_ai_useSensitivePersonalInformation": {
                 "enum": [
-                    "no",
-                    "noAssertion",
-                    "yes"
+                    ":PresenceType/no",
+                    ":PresenceType/noAssertion",
+                    ":PresenceType/yes"
                 ]
         },
         "prop_ai_AIPackage_isoAutomationLevel": {
                 "enum": [
-                    "assistiveAutomation",
-                    "autonomous",
-                    "conditionalAutomation",
-                    "fullAutomation",
-                    "highAutomation",
-                    "notAutomated",
-                    "partialAutomation"
+                    ":IsoAutomationLevel/assistiveAutomation",
+                    ":IsoAutomationLevel/autonomous",
+                    ":IsoAutomationLevel/conditionalAutomation",
+                    ":IsoAutomationLevel/fullAutomation",
+                    ":IsoAutomationLevel/highAutomation",
+                    ":IsoAutomationLevel/notAutomated",
+                    ":IsoAutomationLevel/partialAutomation"
                 ]
         },
         "dataset_DatasetPackage": {
@@ -11267,10 +11267,10 @@
         },
         "prop_dataset_DatasetPackage_dataset_confidentialityLevel": {
                 "enum": [
-                    "amber",
-                    "clear",
-                    "green",
-                    "red"
+                    "dataset_:ConfidentialityLevelType/amber",
+                    "dataset_:ConfidentialityLevelType/clear",
+                    "dataset_:ConfidentialityLevelType/green",
+                    "dataset_:ConfidentialityLevelType/red"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_dataCollectionProcess": {
@@ -11281,11 +11281,11 @@
         },
         "prop_dataset_DatasetPackage_dataset_datasetAvailability": {
                 "enum": [
-                    "clickthrough",
-                    "directDownload",
-                    "query",
-                    "registration",
-                    "scrapingScript"
+                    "dataset_:DatasetAvailabilityType/clickthrough",
+                    "dataset_:DatasetAvailabilityType/directDownload",
+                    "dataset_:DatasetAvailabilityType/query",
+                    "dataset_:DatasetAvailabilityType/registration",
+                    "dataset_:DatasetAvailabilityType/scrapingScript"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_datasetNoise": {
@@ -11297,20 +11297,20 @@
         },
         "prop_dataset_DatasetPackage_dataset_datasetType": {
                 "enum": [
-                    "audio",
-                    "categorical",
-                    "graph",
-                    "image",
-                    "noAssertion",
-                    "numeric",
-                    "other",
-                    "sensor",
-                    "structured",
-                    "syntactic",
-                    "text",
-                    "timeseries",
-                    "timestamp",
-                    "video"
+                    "dataset_:DatasetType/audio",
+                    "dataset_:DatasetType/categorical",
+                    "dataset_:DatasetType/graph",
+                    "dataset_:DatasetType/image",
+                    "dataset_:DatasetType/noAssertion",
+                    "dataset_:DatasetType/numeric",
+                    "dataset_:DatasetType/other",
+                    "dataset_:DatasetType/sensor",
+                    "dataset_:DatasetType/structured",
+                    "dataset_:DatasetType/syntactic",
+                    "dataset_:DatasetType/text",
+                    "dataset_:DatasetType/timeseries",
+                    "dataset_:DatasetType/timestamp",
+                    "dataset_:DatasetType/video"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_datasetUpdateMechanism": {
@@ -11318,9 +11318,9 @@
         },
         "prop_dataset_DatasetPackage_dataset_hasSensitivePersonalInformation": {
                 "enum": [
-                    "no",
-                    "noAssertion",
-                    "yes"
+                    ":PresenceType/no",
+                    ":PresenceType/noAssertion",
+                    ":PresenceType/yes"
                 ]
         },
         "prop_dataset_DatasetPackage_dataset_intendedUse": {
