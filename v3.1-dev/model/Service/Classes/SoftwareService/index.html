@@ -412,6 +412,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Properties/requirementStatement/">requirementStatement</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Core/Properties/requirementStatus/">requirementStatus</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Properties/requirementUID/">requirementUID</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Properties/responsibility/">responsibility</a>
@@ -485,6 +487,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Vocabularies/RelationshipCompleteness/">RelationshipCompleteness</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Vocabularies/RelationshipType/">RelationshipType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Core/Vocabularies/RequirementStatusType/">RequirementStatusType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Vocabularies/SpecificationType/">SpecificationType</a>
                 </li>
@@ -974,8 +978,6 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../../Properties/provider/">provider</a>
-                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Properties/serverAuthenticationProtocol/">serverAuthenticationProtocol</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Properties/serviceHostingCountry/">serviceHostingCountry</a>
@@ -1283,7 +1285,9 @@
 <h2 id="summary">Summary</h2>
 <p>Software provided as a service over a network.</p>
 <h2 id="description">Description</h2>
-<p>SoftwareService represents a service based on software components offered for access online over a network.</p>
+<p>SoftwareService represents a service based on software components offered for access online over a network.
+The primary provider of the SoftwareService is the /Core/suppliedBy.
+Any additional providers can use a relationship of relationship type availableFrom.</p>
 <h2 id="metadata">Metadata</h2>
 <p><code>https://spdx.org/rdf/3/terms/Service/SoftwareService</code></p>
 <table>
@@ -1304,13 +1308,14 @@
 </tr>
 <tr>
 <td><strong>SubclassOf</strong></td>
-<td><a href="../../../Core/Classes/Element/">/Core/Element</a></td>
+<td><a href="../../../Core/Classes/Artifact/">/Core/Artifact</a></td>
 </tr>
 </tbody>
 </table>
 <h2 id="class-hierarchy">Class hierarchy</h2>
 <p><a href="../../../Core/Classes/Element/">/Core/Element</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./">/Service/SoftwareService</a></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../Core/Classes/Artifact/">/Core/Artifact</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./">/Service/SoftwareService</a></p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -1322,12 +1327,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="../../Properties/provider/">provider</a></td>
-<td><a href="../../../Core/Classes/Agent/">/Core/Agent</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">*</td>
-</tr>
 <tr>
 <td><a href="../../Properties/serverAuthenticationProtocol/">serverAuthenticationProtocol</a></td>
 <td><a href="../../Vocabularies/AuthenticationProtocolType/">/Service/AuthenticationProtocolType</a></td>
@@ -1353,6 +1352,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../../../Core/Properties/builtTime/">builtTime</a></td>
+<td><a href="../../../Core/Datatypes/DateTime/">DateTime</a></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
 <tr>
 <td><a href="../../../Core/Properties/comment/">comment</a></td>
 <td>xsd:string</td>
@@ -1390,16 +1395,28 @@
 <td style="text-align: center;">*</td>
 </tr>
 <tr>
+<td><a href="../../../Core/Properties/intendedUse/">intendedUse</a></td>
+<td>xsd:string</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
 <td><a href="../../../Core/Properties/name/">name</a></td>
 <td>xsd:string</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td><a href="../../Properties/provider/">provider</a></td>
+<td><a href="../../../Core/Properties/originatedBy/">originatedBy</a></td>
 <td><a href="../../../Core/Classes/Agent/">Agent</a></td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 <td style="text-align: center;">*</td>
+</tr>
+<tr>
+<td><a href="../../../Core/Properties/releaseTime/">releaseTime</a></td>
+<td><a href="../../../Core/Datatypes/DateTime/">DateTime</a></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
 <td><a href="../../Properties/serverAuthenticationProtocol/">serverAuthenticationProtocol</a></td>
@@ -1420,8 +1437,32 @@
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
+<td><a href="../../../Core/Properties/standardName/">standardName</a></td>
+<td>xsd:string</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">*</td>
+</tr>
+<tr>
 <td><a href="../../../Core/Properties/summary/">summary</a></td>
 <td>xsd:string</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td><a href="../../../Core/Properties/suppliedBy/">suppliedBy</a></td>
+<td><a href="../../../Core/Classes/Agent/">Agent</a></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td><a href="../../../Core/Properties/supportLevel/">supportLevel</a></td>
+<td><a href="../../../Core/Vocabularies/SupportType/">SupportType</a></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">*</td>
+</tr>
+<tr>
+<td><a href="../../../Core/Properties/validUntilTime/">validUntilTime</a></td>
+<td><a href="../../../Core/Datatypes/DateTime/">DateTime</a></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
 </tr>
@@ -1438,7 +1479,7 @@
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../../Service/" class="btn btn-neutral float-left" title="Description"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../Properties/provider/" class="btn btn-neutral float-right" title="provider">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../Properties/serverAuthenticationProtocol/" class="btn btn-neutral float-right" title="serverAuthenticationProtocol">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -1469,7 +1510,7 @@
       <span><a href="../../Service/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../Properties/provider/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../Properties/serverAuthenticationProtocol/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

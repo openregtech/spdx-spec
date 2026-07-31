@@ -412,6 +412,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Properties/requirementStatement/">requirementStatement</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Properties/requirementStatus/">requirementStatus</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Properties/requirementUID/">requirementUID</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Properties/responsibility/">responsibility</a>
@@ -495,6 +497,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../RelationshipCompleteness/">RelationshipCompleteness</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../RelationshipType/">RelationshipType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../RequirementStatusType/">RequirementStatusType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../SpecificationType/">SpecificationType</a>
                 </li>
@@ -970,8 +974,6 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../../../Service/Properties/provider/">provider</a>
-                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Service/Properties/serverAuthenticationProtocol/">serverAuthenticationProtocol</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Service/Properties/serviceHostingCountry/">serviceHostingCountry</a>
@@ -1346,6 +1348,10 @@
 <td>Email address, as defined in <a href="https://datatracker.ietf.org/doc/rfc3696/">RFC 3696</a> Section 3.</td>
 </tr>
 <tr>
+<td><strong>eori</strong></td>
+<td><a href="https://taxation-customs.ec.europa.eu/customs/customs-procedures-import-and-export/customs-operations/economic-operators-registration-and-identification-number-eori_en">Economic Operators Registration and Identification (EORI) number</a> is a unique identifier for businesses undertaking customs operations across European Union customs territory, such as import, export, and transit. It consists of an ISO 3166-1 alpha-2 country code followed by a national identifier of up to 15 alphanumeric characters (e.g., <code>PL1234567890ABCDE</code>).</td>
+</tr>
+<tr>
 <td><strong>evidenceUID</strong></td>
 <td>The unique identifier used by a reporting management system or any other lifecycle management tool to uniquely identify an evidence relationship item.</td>
 </tr>
@@ -1368,6 +1374,10 @@
 <tr>
 <td><strong>hsCodes</strong></td>
 <td>The <a href="https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx">Harmonized System (HS)</a> of tariff nomenclature is an internationally standardized system of names and numbers, defined by the World Customs Organization, used to classify traded products.</td>
+</tr>
+<tr>
+<td><strong>iban</strong></td>
+<td>International Bank Account Number (IBAN) is a system for identifying bank accounts across national borders standardized by <a href="https://www.iso.org/standard/81090.html">ISO 13616</a>. It consists of up to 34 alphanumeric characters, including a country code, two check digits, and a basic bank account number. While spaces may be inserted for human readability, they must be omitted when used for electronic data exchange (e.g., <code>IE64IRCE92050112345678</code>).</td>
 </tr>
 <tr>
 <td><strong>ibid</strong></td>
@@ -1470,12 +1480,16 @@
 <td><a href="https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml">Uniform Resource Identifier (URI) Schemes</a>. The scheme used in order to locate a resource.</td>
 </tr>
 <tr>
+<td><strong>vatNumber</strong></td>
+<td>Value Added Tax (VAT) number, or Goods and Services Tax (GST) number, is an identifier assigned by tax authorities that uniquely identifies a business within a specific national border or tax jurisdiction for the collection and tracking of VAT/GST.</td>
+</tr>
+<tr>
 <td><strong>verificationUID</strong></td>
 <td>The unique identifier used by a verification management system or any other lifecycle management tool to uniquely identify a verification item.</td>
 </tr>
 <tr>
 <td><strong>webpage</strong></td>
-<td>Absolute URL that can be used to locate a resource, as defined in <a href="https://datatracker.ietf.org/doc/rfc7230/">RFC 7230</a> Section 2.7.1 or Section 2.7.2.</td>
+<td>A Uniform Resource Locator (URL) that can be used to locate a resource, as defined in <a href="https://datatracker.ietf.org/doc/rfc9110/">RFC 9110</a> Section 4.2.1 or Section 4.2.2. It may include an optional fragment identifier as specified in <a href="https://datatracker.ietf.org/doc/rfc3986">RFC 3986</a> Section 3.5.</td>
 </tr>
 </tbody>
 </table>
