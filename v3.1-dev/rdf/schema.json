@@ -3491,6 +3491,7 @@
                     ]
                 },
                 { "const": "ConfidentialityLevelType_amber" },
+                { "const": "ConfidentialityLevelType_amberStrict" },
                 { "const": "ConfidentialityLevelType_clear" },
                 { "const": "ConfidentialityLevelType_green" },
                 { "const": "ConfidentialityLevelType_red" },
@@ -11323,6 +11324,7 @@
         "prop_dataset_DatasetPackage_dataset_confidentialityLevel": {
                 "enum": [
                     "dataset_:ConfidentialityLevelType/amber",
+                    "dataset_:ConfidentialityLevelType/amberStrict",
                     "dataset_:ConfidentialityLevelType/clear",
                     "dataset_:ConfidentialityLevelType/green",
                     "dataset_:ConfidentialityLevelType/red"
