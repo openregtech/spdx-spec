@@ -78,6 +78,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../../../serializations/">6. Model and serializations</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../signing/">7. Signing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../attestation/">8. Attestation</a>
+                </li>
+              </ul>
               <p class="caption"><span class="caption-text">model</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >AI</a>
@@ -231,10 +239,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../Classes/LifecycleScopedRelationship/">LifecycleScopedRelationship</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Classes/Location/">Location</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Classes/MeasureOfLength/">MeasureOfLength</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Classes/MeasureOfMass/">MeasureOfMass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Classes/NamespaceMap/">NamespaceMap</a>
                 </li>
@@ -704,6 +708,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Classes/RequirementVerification/">RequirementVerification</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Classes/SafetyContextRelationship/">SafetyContextRelationship</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
@@ -720,6 +726,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/safetyIntegrityLevel/">safetyIntegrityLevel</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/verificationPostcondition/">verificationPostcondition</a>
@@ -735,6 +743,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/EvaluationResultType/">EvaluationResultType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/EvidenceType/">EvidenceType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/SafetyIntegrityLevelType/">SafetyIntegrityLevelType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/VerificationType/">VerificationType</a>
                 </li>
@@ -779,8 +789,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/dimensions/">dimensions</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/mass/">mass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/massOfHardware/">massOfHardware</a>
                 </li>
@@ -1531,7 +1539,7 @@ name completes the sentence:</p>
 <td><strong>has<wbr>Data<wbr>File</strong></td>
 <td>Element</td>
 <td>Element</td>
-<td>The <code>from</code> Element treats each <code>to</code> Element as a data file. A data file is an artifact that stores data required or optional for the <code>from</code> Element's functionality. A data file can be a database file, an index file, a log file, an AI model file, a calibration data file, a temporary file, a backup file, and more. For AI training dataset, test dataset, test artifact, configuration data, build input data, and build output data, please consider using the more specific relationship types: <code>trainedOn</code>, <code>testedOn</code>, <code>hasTest</code>, <code>configures</code>, <code>hasInput</code>, and <code>hasOutput</code>, respectively. This relationship does not imply dependency.</td>
+<td>The <code>from</code> Element treats each <code>to</code> Element as a data file. A data file is an artifact that stores data required or optional for the <code>from</code> Element's functionality. The <code>hasDataFile</code> relationship does not imply a dependency. Examples of data files include database files, index files, log files, AI model files, calibration data files, temporary files, and backup files. For configuration data, build input data, build output data, test artifacts, test datasets, and training datasets, the more specific relationship types <code>configures</code>, <code>hasInput</code>, <code>hasOutput</code>, <code>hasTest</code>, <code>testedOn</code>, and <code>trainedOn</code> shall be used, respectively.</td>
 <td>Relationship</td>
 </tr>
 <tr>

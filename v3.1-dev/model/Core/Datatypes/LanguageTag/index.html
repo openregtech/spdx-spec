@@ -78,6 +78,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../../../serializations/">6. Model and serializations</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../signing/">7. Signing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../attestation/">8. Attestation</a>
+                </li>
+              </ul>
               <p class="caption"><span class="caption-text">model</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >AI</a>
@@ -231,10 +239,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../Classes/LifecycleScopedRelationship/">LifecycleScopedRelationship</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Classes/Location/">Location</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Classes/MeasureOfLength/">MeasureOfLength</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Classes/MeasureOfMass/">MeasureOfMass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Classes/NamespaceMap/">NamespaceMap</a>
                 </li>
@@ -704,6 +708,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Classes/RequirementVerification/">RequirementVerification</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Classes/SafetyContextRelationship/">SafetyContextRelationship</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
@@ -720,6 +726,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/safetyIntegrityLevel/">safetyIntegrityLevel</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/verificationPostcondition/">verificationPostcondition</a>
@@ -735,6 +743,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/EvaluationResultType/">EvaluationResultType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/EvidenceType/">EvidenceType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/SafetyIntegrityLevelType/">SafetyIntegrityLevelType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/VerificationType/">VerificationType</a>
                 </li>
@@ -779,8 +789,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/dimensions/">dimensions</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/mass/">mass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Hardware/Properties/massOfHardware/">massOfHardware</a>
                 </li>
@@ -1282,12 +1290,14 @@
 <p>A string constrained to the IETF BCP 47 language tag format,
 which is used to identify human languages.</p>
 <h2 id="description">Description</h2>
+<p>A language tag provides a standardized way to identify the language of content,
+a performance, or an action.</p>
 <p>The language tag shall be in the format as describes in the Section 2 of
 <a href="https://datatracker.ietf.org/doc/rfc5646/">IETF RFC 5646</a> (part of BCP 47).</p>
-<p>Each language tag is composed of one or more "subtags" separated by hyphens
-(-). Each subtag is composed of basic Latin letters or digits only.</p>
-<p>It provides a standardized way of indicating the language of the content or
-performance or used in an action.</p>
+<p>Each tag consists of one or more subtags separated by hyphens
+("-", Unicode U+002D).
+Subtags contain only basic Latin letters and digits.</p>
+<p>Language tags and their subtags are to be treated as case insensitive.</p>
 <p><em>Example</em></p>
 <ul>
 <li><code>es</code> (Spanish)</li>
@@ -1321,7 +1331,7 @@ for more information.</p>
 </tbody>
 </table>
 <h2 id="format-pattern">Format pattern</h2>
-<p><code>^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$</code></p>
+<p><code>^([a-zA-Z]{2,8}|[iIxX])(-[a-zA-Z0-9]{1,8})*$</code></p>
               
             </div>
           </div><footer>

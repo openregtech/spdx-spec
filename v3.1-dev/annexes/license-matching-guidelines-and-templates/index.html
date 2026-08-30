@@ -78,6 +78,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../serializations/">6. Model and serializations</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../signing/">7. Signing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../attestation/">8. Attestation</a>
+                </li>
+              </ul>
               <p class="caption"><span class="caption-text">model</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" >AI</a>
@@ -231,10 +239,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/LifecycleScopedRelationship/">LifecycleScopedRelationship</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/Location/">Location</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/MeasureOfLength/">MeasureOfLength</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/MeasureOfMass/">MeasureOfMass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/NamespaceMap/">NamespaceMap</a>
                 </li>
@@ -694,6 +698,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Classes/RequirementVerification/">RequirementVerification</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Classes/SafetyContextRelationship/">SafetyContextRelationship</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
@@ -710,6 +716,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/safetyIntegrityLevel/">safetyIntegrityLevel</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/verificationPostcondition/">verificationPostcondition</a>
@@ -725,6 +733,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/EvaluationResultType/">EvaluationResultType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/EvidenceType/">EvidenceType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/SafetyIntegrityLevelType/">SafetyIntegrityLevelType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/VerificationType/">VerificationType</a>
                 </li>
@@ -769,8 +779,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/dimensions/">dimensions</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/mass/">mass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/massOfHardware/">massOfHardware</a>
                 </li>
@@ -1430,7 +1438,7 @@ see <a href="#guideline-official-license-headers">Guideline: official license he
 </ul>
 <p>The original text is enclosed within the beginning and ending alt tags.</p>
 <p>For example:
-<code>&lt;alt match="(?i:copyright.{0,200})." name="copyright1"&gt;Copyright The Linux Foundation&lt;/alt&gt;</code></p>
+<code>&lt;alt match="[Cc]opyright.{0,200}." name="copyright1"&gt;Copyright The Linux Foundation&lt;/alt&gt;</code></p>
 <p>The original replaceable text appears on the SPDX License List webpage in red text.</p>
 <h3 id="guideline-omittable-text">Guideline: omittable text</h3>
 <p>Some licenses have text that can simply be ignored. The intent here is to avoid the inclusion of certain text that is superfluous or irrelevant in regard to the substantive license text resulting in a non-match where the license is otherwise an exact match (e.g., directions on how to apply the license or other similar exhibits). In these cases, there shall be a positive license match.</p>
@@ -1543,7 +1551,7 @@ This text template is still supported, however, users are encouraged to use
 the more expressive XML format.</p>
 <p>A legacy template is composed of text with zero or more rules embedded in it.</p>
 <p>A rule is a variable section of a license wrapped between double angle brackets
-<code>&lt;&lt;&gt;&gt;</code> and is composed of 4 fields.
+<code>&lt;&lt;&gt;&gt;</code> and is composed of either 2 or 4 fields.
 Each field is separated with a semi-colon <code>;</code>.
 Rules shall not be embedded within other rules.
 Rule fields begin with a case sensitive tag followed by an equal sign <code>=</code>.</p>

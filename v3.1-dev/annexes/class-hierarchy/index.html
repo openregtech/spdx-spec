@@ -78,6 +78,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../serializations/">6. Model and serializations</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../signing/">7. Signing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../attestation/">8. Attestation</a>
+                </li>
+              </ul>
               <p class="caption"><span class="caption-text">model</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" >AI</a>
@@ -231,10 +239,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/LifecycleScopedRelationship/">LifecycleScopedRelationship</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/Location/">Location</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/MeasureOfLength/">MeasureOfLength</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/MeasureOfMass/">MeasureOfMass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Core/Classes/NamespaceMap/">NamespaceMap</a>
                 </li>
@@ -694,6 +698,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Classes/RequirementVerification/">RequirementVerification</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Classes/SafetyContextRelationship/">SafetyContextRelationship</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
@@ -710,6 +716,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/safetyIntegrityLevel/">safetyIntegrityLevel</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Properties/verificationPostcondition/">verificationPostcondition</a>
@@ -725,6 +733,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/EvaluationResultType/">EvaluationResultType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/EvidenceType/">EvidenceType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/SafetyIntegrityLevelType/">SafetyIntegrityLevelType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/FunctionalSafety/Vocabularies/VerificationType/">VerificationType</a>
                 </li>
@@ -769,8 +779,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/dimensions/">dimensions</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/mass/">mass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../model/Hardware/Properties/massOfHardware/">massOfHardware</a>
                 </li>
@@ -1533,7 +1541,15 @@
                 <ul>
                                 <li class="classhier-leaf">/Core/ContactPointRelationship</li>
 
-                                <li class="classhier-leaf">/Core/LifecycleScopedRelationship</li>
+                                <li>
+            <details open>
+                <summary>/Core/LifecycleScopedRelationship</summary>
+                <ul>
+                                <li class="classhier-leaf">/FunctionalSafety/SafetyContextRelationship</li>
+
+                </ul>
+            </details>
+        </li>
 
                                 <li class="classhier-leaf">/Core/RoleRelationship</li>
 
@@ -1660,18 +1676,6 @@
                                 <li class="classhier-leaf">/Core/PackageVerificationCode</li>
 
                                 <li class="classhier-leaf">/Software/ContentIdentifier</li>
-
-                </ul>
-            </details>
-        </li>
-
-            <li>
-            <details open>
-                <summary>/Core/UnitOfMeasure</summary>
-                <ul>
-                                <li class="classhier-leaf">/Core/MeasureOfLength</li>
-
-                                <li class="classhier-leaf">/Core/MeasureOfMass</li>
 
                 </ul>
             </details>

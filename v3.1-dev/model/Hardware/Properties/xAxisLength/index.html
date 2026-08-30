@@ -78,6 +78,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../../../serializations/">6. Model and serializations</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../signing/">7. Signing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../attestation/">8. Attestation</a>
+                </li>
+              </ul>
               <p class="caption"><span class="caption-text">model</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >AI</a>
@@ -231,10 +239,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Classes/LifecycleScopedRelationship/">LifecycleScopedRelationship</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Classes/Location/">Location</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../../Core/Classes/MeasureOfLength/">MeasureOfLength</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../../Core/Classes/MeasureOfMass/">MeasureOfMass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../Core/Classes/NamespaceMap/">NamespaceMap</a>
                 </li>
@@ -694,6 +698,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Classes/RequirementVerification/">RequirementVerification</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Classes/SafetyContextRelationship/">SafetyContextRelationship</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
@@ -710,6 +716,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/safetyIntegrityLevel/">safetyIntegrityLevel</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Properties/verificationPostcondition/">verificationPostcondition</a>
@@ -725,6 +733,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/EvaluationResultType/">EvaluationResultType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/EvidenceType/">EvidenceType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/SafetyIntegrityLevelType/">SafetyIntegrityLevelType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../../FunctionalSafety/Vocabularies/VerificationType/">VerificationType</a>
                 </li>
@@ -769,8 +779,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../dimensions/">dimensions</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../mass/">mass</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../massOfHardware/">massOfHardware</a>
                 </li>
@@ -1279,9 +1287,9 @@
               
                 <h1 id="xaxislength">xAxisLength</h1>
 <h2 id="summary">Summary</h2>
-<p>Information related to hardware dimension.</p>
+<p>The length along the x-axis.</p>
 <h2 id="description">Description</h2>
-<p>Information related to xAxis measurement of an object.</p>
+<p>This property specifies the length along the x-axis of a hardware component. The value must be expressed using the /Core/UnitOfMeasure type which requires both a quantity, and a unitQUDT which must be a unit of length from the QUDT vocabulary, specifically constrained to the http://qudt.org/vocab/quantitykind/Length.</p>
 <h2 id="metadata">Metadata</h2>
 <p><code>https://spdx.org/rdf/3/terms/Hardware/xAxisLength</code></p>
 <table>
@@ -1302,7 +1310,7 @@
 </tr>
 <tr>
 <td><strong>Range</strong></td>
-<td><a href="../../../Core/Classes/MeasureOfLength/">/Core/MeasureOfLength</a></td>
+<td><a href="../../../Core/Classes/UnitOfMeasure/">/Core/UnitOfMeasure</a></td>
 </tr>
 </tbody>
 </table>
